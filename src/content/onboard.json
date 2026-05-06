@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "eyebrow": "Software Onboard",
+    "titleStart": "Onboard:",
+    "title": "para de gestionar con personas lo que puede gestionarse solo",
+    "body": "Si tu operación depende de que alguien abra el correo, copie datos y lo pase al siguiente, cada día estás pagando un coste que no aparece en ninguna factura. Onboard elimina esa carga: captura, procesa y entrega los datos en tus sistemas sin que nadie tenga que intervenir en el medio.",
+    "button": "Solicita una demo con nuestro equipo técnico",
+    "image": "/assets/figma/onboard-hero-screen.png",
+    "badge": "/assets/figma/onboard-hero-badge.png"
+  },
+  "problem": {
+    "image": "/assets/figma/onboard-problem.jpg",
+    "chip": "Plataforma BPM low-code",
+    "title": "Lo que tu equipo hace hoy a mano,",
+    "highlight": "Onboard lo hace solo",
+    "body": "Cuando el volumen crece, la primera reacción es añadir más personas al proceso. Pero el problema no es la gente: es que el proceso no está diseñado para escalar.",
+    "insights": [
+      "Onboard recoge los documentos que entran por cualquier canal, los lee, extrae los datos que necesitas, los valida contra tus propias reglas de negocio y los deja listos en tu ERP o CRM. Sin que nadie tenga que abrirlos, copiarlos ni verificarlos.",
+      "Tu equipo deja de ser el cuello de botella y empieza a enfocarse en lo que sí necesita criterio humano."
+    ],
+    "button": "Solicitar demostración"
+  },
+  "capabilities": {
+    "title": "Qué resuelve Onboard en tu operación",
+    "items": [
+      ["Captura multicanal sin intervención manual", "¿Cuánto tiempo pierde tu equipo clasificando lo que llega por email, por portal o por fichero? Onboard lo recibe todo, lo clasifica y abre el expediente solo, desde el primer mensaje.", "Ver cómo funciona la captura"],
+      ["Lectura y extracción inteligente de documentos", "Nadie vuelve a teclear lo que ya está escrito en un documento. Onboard lee facturas, contratos, albaranes, pólizas y fichas catastrales, extrae los datos y los estructura. Sin errores de transcripción. Sin retrabajo", "Ver casos de extracción"],
+      ["Validación automática por reglas de negocio", "Un dato malo en el sistema cuesta diez veces más de corregir que de prevenir. Onboard aplica tus reglas de validación antes de que nada entre, y avisa cuando algo no cuadra.", "Ver motor de validación"],
+      ["Flujos de trabajo sin código", "¿Necesitas cambiar cómo se asigna una tarea o añadir un paso de aprobación? Lo haces tú, de forma visual, sin esperar a IT ni abrir un ticket.", "Ver diseñador de flujos"],
+      ["Integración directa con tu ERP y CRM", "Onboard no reemplaza tus sistemas: los alimenta. Los datos llegan limpios y listos directamente a donde tu equipo ya trabaja. Sin migraciones. Sin parar la operación.", "Ver integraciones disponibles"],
+      ["Control total en tiempo real", "¿Cuántas veces al día alguien pregunta en qué estado está un expediente? Con Onboard, cualquiera puede verlo en el panel, en tiempo real, sin tener que preguntarle a nadie.", "Ver el panel de control"]
+    ]
+  },
+  "industries": {
+    "title": "Onboard configurado para tu industria",
+    "body": "Nuestro objetivo es simple: que dejes de crecer a base de contratar más gente y empieces a hacerlo con procesos que escalan solos.",
+    "items": [
+      ["Real Estate y Servicing", "Gestión automatizada de carteras REO, pagos de tributos, administración de alquileres y recobro de impagos. Para servicers y fondos que manejan miles de activos con procesos que no admiten error.", "Ver Onboard para Real Estate", "/assets/figma/onboard-industry-real-estate.jpg"],
+      ["Banca, Financieras y Seguros", "Onboarding KYC automatizado, gestión de siniestros y cumplimiento normativo con trazabilidad completa. Para entidades que necesitan velocidad y seguridad jurídica en cada expediente procesado.", "Ver Onboard para Banca", "/assets/figma/onboard-industry-bank.jpg"],
+      ["Logística, Compras y Alimentación", "Conciliación automática de albaranes, facturas y pedidos. Para operadores logísticos y empresas de gran consumo donde cada error documental tiene impacto directo en la cadena de suministro.", "Ver Onboard para Logística", "/assets/figma/onboard-industry-logistics.jpg"],
+      ["Auditoría Catastral", "Centralización del inventario catastral, detección de discrepancias y gestión de expedientes de reclamación para carteras de activos de gran tamaño distribuidas geográficamente.", "Ver Onboard para Catastral", "/assets/figma/onboard-industry-audit.jpg"]
+    ]
+  },
+  "process": {
+    "chip": "Como empezamos a trabajar contigo",
+    "title": "Cómo transforma Onboard tu operación en tres pasos",
+    "button": "Quiero Onboard funcionando en mi operación",
+    "items": [
+      ["01", "Captura inteligente", "Onboard recibe documentos y comunicaciones desde cualquier canal de entrada —email, API, SFTP, formularios— y los clasifica automáticamente, abriendo un expediente digital por cada operación sin que nadie tenga que hacerlo a mano."],
+      ["02", "Procesamiento y validación con IA", "El motor de inteligencia artificial lee y extrae los datos de cada documento, los contrasta con las reglas de negocio que tú has definido, detecta errores, compara con documentos relacionados y enriquece la información. Todo sin intervención humana y con trazabilidad completa de cada acción."],
+      ["03", "Integración y acción en tus sistemas", "Los datos ya procesados y validados se entregan directamente en tu ERP, CRM o sistema de gestión, limpios y estructurados, listos para que tu equipo tome decisiones. El proceso no se interrumpe: continúa en el sistema que ya usas sin ningún paso manual de por medio."]
+    ]
+  },
+  "cta": {
+    "title": "Si tu operación crece, Onboard crece con ella",
+    "body": "Cuando el volumen crece, la presión recae sobre el equipo. Siempre hay dos salidas: contratar más personas o dejar que Onboard absorba el crecimiento por ti. La primera sube el coste fijo y la fragilidad; la segunda escala sin rozaduras, se adapta a tus procesos y libera a tu equipo para lo que no puede automatizarse.",
+    "button": "Háblanos y calcula tu ahorro",
+    "image": "/assets/figma/onboard-cta.jpg"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes sobre Onboard",
+    "items": [
+      "¿Onboard es un software genérico de gestión documental o una plataforma específica?",
+      "¿Cuánto tiempo lleva implantar Onboard en una empresa?",
+      "¿Es necesario migrar los sistemas que ya usamos para implantar Onboard?",
+      "¿Qué tipo de documentos puede procesar el motor de IA de Onboard?",
+      "¿Cómo garantiza Onboard la seguridad de los datos que procesa?"
+    ]
+  }
+}

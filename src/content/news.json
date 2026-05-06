@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "title": "Lo que está cambiando en las operaciones de las empresas que crecen",
+    "highlight": "operaciones",
+    "body": "No publicamos por publicar. Aquí encontrarás análisis de casos reales, tendencias en automatización y recursos prácticos para tomar mejores decisiones operativas. Todo con base en proyectos que hemos ejecutado, no en teoría de manual."
+  },
+  "articles": {
+    "title": "Últimas noticias",
+    "items": [
+      {
+        "date": "15 Enero 2025",
+        "title": "Cómo la automatización RPA está transformando el back office de las aseguradoras",
+        "body": "Analizamos los casos reales donde la robótica de procesos ha reducido los tiempos de gestión hasta un 70% en el sector asegurador español.",
+        "button": "Leer artículo",
+        "image": "/assets/figma/news-list-1.jpg"
+      },
+      {
+        "date": "15 Enero 2025",
+        "title": "BPO 2025: cinco tendencias que marcarán la externalización operativa este año",
+        "body": "Desde la integración de IA generativa hasta los modelos híbridos de outsourcing, repasamos lo que viene en la gestión externalizada de procesos.",
+        "button": "Leer artículo",
+        "image": "/assets/figma/news-list-2.jpg"
+      },
+      {
+        "date": "15 Enero 2025",
+        "title": "Auditoría catastral: cuándo y por qué revisar el valor de tus activos inmobiliarios",
+        "body": "Si gestionas una cartera de activos de más de 2.000 m², este artículo puede ahorrarte decenas de miles de euros en IBI cada año.",
+        "button": "Leer artículo",
+        "image": "/assets/figma/news-list-3.jpg"
+      },
+      {
+        "date": "15 Enero 2025",
+        "title": "Cómo la automatización RPA está transformando el back office de las aseguradoras",
+        "body": "Analizamos los casos reales donde la robótica de procesos ha reducido los tiempos de gestión hasta un 70% en el sector asegurador español.",
+        "button": "Leer artículo",
+        "image": "/assets/figma/news-list-4.jpg"
+      },
+      {
+        "date": "15 Enero 2025",
+        "title": "BPO 2025: cinco tendencias que marcarán la externalización operativa este año",
+        "body": "Desde la integración de IA generativa hasta los modelos híbridos de outsourcing, repasamos lo que viene en la gestión externalizada de procesos.",
+        "button": "Leer artículo",
+        "image": "/assets/figma/news-list-5.jpg"
+      },
+      {
+        "date": "15 Enero 2025",
+        "title": "Auditoría catastral: cuándo y por qué revisar el valor de tus activos inmobiliarios",
+        "body": "Si gestionas una cartera de activos de más de 2.000 m², este artículo puede ahorrarte decenas de miles de euros en IBI cada año.",
+        "button": "Leer artículo",
+        "image": "/assets/figma/news-list-6.jpg"
+      }
+    ]
+  }
+}

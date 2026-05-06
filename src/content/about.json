@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "title": "Llevamos más de 15 años resolviendo lo que nadie quería automatizar",
+    "highlight": "nadie quería automatizar",
+    "body": "Empezamos gestionando operaciones que nadie creía que podían escalarse. Aprendimos desde dentro cómo se rompe una operación cuando crece más rápido que sus procesos. Por eso construimos Suncapital: no como un proveedor de software, sino como el equipo que entiende tu problema antes de proponer cualquier solución.",
+    "button": "Habla con nuestro equipo",
+    "image": "/assets/figma/about-hero.jpg"
+  },
+  "mission": {
+    "title": "Nuestra misión",
+    "body": "Cada hora que un profesional dedica a copiar datos, clasificar documentos o revisar expedientes manualmente es una hora que no está siendo usada para pensar, decidir o crecer. Nuestra misión es simple: eliminar esa carga para que las personas de tu equipo vuelvan a hacer lo que solo ellas pueden hacer.",
+    "image": "/assets/figma/about-mission.jpg",
+    "items": [
+      { "title": "Foco en el problema real", "body": "No llegamos con tecnología. Llegamos con preguntas. Primero entendemos dónde duele y cuánto está costando. Después diseñamos la solución." },
+      { "title": "Tecnología que se adapta a ti", "body": "No te pedimos que cambies cómo trabajas para usar nuestra plataforma. Configuramos Onboard para que encaje en tus procesos, tus reglas y tus sistemas." },
+      { "title": "Una alianza, no un proveedor", "body": "Tu operación no termina cuando entregamos el proyecto. Nos quedamos para medir, ajustar y hacer que el sistema evolucione con tu negocio." }
+    ]
+  },
+  "history": {
+    "title": "Nuestra historia",
+    "image": "/assets/figma/about-history.jpg",
+    "items": [
+      { "year": "2008", "title": "El punto de partida", "body": "Nacimos dentro del sector de Real Estate Servicing, gestionando cientos de miles de expedientes. Vimos de primera mano qué pasa cuando el volumen desborda a los equipos: errores, retrasos, dependencia de personas clave y una operación que no puede crecer sin romperse." },
+      { "year": "2015", "title": "La decisión que lo cambió todo", "body": "Entendimos que el problema no era la gente. Era que los procesos no estaban diseñados para escalar. Empezamos a construir la tecnología que nos hubiera gustado tener desde el principio." },
+      { "year": "2022", "title": "Nace Onboard", "body": "Unificamos todo lo aprendido en una sola plataforma: Onboard. Diseñada desde la experiencia operativa real, no desde un laboratorio. Cada funcionalidad existe porque resolvió antes un problema concreto." },
+      { "year": "2024", "title": "Expansión a LATAM", "body": "Dimos el salto a México y Colombia. Empresas en América Latina enfrentan los mismos retos operativos con recursos más ajustados. Ahí es donde más impacto podemos generar." },
+      { "year": "2025", "title": "Nuevas industrias", "body": "Llevamos Onboard a logística, alimentación y utilities. El problema es el mismo en todos los sectores: operaciones manuales que no escalan. Nuestra respuesta también." }
+    ]
+  },
+  "team": {
+    "title": "Las personas que van a entender tu operación antes de tocar nada",
+    "highlight": "van a entender tu operación",
+    "body": "Somos más de 150 profesionales especializados en tecnología, operaciones y consultoría. Lo que nos diferencia no es el número — es que cada proyecto lo llevan personas con nombre, con experiencia en el sector de nuestros clientes y con el compromiso de que la solución funcione en la práctica.",
+    "items": [
+      { "name": "Jorge Muñoz", "role": "Fundador y CEO", "image": "/assets/figma/about-team-jorge.jpg" },
+      { "name": "Eileem Esteban", "role": "Directora Corporativa", "image": "/assets/figma/about-team-eileem.jpg" },
+      { "name": "Patricia Pallí", "role": "Directora de Operaciones", "image": "/assets/figma/about-team-patricia.jpg" },
+      { "name": "Alejandro Quiroga", "role": "CTO", "image": "/assets/figma/about-team-alejandro.jpg" }
+    ]
+  },
+  "recognitions": {
+    "title": "Reconocimientos",
+    "body": "El trabajo habla por sí solo. Pero cuando el sector lo reconoce, es una señal adicional de que el enfoque funciona.",
+    "images": [
+      "/assets/figma/about-award-1.png",
+      "/assets/figma/about-award-2.png",
+      "/assets/figma/about-award-3.png",
+      "/assets/figma/about-award-4.png"
+    ]
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "body": "Cuando automatizas procesos con datos sensibles, la seguridad no puede ser una capa que se añade al final. En Suncapital está integrada desde el principio: en la arquitectura, en los accesos, en la trazabilidad de cada acción.",
+    "items": [
+      { "status": "Homologado", "title": "Banco de España", "image": "/assets/figma/about-cert-bde.png" },
+      { "status": "Seguridad", "title": "ISO 27001", "image": "/assets/figma/about-cert-27001.png" },
+      { "status": "Calidad", "title": "ISO 9001", "image": "/assets/figma/about-cert-9001.png" },
+      { "status": "Gobierno del dato", "title": "RGPD", "image": "" }
+    ]
+  },
+  "finalCta": {
+    "title": "¿Quieres saber si hay un caso de automatización claro en tu operación?",
+    "body": "No hace falta que tengas todo definido. Solo cuéntanos dónde duele. En 30 minutos te decimos si hay un caso de ROI claro y cuál sería el siguiente paso.",
+    "button": "Habla con nuestro equipo",
+    "image": "/assets/figma/about-final-cta.jpg"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      "¿Suncapital es una empresa de software o una consultora?",
+      "¿Con qué tipo de empresas trabajáis habitualmente?",
+      "¿Tenéis presencia en América Latina?",
+      "¿Cómo se inicia un proyecto con Suncapital?",
+      "¿Cuánto tiempo lleváis en el mercado?"
+    ]
+  }
+}

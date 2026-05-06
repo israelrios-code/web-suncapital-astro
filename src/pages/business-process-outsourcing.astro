@@ -1,0 +1,304 @@
+---
+import "../styles/global.css";
+import Nav from "../components/Nav.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+import data from "../content/bpo.json";
+import home from "../content/home.json";
+
+const iconText = ["⌁", "▦", "⌬", "▥", "✓", "€"];
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Business Process Outsourcing | Suncapital</title>
+    <meta name="description" content={data.hero.body} />
+  </head>
+  <body>
+    <Nav />
+
+    <main class="pt-[102px] bg-white">
+      <Breadcrumb current="Business Process Outsourcing" />
+      <section class="relative overflow-hidden bg-ink py-[120px] dark-orb">
+        <div class="container-figma relative grid grid-cols-[760px_1fr] gap-20 items-center max-lg:grid-cols-1">
+          <div class="reveal">
+            <h1 class="text-white text-[68px] leading-[72px] font-bold max-lg:text-[44px] max-lg:leading-[48px]">
+              <span class="text-accent">{data.hero.titleStart}</span> {data.hero.title}
+            </h1>
+            <p class="mt-10 text-white text-[18px] leading-[22px] font-medium">{data.hero.body}</p>
+            <a href="#contacto" class="btn-primary mt-10">{data.hero.button}</a>
+          </div>
+          <img src={data.hero.image} alt="" class="reveal h-[504px] w-full rounded-3xl object-cover shadow-2xl" />
+        </div>
+      </section>
+
+      <section class="bg-surface py-20">
+        <div class="container-figma grid grid-cols-[883px_1fr] gap-20 items-center max-xl:grid-cols-[1fr_477px] max-lg:grid-cols-1">
+          <img src={data.problem.image} alt="" class="reveal h-[420px] w-full rounded-3xl object-cover" />
+          <div class="reveal">
+            <h2 class="text-primary text-[48px] leading-[52px] font-bold max-lg:text-[34px] max-lg:leading-[38px]">
+              La <span class="text-accent">externalización que funciona</span> cuando el negocio ya no cabe en el organigrama
+            </h2>
+            <p class="section-copy mt-8">{data.problem.body}</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-20">
+        <div class="container-figma">
+          <h2 class="text-center text-primary text-[48px] leading-[52px] font-bold reveal">{data.why.title}</h2>
+          <div class="mt-10 grid grid-cols-3 gap-6 max-lg:grid-cols-1">
+            {data.why.items.map(([title, body, link], index) => (
+              <article class="reveal relative min-h-[332px] overflow-hidden rounded-3xl bg-ink p-8 text-white dark-card flex flex-col justify-between">
+                <div class="relative">
+                  <span class="mb-[18px] grid size-12 place-items-center rounded-2xl bg-surface text-primary font-bold">{iconText[index]}</span>
+                  <h3 class="card-title text-secondary">{title}</h3>
+                  <p class="section-copy mt-4">{body}</p>
+                </div>
+                <a href="#contacto" class="btn-text relative mt-6 text-white">{link} <span>→</span></a>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden bg-ink py-[120px] dark-orb">
+        <div class="container-figma relative">
+          <h2 class="text-center text-white text-[48px] leading-[52px] font-bold reveal">{data.services.title}</h2>
+          <div class="mt-10 grid grid-cols-2 gap-6 max-lg:grid-cols-1">
+            {data.services.items.map(([title, body, image]) => (
+              <article class="group reveal relative min-h-[490px] overflow-hidden rounded-[28px] p-10 flex flex-col justify-end">
+                <img src={image} alt={title} class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-slate-900/70"></div>
+                <div class="relative text-white">
+                  <h3 class="card-title">{title}</h3>
+                  <p class="section-copy mt-4">{body}</p>
+                  <a class="btn-primary mt-[18px]" href="#contacto">Consultar servicio</a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-surface py-20">
+        <div class="container-figma">
+          <h2 class="text-center text-primary text-[48px] leading-[52px] font-bold reveal">{data.audienceProblem.title}</h2>
+          <div class="mt-10 grid grid-cols-3 gap-6 max-lg:grid-cols-1">
+            {data.audienceProblem.items.map((item, index) => (
+              <article class="reveal min-h-[258px] rounded-3xl border border-border bg-white p-8">
+                <span class="grid size-12 place-items-center rounded-2xl bg-surface text-primary font-bold">{iconText[index]}</span>
+                <h3 class="mt-[18px] card-title text-primary">{item}</h3>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-20">
+        <div class="container-figma">
+          <div class="reveal relative overflow-hidden rounded-3xl bg-ink p-10 dark-orb">
+            <div class="relative grid grid-cols-[676px_1fr] gap-10 items-center max-lg:grid-cols-1">
+              <div class="p-6 text-white">
+                <h2 class="text-[48px] leading-[52px] font-bold max-lg:text-[34px] max-lg:leading-[38px]">
+                  Onboard, nuestra <span class="text-secondary">plataforma BPM</span> para operaciones financieras
+                </h2>
+                <p class="section-copy mt-4">{data.onboard.body}</p>
+                <ul class="mt-4 rounded-2xl bg-accent/20 p-4 section-copy list-disc pl-10">
+                  {data.onboard.items.map((item) => <li>{item}</li>)}
+                </ul>
+                <a class="btn-primary mt-6" href="/onboard">{data.onboard.button}</a>
+              </div>
+              <div class="relative min-h-[370px]">
+                <img src={data.onboard.image} alt="" class="absolute right-0 top-14 w-[644px] max-w-full" />
+                <img src={data.onboard.badge} alt="" class="absolute left-[42%] top-8 w-[259px] rounded-lg shadow-2xl max-lg:left-4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-[120px]">
+        <div class="container-figma grid grid-cols-[1fr_720px] gap-20 items-center max-lg:grid-cols-1">
+          <div class="reveal">
+            <h2 class="text-primary text-[48px] leading-[52px] font-bold">{data.audience.title}</h2>
+            <div class="mt-6 grid gap-6">
+              {data.audience.items.map((item) => (
+                <p class="flex gap-4 section-copy text-primary"><span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full border border-primary text-xs">✓</span>{item}</p>
+              ))}
+            </div>
+          </div>
+          <img src={data.audience.image} alt="" class="reveal h-[468px] w-full rounded-3xl object-cover" />
+        </div>
+      </section>
+
+      <section class="bg-surface py-20">
+        <div class="container-figma text-center">
+          <h2 class="text-primary text-[48px] leading-[52px] font-bold reveal">{data.logos.title}</h2>
+          <p class="section-copy mt-4 reveal">{data.logos.body}</p>
+          <div class="mt-20 grid grid-cols-9 gap-4 max-lg:grid-cols-3">
+            {data.logos.items.map((logo) => <div class="reveal grid h-[62px] place-items-center bg-white/50 p-4"><img src={logo} alt="" class="max-h-12 object-contain" /></div>)}
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-20">
+        <div class="container-figma reveal relative min-h-[580px] overflow-hidden rounded-3xl p-20 flex items-center">
+          <img src={data.pricingCta.image} alt="" class="absolute inset-0 h-full w-full object-cover" />
+          <div class="absolute inset-0 bg-[linear-gradient(80deg,#1d1d1b_27%,rgba(29,29,27,0)_87%),linear-gradient(0deg,#1d1d1b_5%,rgba(29,29,27,0)_45%)]"></div>
+          <div class="relative max-w-[640px] text-white">
+            <h2 class="text-[48px] leading-[52px] font-bold">{data.pricingCta.title}</h2>
+            <p class="section-copy mt-5">{data.pricingCta.body}</p>
+            <a class="btn-primary mt-5" href="#contacto">{data.pricingCta.button}</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-20">
+        <div class="container-figma text-center">
+          <span class="inline-flex items-center gap-2 rounded-full border border-border bg-white px-4 py-2.5 text-primary section-copy reveal"><i class="size-2 rounded-full bg-secondary"></i>{data.caseStudy.kicker}</span>
+          <h2 class="mt-4 text-primary text-[48px] leading-[52px] font-bold reveal">{data.caseStudy.title}</h2>
+          <p class="section-copy mt-4 reveal">{data.caseStudy.body}</p>
+          <div class="reveal mt-10 rounded-3xl border border-white/10 bg-ink p-20 text-white dark-card">
+            <span class="rounded-full bg-secondary/20 px-3 py-1 text-secondary section-copy">{data.caseStudy.tag}</span>
+            <div class="mt-10 grid grid-cols-3 gap-10 text-left max-lg:grid-cols-1">
+              {data.caseStudy.steps.map(([title, body], index) => (
+                <div>
+                  <h3 class="text-surface text-xl leading-6 font-semibold"><span class="mr-2 inline-grid size-6 place-items-center rounded-full bg-secondary text-primary text-base">{index + 1}</span>{title}</h3>
+                  <p class="section-copy mt-3">{body}</p>
+                </div>
+              ))}
+            </div>
+            <div class="mt-10 grid grid-cols-3 gap-20 border-t border-white pt-8 max-lg:grid-cols-1">
+              {data.caseStudy.metrics.map(([metric, label]) => (
+                <div><p class="text-secondary text-[68px] leading-[72px] font-bold">{metric}</p><p class="section-copy">{label}</p></div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-20">
+        <div class="container-figma text-center">
+          <h2 class="text-primary text-[48px] leading-[52px] font-bold reveal">{data.certifications.title}</h2>
+          <p class="section-copy mx-auto mt-[18px] max-w-[1250px] reveal">{data.certifications.body}</p>
+          <div class="mt-10 grid grid-cols-4 gap-4 text-left max-lg:grid-cols-1">
+            {data.certifications.items.map(([status, title, image]) => (
+              <article class="reveal rounded-3xl bg-border p-8">
+                {image ? <img src={image} alt="" class="h-[54px] max-w-[284px] object-contain" /> : <div class="h-[54px]"></div>}
+                <p class="mt-4 text-accent text-[18px] leading-[22px] font-medium">{status}</p>
+                <h3 class="card-title mt-3 text-primary">{title}</h3>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden bg-ink py-[120px] dark-orb">
+        <div class="container-figma relative text-center text-white">
+          <h2 class="text-[48px] leading-[52px] font-bold reveal">{data.process.title}</h2>
+          <div class="mt-10 grid grid-cols-4 gap-6 text-left max-lg:grid-cols-1">
+            {data.process.items.map(([num, title, body]) => (
+              <article class="reveal min-h-[396px] rounded-3xl bg-primary p-10">
+                <div class="flex items-center justify-between"><p class="text-[68px] leading-[72px] font-bold text-white/20">{num}</p><span class="grid size-12 place-items-center rounded-2xl bg-accent">▤</span></div>
+                <h3 class="card-title mt-6">{title}</h3>
+                <p class="mt-6 text-[16px] leading-5 font-medium">{body}</p>
+              </article>
+            ))}
+          </div>
+          <a href="#contacto" class="btn-primary mt-10">{data.process.button} <span class="ml-3">→</span></a>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden bg-ink py-[120px] dark-orb">
+        <div class="container-figma relative">
+          <h2 class="text-center text-white text-[48px] leading-[52px] font-bold reveal">{data.otherIndustries.title}</h2>
+          <div class="mt-10 grid grid-cols-2 gap-6 max-lg:grid-cols-1">
+            {data.otherIndustries.items.map(([title, body, button, image]) => (
+              <article class="group reveal relative min-h-[470px] overflow-hidden rounded-[28px] p-10 flex flex-col justify-end">
+                <img src={image} alt={title} class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-slate-900/70"></div>
+                <div class="relative text-white">
+                  <h3 class="card-title">{title}</h3>
+                  <p class="section-copy mt-4">{body}</p>
+                  <a class="btn-primary mt-[18px]" href="#contacto">{button}</a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="bg-white py-20">
+        <div class="container-figma reveal relative min-h-[580px] overflow-hidden rounded-3xl p-20 flex items-center">
+          <img src={data.finalCta.image} alt="" class="absolute inset-0 h-full w-full object-cover" />
+          <div class="absolute inset-0 bg-[linear-gradient(80deg,#1d1d1b_27%,rgba(29,29,27,0)_87%),linear-gradient(0deg,#1d1d1b_5%,rgba(29,29,27,0)_45%)]"></div>
+          <div class="relative max-w-[640px] text-white">
+            <h2 class="text-[48px] leading-[52px] font-bold">{data.finalCta.title}</h2>
+            <p class="section-copy mt-5">{data.finalCta.body}</p>
+            <a class="btn-primary mt-5" href={`mailto:${home.footer.email}`}>{data.finalCta.button}</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-20">
+        <div class="container-figma grid grid-cols-[338px_1fr] gap-20 items-start max-lg:grid-cols-1">
+          <h2 class="text-primary text-[48px] leading-[52px] font-bold reveal">{data.faq.title}</h2>
+          <div class="grid gap-5">
+            {data.faq.items.map(([question, answer]) => (
+              <details open class="reveal rounded-xl border-2 border-border px-[26px] py-[18px]">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-8 card-title text-accent">{question}<span class="grid size-8 shrink-0 place-items-center rounded-full bg-accent text-white text-base">−</span></summary>
+                <p class="section-copy mt-6 text-ink">{answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-surface py-20">
+        <div class="container-figma text-center">
+          <h2 class="text-primary text-[48px] leading-[52px] font-bold reveal">{data.cities.title}</h2>
+          <p class="section-copy mt-6 reveal">{data.cities.body}</p>
+          <div class="mt-12 grid grid-cols-3 gap-6 text-left max-lg:grid-cols-1">
+            {data.cities.items.map(([title, body, button, image]) => (
+              <article class="group reveal overflow-hidden rounded-3xl border border-border bg-white">
+                <img src={image} alt={title} class="h-[286px] w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="p-6">
+                  <h3 class="text-primary text-[18px] leading-[22px] font-medium">{title}</h3>
+                  <p class="mt-4 text-sm leading-[18px]">{body}</p>
+                  <a class="btn-text mt-4" href="#contacto">{button} <span>→</span></a>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div class="mt-6 flex justify-center gap-2"><span class="size-2 rounded-full bg-primary"></span><span class="size-2 rounded-full bg-white"></span><span class="size-2 rounded-full bg-white"></span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-ink py-20 text-white">
+      <div class="container-figma grid grid-cols-4 gap-10 max-lg:grid-cols-1">
+        <div>
+          <strong class="block text-[30px] leading-none">SC <span class="text-white/60">|</span> <span class="text-[24px]">suncapital</span></strong>
+          <p class="mt-6 font-manrope section-copy">{home.footer.body}</p>
+          <p class="mt-6 font-manrope section-copy">© 2025 Suncapital. Todos los derechos reservados.</p>
+          <div class="mt-6 grid gap-3 underline font-manrope section-copy"><a href="#">Política de Calidad y Seguridad</a><a href="#">Política de Privacidad</a><a href="#">Aviso Legal</a><a href="#">Canal Ético</a></div>
+        </div>
+        <div><h3 class="font-manrope text-secondary text-[28px] leading-8 font-bold">Oficinas</h3><p class="mt-6 font-manrope text-xl leading-6 font-bold">{home.footer.office}</p><p class="mt-1 font-manrope section-copy">{home.footer.address}</p><p class="mt-6 font-manrope section-copy">{home.footer.coverage}</p></div>
+        <div class="grid gap-4 text-[18px] leading-[22px] font-bold">{["Sobre nosotros", "Noticias", "Software Onboard", "Servicios", "Automatización inteligente de procesos", "Business Process Outsourcing", "Auditoría Catastral", "Industrias", "Banca, Financieras y Seguros", "Real Estate y Servicing", "Gran Consumo", "Tecnología para gestión operativa"].map((item) => <a href="#" class={item === "Servicios" || item === "Industrias" ? "text-secondary" : "text-white"}>{item} <span class="float-right">→</span></a>)}</div>
+        <div><a class="btn-primary" href={`mailto:${home.footer.email}`}>Contacto</a><p class="mt-6 text-sm leading-[18px]">{home.footer.email}</p><p class="mt-4 text-sm leading-[18px]">{home.footer.phone}</p><div class="mt-6 flex gap-2"><img src="/assets/figma/cert-bde.png" alt="" class="h-12 rounded bg-white p-2" /><img src="/assets/figma/cert-27001.png" alt="" class="h-12 rounded bg-white p-2" /><img src="/assets/figma/cert-9001.png" alt="" class="h-12 rounded bg-white p-2" /></div></div>
+      </div>
+    </footer>
+
+    <script>
+      const els = document.querySelectorAll(".reveal");
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("is-visible");
+        });
+      }, { threshold: 0.12 });
+      els.forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>

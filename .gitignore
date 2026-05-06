@@ -1,0 +1,15 @@
+node_modules/
+dist/
+dist-inline/
+dist-hostinger-flat/
+dist-hostinger-self-contained/
+release/
+hostinger-split/
+qa-screens/
+.astro/
+.tina/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*

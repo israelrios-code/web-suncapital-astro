@@ -1,0 +1,198 @@
+{
+  "nav": {
+    "logo": "SC | suncapital",
+    "links": ["Software Onboard", "Servicios", "Industrias", "Sobre nosotros", "Noticias"],
+    "cta": "Contacto"
+  },
+  "hero": {
+    "title": "Haz que tu operación crezca",
+    "highlight": "sin aumentar tu equipo",
+    "body": "¿Tu equipo sigue procesando documentos a mano mientras el volumen no para de crecer? Equipos saturados, errores que se repiten y costes que suben sin control son señales de que la operación ya no aguanta el ritmo del negocio. En Suncapital identificamos exactamente dónde se está perdiendo tiempo y dinero, y lo transformamos.",
+    "button": "Conoce nuestras soluciones",
+    "image": "/assets/figma/hero.jpg"
+  },
+  "services": {
+    "title": "Nuestros servicios",
+    "body": "Nuestro objetivo es simple: que dejes de crecer a base de contratar más gente y empieces a hacerlo con procesos que escalan solos.",
+    "items": [
+      {
+        "tag": "Automatización",
+        "title": "Automatización inteligente de procesos",
+        "body": "En Suncapital analizamos cómo funciona tu operación y desarrollamos soluciones que eliminan tareas manuales, conectan sistemas y permiten que tu empresa procese más volumen con el mismo equipo.",
+        "button": "Solicitar diagnóstico",
+        "image": "/assets/figma/solution-1.jpg"
+      },
+      {
+        "tag": "BPO",
+        "title": "Business Process Outsourcing",
+        "body": "Nuestro servicio de BPO se encarga de gestionar procesos operativos completos: back office, gestión documental, atención al cliente o tareas administrativas críticas.",
+        "button": "Solicitar diagnóstico",
+        "image": "/assets/figma/solution-2.jpg"
+      },
+      {
+        "tag": "Auditoría",
+        "title": "Auditoría catastral",
+        "body": "Nuestro equipo revisa el valor catastral de los activos inmobiliarios para detectar errores o desactualizaciones que estén generando sobrecostes.",
+        "button": "Solicitar diagnóstico",
+        "image": "/assets/figma/solution-3.jpg"
+      }
+    ]
+  },
+  "logos": {
+    "title": "Empresas que ya confían en",
+    "highlight": "Suncapital",
+    "body": "Organizaciones de distintos sectores confían en nosotros para mejorar sus operaciones y reducir la complejidad de sus procesos: grandes volúmenes de información, activos o transacciones; logrando mejoras operativas y un impacto directo en el negocio.",
+    "items": ["/assets/figma/logo-1.png", "/assets/figma/logo-2.png", "/assets/figma/logo-3.png", "/assets/figma/logo-4.png", "/assets/figma/logo-5.png", "/assets/figma/logo-6.png", "/assets/figma/logo-7.png", "/assets/figma/logo-8.png", "/assets/figma/logo-9.png"]
+  },
+  "audience": {
+    "image": "/assets/figma/audience.jpg",
+    "title": "¿Para quién son nuestras soluciones?",
+    "body": "Nuestros servicios están pensados para empresas que necesitan que su operación crezca al mismo ritmo que su negocio. Si gestionas volumen, procesos complejos o activos inmobiliarios, hay oportunidades claras de optimización. Trabajamos con empresas que ya están creciendo y necesitan procesos más eficientes para seguir escalando.",
+    "button": "Solucionemos tus necesidades",
+    "items": [
+      ["Empresas con grandes volúmenes operativos", "Real estate, banca, financieras, seguros, logística o alimentación son sectores donde los procesos administrativos pueden crecer muy rápido. Ayudamos a estas organizaciones a mantener el control operativo incluso cuando el volumen aumenta."],
+      ["Directores de Operaciones, Tecnología, Logística, Innovación y Compras", "Trabajamos con responsables que tienen el reto de mejorar procesos y reducir costes sin poner en riesgo la operación. Nuestro papel es acompañarlos con soluciones claras, viables y medibles."],
+      ["Compradores de vivienda", "A través de SunHabitat y Efiteca ayudamos a compradores a encontrar la mejor financiación hipotecaria y a gestionar todo el proceso con mayor claridad."],
+      ["Funcionarios y perfiles con contrato estable", "Ofrecemos acceso a financiación adaptada a perfiles con estabilidad laboral, con condiciones competitivas y acompañamiento especializado."],
+      ["Agencias inmobiliarias", "Ayudamos a las agencias a gestionar su cartera de activos con herramientas y procesos que reducen la carga administrativa y mejoran la eficiencia."],
+      ["Propietarios de vivienda interesados en vender", "Acompañamos todo el proceso de venta para que sea más ágil, transparente y sencillo desde la valoración inicial hasta el cierre."]
+    ]
+  },
+  "onboard": {
+    "title": "¿Cómo funciona nuestra plataforma",
+    "highlight": "Onboard?",
+    "body": "Cuando una empresa crece, muchas veces sus procesos no lo hacen al mismo ritmo: aparecen cuellos de botella, tareas manuales y dependencias de personas clave que hacen que todo funcione más lento. Onboard es nuestra plataforma de gestión de procesos diseñada para ayudarte a organizar, automatizar y controlar la operación desde un solo lugar.",
+    "items": [
+      "Centraliza todos los canales de entrada de información (email, formularios, APIs).",
+      "Extrae automáticamente datos de documentos y archivos.",
+      "Permite diseñar flujos de trabajo de forma visual y flexible.",
+      "Asigna tareas automáticamente según reglas de negocio.",
+      "Permite supervisar la operación en tiempo real."
+    ],
+    "image": "/assets/figma/onboard-screen.png",
+    "badge": "/assets/figma/onboard-logo.png"
+  },
+  "benefits": {
+    "title": "Por qué elegir",
+    "highlight": "Suncapital",
+    "body": "Cambiar procesos críticos da miedo, sobre todo cuando no puedes parar la operación mientras lo haces. Llegamos a entender cómo funciona tu negocio antes de tocar nada.",
+    "button": "Descubre los beneficios de Suncapital",
+    "items": [
+      ["Tecnología + talento humano", "No solo desarrollamos herramientas, nuestro equipo trabaja contigo para entender el proceso y asegurarse de que la solución realmente funcione en la práctica."],
+      ["Flexibilidad total", "Cada empresa tiene una situación distinta, por eso ofrecemos diferentes modelos: externalización operativa, plataformas SaaS o proyectos a medida."],
+      ["ROI antes de los 12 meses", "Nuestros clientes identifican los primeros ahorros en los primeros 90 días. En el diagnóstico estimamos contigo el retorno con datos reales, sin compromisos."],
+      ["Seguridad certificada ISO 27001", "La información de tu empresa se gestiona bajo estándares estrictos de seguridad y cumplimiento normativo."],
+      ["Integración con tus sistemas actuales", "Conectamos nuestra tecnología con tu core bancario, CRM o ERP sin migraciones ni interrupciones operativas. APIs robustas para un encaje limpio en tu ecosistema."],
+      ["Orientación a resultados medibles", "Defines con nosotros qué debe mejorar. Medimos si lo logramos: sin ambigüedades."]
+    ]
+  },
+  "stats": {
+    "title": "Suncapital en",
+    "highlight": "cifras",
+    "body": "Más de una década ayudando a empresas a mejorar sus operaciones, reducir costes y escalar tu negocio",
+    "items": [
+      ["+15 años", "ayudando a empresas a optimizar procesos y operaciones."],
+      ["6 a 8 meses", "ciclo medio de transformación operativa en proyectos complejos."],
+      ["300.000", "inmuebles gestionados a través de herramientas de automatización"],
+      ["+150", "ingenieros, consultores y especialistas en operaciones."],
+      ["+500.000", "pagos gestionados al año relacionados con IBI y fiscalidad inmobiliaria."]
+    ]
+  },
+  "industries": {
+    "title": "Algunas",
+    "highlight": "industrias",
+    "suffix": "en las que operamos",
+    "body": "Nuestra experiencia se concentra en sectores donde los procesos son complejos, el volumen de datos es alto y los errores pueden tener un impacto significativo.",
+    "button": "Cuéntanos sobre tu industria y trabajemos juntos",
+    "items": [
+      ["Real Estate y Servicing", "Automatizamos la gestión de carteras inmobiliarias, alquileres y procesos asociados a activos REO. También acompañamos procesos de compraventa y financiación a través de nuestras plataformas especializadas.", "/assets/figma/industry-real-estate.jpg"],
+      ["Banca, Financieras y Seguros", "Ayudamos a digitalizar procesos como el alta de clientes, la gestión documental o la tramitación de siniestros, asegurando trazabilidad y cumplimiento normativo.", "/assets/figma/industry-bank.jpg"],
+      ["Logística, Compras y Alimentación", "Optimizamos procesos relacionados con conciliación de facturas, gestión de albaranes y seguimiento de envíos para mejorar la eficiencia de la cadena de suministro.", "/assets/figma/industry-logistics.jpg"],
+      ["Auditoría Catastral", "Analizamos activos inmobiliarios de gran tamaño para detectar posibles ahorros fiscales en el IBI y otros tributos asociados.", "/assets/figma/industry-audit.jpg"]
+    ]
+  },
+  "caseStudy": {
+    "kicker": "Resultados",
+    "title": "Casos de éxito",
+    "body": "Empresas como la tuya ya operan más volumen con el mismo equipo. Estos son algunos de los antes y después que lo demuestran.",
+    "tag": "Onboarding KYC",
+    "steps": [
+      ["El reto", "Gestora de fondos con 4.500 altas de clientes al mes procesadas manualmente con un equipo de 12 personas y tiempos de 8 días por expediente."],
+      ["La solución", "Implementación de Onboard BPM con captura automática de datos, verificación OCR de documentos y firma electrónica integrada."],
+      ["El resultado", "Reducción del tiempo de onboarding de 8 días a 1,5 días. El equipo pasó de 12 a 4 personas, redirigiendo el talento a tareas de mayor valor."]
+    ],
+    "metrics": [["-81%", "Tiempo de onboarding"], ["-67%", "Recursos operativos"], ["100%", "Trazabilidad normativa"]]
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "body": "Operamos bajo estándares estrictos de seguridad, calidad y cumplimiento normativo. Suncapital está homologado por el Banco de España y cuenta con certificaciones internacionales como ISO 27001 en seguridad de la información e ISO 9001 en gestión de calidad.",
+    "items": [
+      ["Homologado", "Banco de Espana", "/assets/figma/cert-bde.png"],
+      ["Seguridad", "ISO 27001", "/assets/figma/cert-27001.png"],
+      ["Calidad", "ISO 9001", "/assets/figma/cert-9001.png"],
+      ["Gobierno del dato", "RGPD", ""]
+    ]
+  },
+  "awards": {
+    "title": "Reconocimientos",
+    "body": "El trabajo de Suncapital ha sido reconocido por organizaciones y entidades del sector que valoran la calidad y el impacto de nuestros proyectos. Estos reconocimientos reflejan nuestro compromiso con la excelencia operativa.",
+    "images": ["/assets/figma/award-1.png", "/assets/figma/award-2.png", "/assets/figma/award-3.png", "/assets/figma/award-4.png"]
+  },
+  "team": {
+    "title": "El",
+    "highlight": "equipo",
+    "suffix": "detrás de cada proyecto",
+    "body": "Detrás de cada proyecto hay personas especializadas en tecnología, operaciones y consultoría. Nuestro equipo trabaja contigo para entender el contexto de tu empresa y construir soluciones que realmente funcionen.",
+    "items": [
+      ["Jorge Muñoz", "Fundador y CEO", "/assets/figma/team-jorge.jpg"],
+      ["Eileem Esteban", "Directora Corporativa", "/assets/figma/team-eileem.jpg"],
+      ["Patricia Pallí", "Directora de Operaciones", "/assets/figma/team-patricia.jpg"],
+      ["Alejandro Quiroga", "CTO", "/assets/figma/team-alejandro.jpg"]
+    ]
+  },
+  "cta": {
+    "title": "¿Listo para empezar?",
+    "body": "Si sientes que el equipo está tapando agujeros en lugar de crecer, esa es la señal. En 30 minutos te mostramos dónde está el problema y si hay un caso de ROI claro.",
+    "button": "Habla con nuestros especialistas",
+    "image": "/assets/figma/cta.jpg"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes sobre automatización, BPO y auditoría catastral",
+    "items": [
+      "¿Cómo sé si mi operación ya necesita automatización?",
+      "¿Qué ocurre durante el diagnóstico inicial con Suncapital?",
+      "¿Cuánto tiempo tarda en verse el impacto de una mejora operativa?",
+      "¿Suncapital solo trabaja con grandes empresas?",
+      "¿Qué diferencia a Suncapital de una consultora tradicional?",
+      "¿Es necesario cambiar todos los sistemas de mi empresa?",
+      "¿Cómo garantiza Suncapital la seguridad de la información?",
+      "¿Qué tipo de resultados suelen conseguir las empresas que trabajan con Suncapital?"
+    ]
+  },
+  "news": {
+    "title": "Noticias sobre automatización empresarial",
+    "body": "Analizamos tendencias, compartimos casos reales y publicamos recursos prácticos para que los responsables de operaciones y tecnología tomen mejores decisiones. Aquí, lo que escribimos tiene base en proyectos reales.",
+    "items": [
+      ["15 Enero 2025", "Cómo la automatización RPA está transformando el back office de las aseguradoras", "Analizamos los casos reales donde la robótica de procesos ha reducido los tiempos de gestión hasta un 70% en el sector asegurador español.", "/assets/figma/news-1.jpg"],
+      ["15 Enero 2025", "BPO 2025: cinco tendencias que marcarán la externalización operativa este año", "Desde la integración de IA generativa hasta los modelos híbridos de outsourcing, repasamos lo que viene en la gestión externalizada de procesos.", "/assets/figma/news-2.jpg"],
+      ["15 Enero 2025", "Auditoría catastral: cuándo y por qué revisar el valor de tus activos inmobiliarios", "Si gestionas una cartera de activos de más de 2.000 m², este artículo puede ahorrarte decenas de miles de euros en IBI cada año.", "/assets/figma/news-3.jpg"]
+    ]
+  },
+  "cities": {
+    "title": "Suncapital en tu ciudad",
+    "body": "Sabemos que muchos proyectos de transformación operativa empiezan con una conversación directa. Por eso contamos con presencia física en Madrid y Barcelona y seguimos ampliando nuestra red de atención en distintas ciudades de España para acompañar a empresas que necesitan mejorar sus procesos.",
+    "items": [
+      ["Valencia", "Desde Valencia trabajamos con empresas del sector inmobiliario, logístico y financiero que buscan operar con más eficiencia y control.", "Contactar desde Valencia", "/assets/figma/city-valencia.jpg"],
+      ["Barcelona", "Desde Barcelona ofrecemos soluciones de externalización operativa y auditoría catastral, especialmente pensadas para carteras inmobiliarias, entidades financieras y organizaciones con activos distribuidos.", "Contactar desde Barcelona", "/assets/figma/city-barcelona.jpg"],
+      ["Madrid", "Desde Madrid ayudamos a optimizar esas operaciones mediante automatización de procesos, externalización de tareas administrativas y consultoría especializada.", "Contactar desde Madrid", "/assets/figma/city-madrid.jpg"]
+    ]
+  },
+  "footer": {
+    "body": "Automatización de procesos, BPO y auditoría catastral para empresas que necesitan escalar con inteligencia.",
+    "office": "Barcelona",
+    "address": "C/ d/Aragó, 383, Pl. 5ª, 08013",
+    "coverage": "Atención a toda España y Latinoamérica",
+    "email": "info@suncapital.es",
+    "phone": "(+34) 937 377 158"
+  }
+}

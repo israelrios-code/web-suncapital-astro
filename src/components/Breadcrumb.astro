@@ -1,0 +1,15 @@
+---
+interface Props {
+  current: string;
+}
+
+const { current } = Astro.props;
+---
+
+<section class="breadcrumb-band">
+  <div class="container-figma breadcrumb">
+    <a href="/">Home</a>
+    <span aria-hidden="true">»</span>
+    <span>{current}</span>
+  </div>
+</section>

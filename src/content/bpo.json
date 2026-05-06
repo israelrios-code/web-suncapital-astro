@@ -1,0 +1,148 @@
+{
+  "hero": {
+    "titleStart": "Business Process Outsourcing",
+    "title": "para empresas que necesitan escalar sin crecer en estructura",
+    "body": "Cuando el volumen supera la capacidad del equipo, contratar más personas no es la solución: es aplazar el problema. Con nuestro BPO, un equipo especializado asume tus procesos críticos y los ejecuta con tecnología, metodología y responsabilidad medida por SLAs.",
+    "button": "Descubre qué procesos puedes externalizar hoy",
+    "image": "/assets/figma/bpo-hero.jpg"
+  },
+  "problem": {
+    "title": "La externalización que funciona cuando el negocio ya no cabe en el organigrama",
+    "highlight": "externalización que funciona",
+    "body": "Hay un punto en el crecimiento de toda empresa donde la estructura interna empieza a ser el freno. El back office se atasca, el front office pierde calidad, las conciliaciones se acumulan y el equipo dedica más tiempo a apagar fuegos que a generar valor. El BPO no es subcontratar tareas: es transferir la responsabilidad operativa a un socio que vive de ejecutar bien lo que otros no pueden o no deben hacer internamente.",
+    "image": "/assets/figma/bpo-problem.jpg"
+  },
+  "why": {
+    "title": "Lo que hace diferente a nuestro modelo de BPO",
+    "items": [
+      ["Equipo dedicado, no recursos compartidos", "Tienes personas asignadas a tu operación con nombre, formación en tus procesos y compromisos de rendimiento. No compartes equipo con otros clientes ni dependes de un pool rotativo.", "Conocer el modelo de equipo"],
+      ["Operación activa en semanas, no en meses", "El BPO es el servicio que más rápido se activa. Sin desarrollo previo, sin migraciones. En dos a cuatro semanas el equipo está formado y ejecutando con pleno rendimiento.", "Ver cómo arrancamos"],
+      ["Trazabilidad total sobre lo que delegas", "Delegar no significa perder control. Desde la plataforma Onboard tienes visibilidad en tiempo real de cada tarea gestionada, cada incidencia resuelta y cada KPI comprometido.", "Ver plataforma Onboard"],
+      ["Escala hacia arriba o hacia abajo sin penalizaciones", "Si tu operación tiene picos estacionales o crece de forma acelerada, ajustamos el equipo y la capacidad sin compromisos de permanencia ni costes adicionales por cambio de volumen.", "Ver modelos de contratación"],
+      ["Especialización sectorial desde el primer día", "No llegamos a aprender tu sector: llevamos más de 15 años operando en real estate, banca, logística y seguros. El equipo ya conoce los procesos antes de empezar a ejecutarlos.", "Ver industrias donde operamos"],
+      ["Precio por lo que usas, no por lo que contratas", "Pago por uso, por volumen gestionado o por equipo dedicado. Tú eliges el modelo que encaja con tu momento de negocio, sin estructura fija que pesar en tu cuenta de resultados.", "Solicitar presupuesto"]
+    ]
+  },
+  "services": {
+    "title": "Líneas de servicio BPO",
+    "items": [
+      ["BPO de Back Office", "Nos hacemos cargo de los procesos que sostienen tu operación pero que nadie ve: digitalización y clasificación de documentos, introducción y validación de datos, gestión de expedientes, tramitación administrativa y soporte interno. Liberamos a tu equipo de la carga que les impide hacer lo que realmente saben hacer.", "/assets/figma/bpo-service-back-office.jpg"],
+      ["BPO de Front Office", "Gestionamos el punto de contacto con tus clientes cuando el volumen supera tu capacidad interna: atención multicanal, gestión de incidencias, soporte posventa y cualificación operativa de solicitudes. Tu cliente percibe continuidad; tú no añades estructura fija.", "/assets/figma/bpo-service-front-office.jpg"],
+      ["BPO Financiero e Inmobiliario", "Nuestra especialidad histórica. Gestionamos carteras de activos REO, pagamos tributos inmobiliarios, ejecutamos conciliaciones financieras y producimos reporting para fondos, servicers y entidades bancarias que manejan volúmenes que no admiten error ni demora.", "/assets/figma/bpo-service-financial.jpg"],
+      ["BPO para Operaciones y Logística", "Para empresas donde la cadena de suministro genera montañas de documentación operativa: conciliamos albaranes con facturas y pedidos, gestionamos incidencias de entrega y coordinamos con proveedores. Menos errores, menos pérdidas, más fluidez en cada eslabón de la cadena.", "/assets/figma/bpo-service-logistics.jpg"]
+    ]
+  },
+  "audienceProblem": {
+    "title": "¿A quién le resuelve el problema el BPO?",
+    "items": [
+      "Director de Operaciones que ya no puede escalar su equipo interno.",
+      "Director General de empresa en crecimiento con procesos tensionados.",
+      "Director Financiero que necesita reducir costes de estructura sin perder control.",
+      "Director de Compras con gestión documental manual y volumen creciente.",
+      "Responsable de Transformación Digital que busca eficiencia antes que tecnología.",
+      "Responsable de Logística con alta carga de gestión administrativa repetitiva."
+    ]
+  },
+  "onboard": {
+    "title": "Onboard, nuestra plataforma BPM para operaciones financieras",
+    "highlight": "plataforma BPM",
+    "body": "Cuando el volumen de expedientes, contratos y notificaciones supera lo que el equipo puede gestionar manualmente, Onboard actúa como el sistema nervioso de tu operación. Una plataforma BPM low-code que orquesta, automatiza y controla cada proceso desde un solo lugar, sin depender de IT para cada ajuste.",
+    "button": "Descubrir Onboard",
+    "image": "/assets/figma/bpo-onboard-screen.png",
+    "badge": "/assets/figma/bpo-onboard-badge.png",
+    "items": [
+      "Captura automática de datos desde emails, APIs y formularios.",
+      "Lectura inteligente de documentos con IA y OCR (DNI, contratos, pólizas, nóminas).",
+      "Flujos de aprobación y validación configurables sin código.",
+      "Asignación automática de tareas por reglas de negocio y perfil de riesgo.",
+      "Panel de control con métricas en tiempo real y alertas de desviación."
+    ]
+  },
+  "audience": {
+    "title": "¿Quién utiliza la solución?",
+    "image": "/assets/figma/bpo-audience.jpg",
+    "items": [
+      "Empresas de entre 20 y 500 empleados que han crecido apoyándose en su equipo interno y han llegado al límite de lo que pueden resolver contratando más.",
+      "Servicers y fondos inmobiliarios con carteras de activos que exigen gestión masiva y continua.",
+      "Empresas logísticas y de alimentación donde la documentación operativa crece más rápido que la capacidad de procesarla.",
+      "Entidades financieras que necesitan externalizar back office sin perder trazabilidad ni cumplimiento normativo."
+    ]
+  },
+  "logos": {
+    "title": "Empresas del sector financiero que ya confían en Suncapital",
+    "body": "Trabajamos con algunas de las entidades más exigentes del mercado para mejorar sus operaciones y reducir la complejidad de sus procesos.",
+    "items": ["/assets/figma/logo-1.png", "/assets/figma/logo-2.png", "/assets/figma/logo-3.png", "/assets/figma/logo-4.png", "/assets/figma/logo-5.png", "/assets/figma/logo-6.png", "/assets/figma/logo-7.png", "/assets/figma/logo-8.png", "/assets/figma/logo-9.png"]
+  },
+  "pricingCta": {
+    "title": "¿Cuánto cuesta externalizar con Suncapital?",
+    "body": "Depende del tipo de proceso, el volumen mensual y el modelo de servicio elegido. Lo que no cuesta nada es saberlo: en 30 minutos de diagnóstico te damos una estimación real de coste y ahorro potencial con datos concretos de tu operación. Sin propuestas genéricas ni presupuestos inflados.",
+    "button": "Solicitar presupuesto personalizado",
+    "image": "/assets/figma/bpo-pricing-cta.jpg"
+  },
+  "caseStudy": {
+    "kicker": "Resultados",
+    "title": "Casos de éxito",
+    "body": "Empresas como la tuya ya operan más volumen con el mismo equipo. Estos son algunos de los antes y después que lo demuestran.",
+    "tag": "Onboarding KYC",
+    "steps": [
+      ["El reto", "Gestora de fondos con 4.500 altas de clientes al mes procesadas manualmente con un equipo de 12 personas y tiempos de 8 días por expediente."],
+      ["La solución", "Implementación de Onboard BPM con captura automática de datos, verificación OCR de documentos y firma electrónica integrada."],
+      ["El resultado", "Reducción del tiempo de onboarding de 8 días a 1,5 días. El equipo pasó de 12 a 4 personas, redirigiendo el talento a tareas de mayor valor."]
+    ],
+    "metrics": [["-81%", "Tiempo de onboarding"], ["-67%", "Recursos operativos"], ["100%", "Trazabilidad normativa"]]
+  },
+  "certifications": {
+    "title": "Certificaciones que respaldan cada proyecto",
+    "body": "Suncapital está regulado y homologado por el Banco de España y opera bajo certificación ISO 27001 en seguridad de la información e ISO 9001 en gestión de la calidad. Para el sector financiero y asegurador, esto no es un diferencial, es el punto de partida mínimo que exigimos a nuestro propio equipo.",
+    "items": [
+      ["Homologado", "Banco de España", "/assets/figma/cert-bde.png"],
+      ["Seguridad", "ISO 27001", "/assets/figma/cert-27001.png"],
+      ["Calidad", "ISO 9001", "/assets/figma/cert-9001.png"],
+      ["Gobierno del dato", "RGPD", ""]
+    ]
+  },
+  "process": {
+    "title": "Así arrancamos tu servicio BPO",
+    "button": "Iniciar mi diagnóstico ahora",
+    "items": [
+      ["01", "Diagnóstico de procesos (30 minutos, sin coste)", "Identificamos qué procesos externalizaría primero, el volumen actual y el punto de dolor más alto para tu equipo."],
+      ["02", "Diseño del modelo de servicio", "Definimos el equipo asignado, las herramientas, los SLAs por proceso y el modelo de precio adaptado a tu volumen real."],
+      ["03", "Onboarding del equipo y arranque operativo", "Formamos al equipo en tus procesos, configuramos los flujos en Onboard y arrancamos en semanas sin tocar lo que ya funciona."],
+      ["04", "Operación, reporte y mejora continua", "Recibes informes periódicos de rendimiento. Ajustamos el servicio conforme evoluciona tu operación, hacia arriba o hacia abajo."]
+    ]
+  },
+  "otherIndustries": {
+    "title": "BPO en otras industrias donde también operamos",
+    "items": [
+      ["Real Estate y Servicing", "Gestión masiva de carteras REO, administración de alquileres, recobro de impagos y pago de tributos para servicers y fondos de inversión con grandes volúmenes de activos.", "Ver BPO para Real Estate", "/assets/figma/bpo-other-real-estate.jpg"],
+      ["Banca, Financieras y Seguros", "Externalización de back office para entidades financieras: onboarding KYC, gestión de siniestros, digitalización contractual y cumplimiento normativo con trazabilidad total.", "Ver BPO para Banca y Seguros", "/assets/figma/bpo-other-bank.jpg"],
+      ["Logística, Compras y Alimentación", "Conciliación documental, gestión de incidencias logísticas y coordinación con proveedores para operadores de cadena de suministro con alto volumen operativo.", "Ver BPO para Logística", "/assets/figma/bpo-other-logistics.jpg"],
+      ["Auditoría Catastral", "Si además de optimizar tu operación quieres reducir lo que pagas de IBI en activos de más de 2.000 m², aquí también podemos ayudarte. Solo cobramos si hay ahorro real.", "Ver Auditoría Catastral", "/assets/figma/bpo-other-audit.jpg"]
+    ]
+  },
+  "finalCta": {
+    "title": "Si tu equipo dedica más tiempo a gestionar que a crecer, es el momento",
+    "body": "El BPO no es una solución de último recurso: es una decisión estratégica de las empresas que entienden que la eficiencia operativa es tan importante como la captación de negocio. Hablemos 30 minutos y te mostramos qué procesos tienen sentido externalizar ahora mismo.",
+    "button": "Habla con un especialista en BPO",
+    "image": "/assets/figma/bpo-final-cta.jpg"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      ["¿Qué es exactamente el BPO y en qué se diferencia de subcontratar personal?", "El BPO no es ETT ni subcontratación de mano de obra. Es la transferencia de la responsabilidad operativa de un proceso completo a un proveedor especializado que lo ejecuta con su propio equipo, sus herramientas y compromisos de rendimiento medibles. La diferencia clave está en que no gestionas personas: gestionas resultados. Nosotros asumimos la formación del equipo, la tecnología de soporte, los SLAs y la mejora continua del proceso externalizado."],
+      ["¿Cómo mantengo el control de lo que externalizo?", "A través de la plataforma Onboard tienes visibilidad en tiempo real de cada tarea ejecutada, cada documento gestionado y cada indicador comprometido. Además, recibes informes periódicos con el rendimiento del servicio. Externalizar con Suncapital no significa desconectarse de la operación: significa no tener que ejecutarla tú mismo."],
+      ["¿Puedo externalizar solo una parte de mis procesos o es todo o nada?", "Puedes empezar por un proceso concreto, el que más te cuesta o el que más tiempo consume a tu equipo, y ampliar el servicio de forma progresiva. No hay obligación de externalizar toda un área de una vez. De hecho, en el diagnóstico inicial identificamos juntos cuál es el proceso con mayor retorno potencial para empezar por ahí y demostrar el valor antes de escalar."],
+      ["¿Qué pasa con la confidencialidad de la información que maneja el equipo BPO?", "Todos los acuerdos incluyen cláusulas específicas de confidencialidad, control de accesos por rol y trazabilidad completa de cada acción sobre la información. Operamos bajo certificación ISO 27001 y cumplimiento estricto del RGPD. El equipo asignado solo accede a la información necesaria para ejecutar los procesos definidos en el contrato, sin posibilidad de acceso a sistemas o datos fuera del alcance acordado."],
+      ["¿Qué volumen mínimo se necesita para que el BPO tenga sentido económico?", "No existe un umbral universal, porque el punto de equilibrio depende del tipo de proceso y el coste actual de ejecutarlo internamente. En términos generales, empresas a partir de 20 empleados con procesos de back office o gestión documental repetitiva encuentran retorno desde el primer mes. En el diagnóstico calculamos contigo el punto exacto a partir del cual el BPO es más eficiente que la gestión interna, con datos reales de tu operación."]
+    ]
+  },
+  "cities": {
+    "title": "Suncapital en tu ciudad",
+    "body": "Sabemos que muchos proyectos de transformación operativa empiezan con una conversación directa. Por eso contamos con presencia física en Madrid y Barcelona y seguimos ampliando nuestra red de atención en distintas ciudades de España para acompañar a empresas que necesitan mejorar sus procesos.",
+    "items": [
+      ["Valencia", "Desde Valencia trabajamos con empresas del sector inmobiliario, logístico y financiero que buscan operar con más eficiencia y control.", "Contactar desde Valencia", "/assets/figma/bpo-city-valencia.jpg"],
+      ["Barcelona", "Desde Barcelona ofrecemos soluciones de externalización operativa y auditoría catastral, especialmente pensadas para carteras inmobiliarias, entidades financieras y organizaciones con activos distribuidos.", "Contactar desde Barcelona", "/assets/figma/bpo-city-barcelona.jpg"],
+      ["Madrid", "Desde Madrid ayudamos a optimizar esas operaciones mediante automatización de procesos, externalización de tareas administrativas y consultoría especializada.", "Contactar desde Madrid", "/assets/figma/bpo-city-madrid.jpg"]
+    ]
+  }
+}

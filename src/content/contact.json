@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "title": "Cuéntanos dónde duele. Nosotros hacemos el resto.",
+    "highlight": "Nosotros hacemos el resto.",
+    "body": "No necesitas tener todo definido ni saber qué solución necesitas. Solo dinos qué proceso te está generando más carga, errores o costes — y en una primera sesión te decimos si hay un caso claro de automatización y cuál sería el siguiente paso."
+  },
+  "form": {
+    "fields": [
+      { "label": "Nombre", "placeholder": "Tu nombre", "type": "text" },
+      { "label": "Empresa", "placeholder": "Tu empresa", "type": "text" },
+      { "label": "Email corporativo", "placeholder": "nombre@empresa.es", "type": "email" },
+      { "label": "¿Qué proceso quieres automatizar?", "placeholder": "", "type": "select" }
+    ],
+    "button": "Solicitar demostración",
+    "note": "Sin compromiso. | Sin que te persigamos con llamadas. Si hay un caso, te lo decimos; si no, también."
+  },
+  "process": {
+    "title": "¿Qué pasa después de que nos escribes?",
+    "items": [
+      { "number": "01", "icon": "◷", "title": "Te respondemos en menos de 24 horas", "body": "Un especialista revisa tu mensaje y te contacta para confirmar una sesión breve. Sin formularios adicionales, sin centralitas." },
+      { "number": "02", "icon": "⌕", "title": "Diagnóstico express (30–45 min)", "body": "Analizamos el proceso que más te preocupa: volumen, coste actual, errores y puntos de ruptura. Tú pones el problema; nosotros hacemos el mapa." },
+      { "number": "03", "icon": "▣", "title": "Te devolvemos un diagnóstico claro", "body": "Al terminar la sesión tienes dos cosas en la mano: los procesos con mayor potencial de automatización y una hipótesis inicial de ROI. Sin ambigüedades." }
+    ]
+  },
+  "faq": {
+    "title": "Preguntas frecuentes sobre Onboard",
+    "items": [
+      { "question": "¿El diagnóstico tiene algún coste?", "answer": "No. Es completamente gratuito y sin compromiso. Si al terminar no hay un caso claro de automatización, te lo decimos directamente." },
+      { "question": "¿Necesito preparar algo antes de la sesión?", "answer": "No hace falta documentación técnica ni datos perfectos. Con que puedas describir el proceso (volumen aproximado, cómo entra la información y dónde se pierde tiempo) es suficiente para empezar." },
+      { "question": "¿Con quién voy a hablar?", "answer": "Con un especialista en operaciones, no con un comercial. La persona que te contacta es quien luego trabajará en tu proyecto si decidimos avanzar." },
+      { "question": "¿Trabajáis con empresas de cualquier tamaño?", "answer": "Trabajamos principalmente con empresas que gestionan grandes volúmenes de documentos, expedientes o transacciones. Si tienes dudas sobre si tu caso encaja, escríbenos igualmente. En la sesión lo vemos juntos." },
+      { "question": "¿Tenéis presencia fuera de España?", "answer": "Sí. Operamos en España, México y Colombia con equipos locales. Si tu empresa tiene operaciones en LATAM podemos acompañarte desde allí." }
+    ]
+  },
+  "locations": {
+    "title": "También puedes encontrarnos aquí",
+    "phone": "(+34) 937 377 158",
+    "items": [
+      { "city": "Madrid", "address": "Calle Condesa Trifaldi 46, 28034" },
+      { "city": "Barcelona", "address": "C/ d'Aragó, 383, Pl. 5ª, 08013" },
+      { "city": "Valencia", "address": "Av. Corts Valencianes 58, 46015" },
+      { "city": "Bogotá (Colombia)", "address": "Cra. 11 #79-66" },
+      { "city": "Puebla (México)", "address": "Prados Agua Azul, 7 Sur, 72430" }
+    ]
+  }
+}

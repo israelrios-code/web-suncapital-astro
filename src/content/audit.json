@@ -1,0 +1,147 @@
+{
+  "hero": {
+    "titleStart": "Paga menos IBI sin reclamar tú nada:",
+    "title": "auditamos el valor catastral de tus activos y solo cobramos si hay ahorro",
+    "body": "Muchos grandes patrimonios inmobiliarios pagan más IBI del que les corresponde porque el valor catastral de sus activos está sobrevalorado o desactualizado. Lo detectamos, lo corregimos y recuperamos ese dinero para ti. Sin riesgo, sin gestión por tu parte.",
+    "button": "Descubre cuánto estás pagando de más",
+    "image": "/assets/figma/audit-hero.jpg"
+  },
+  "problem": {
+    "title": "Cada año, miles de empresas pagan impuestos que no les corresponden.",
+    "body": "El valor catastral es la base sobre la que se calcula el IBI. Cuando ese valor no refleja la realidad del inmueble, el impuesto se sobredimensiona. Errores en la descripción del bien, superficies incorrectas, usos desactualizados o valoraciones que no han incorporado depreciaciones: son discrepancias silenciosas que acumulan sobrecostes fiscales año tras año en carteras de activos de gran tamaño.",
+    "image": "/assets/figma/audit-problem.jpg"
+  },
+  "why": {
+    "title": "Por qué la auditoría catastral de Suncapital es diferente",
+    "items": [
+      ["Modelo de éxito, sin riesgo para ti", "No cobramos honorarios iniciales ni tarifas fijas. Nuestra retribución está vinculada exclusivamente al ahorro real y demostrable que conseguimos en tu tributación inmobiliaria.", "Entender el modelo de honorarios"],
+      ["Especialistas en grandes activos, no en viviendas residenciales", "Nos focalizamos en activos de más de 2.000 m²: naves logísticas, edificios de oficinas, carteras REO, suelo industrial y centros comerciales. Donde el margen de ahorro justifica la operativa.", "Ver tipos de activos que auditamos"],
+      ["Más de 500.000 tributos inmobiliarios gestionados", "Llevamos más de 15 años gestionando el pago de tributos para carteras masivas de activos en España. Conocemos el catastro, los criterios de valoración y los mecanismos de corrección mejor que nadie.", "Ver nuestra trayectoria"],
+      ["Gestión completa del proceso de reclamación", "Identificamos la discrepancia, preparamos la documentación técnica y jurídica, presentamos la reclamación ante el catastro y hacemos el seguimiento hasta la resolución. Tú no intervienes en nada.", "Ver cómo funciona el proceso"],
+      ["Seguridad jurídica en cada corrección", "Cada reclamación está respaldada por un análisis técnico riguroso. No generamos contingencias fiscales ni reclamaciones sin fundamento. El ahorro que conseguimos es sólido y sostenible en el tiempo.", "Ver garantías del servicio"],
+      ["Ahorro que se repite cada año", "Una vez corregido el valor catastral, el ahorro en IBI se aplica de forma automática en cada liquidación posterior. No es un beneficio puntual: es una reducción estructural del coste fiscal de tu patrimonio.", "Calcular mi ahorro potencial"]
+    ]
+  },
+  "clients": {
+    "title": "Para qué tipo de activos y clientes trabajamos",
+    "items": [
+      ["Fondos de Inversión y SOCIMIs", "Gestionamos la revisión catastral de carteras con decenas o cientos de activos de forma sistemática y escalable. Identificamos las propiedades con mayor potencial de ahorro, priorizamos por impacto y ejecutamos el proceso de corrección en bloque, reduciendo el coste fiscal agregado de la cartera sin distraer a los equipos de gestión.", "/assets/figma/audit-client-funds.jpg"],
+      ["Family Offices", "Patrimonios inmobiliarios de gran tamaño que acumulan activos de distintas tipologías y ubicaciones. Auditamos la coherencia catastral de cada bien, detectamos sobrevaloraciones históricas y gestionamos las correcciones necesarias para optimizar la carga fiscal del patrimonio familiar de forma permanente.", "/assets/figma/audit-client-family.jpg"],
+      ["Grandes Empresas y Corporaciones", "Compañías con activos inmobiliarios propios en su balance: naves industriales, oficinas corporativas, almacenes logísticos o suelo. En muchos casos estos activos llevan años tributando sobre valores catastrales erróneos sin que nadie los haya revisado. Los auditamos, corregimos y calculamos el ahorro conseguido con precisión.", "/assets/figma/audit-client-corporate.jpg"],
+      ["Promotoras Inmobiliarias", "Para promotoras con suelo en desarrollo o activos en distintas fases del ciclo inmobiliario, una auditoría catastral bien ejecutada puede suponer un ahorro fiscal significativo durante los años previos a la edificación o comercialización. Gestionamos la revisión antes de que el activo cambie de naturaleza catastral y se pierda la oportunidad de corrección.", "/assets/figma/audit-client-promoter.jpg"]
+    ]
+  },
+  "audienceProblem": {
+    "title": "¿A quién le resuelve el problema nuestra auditoría catastral?",
+    "items": [
+      "Director Financiero con activos inmobiliarios en el balance y costes fiscales no optimizados.",
+      "Responsable de Patrimonio de family office con cartera diversificada en España.",
+      "Director de Activos de fondo de inversión o SOCIMI con carteras REO o en gestión.",
+      "Director General de empresa con inmuebles propios que nunca han pasado por una revisión catastral.",
+      "Responsable Fiscal de gran empresa o corporación con exposición significativa al IBI.",
+      "Director de Operaciones de promotora con suelo en cartera pendiente de desarrollo."
+    ]
+  },
+  "onboard": {
+    "title": "Onboard, nuestra plataforma BPM para operaciones financieras",
+    "highlight": "plataforma BPM",
+    "body": "Cuando el volumen de expedientes, contratos y notificaciones supera lo que el equipo puede gestionar manualmente, Onboard actúa como el sistema nervioso de tu operación. Una plataforma BPM low-code que orquesta, automatiza y controla cada proceso desde un solo lugar, sin depender de IT para cada ajuste.",
+    "button": "Descubrir Onboard",
+    "image": "/assets/figma/audit-onboard-screen.png",
+    "badge": "/assets/figma/audit-onboard-badge.png",
+    "items": [
+      "Captura automática de datos desde emails, APIs y formularios.",
+      "Lectura inteligente de documentos con IA y OCR (DNI, contratos, pólizas, nóminas).",
+      "Flujos de aprobación y validación configurables sin código.",
+      "Asignación automática de tareas por reglas de negocio y perfil de riesgo.",
+      "Panel de control con métricas en tiempo real y alertas de desviación."
+    ]
+  },
+  "audience": {
+    "title": "¿Quién necesita este servicio ahora mismo?",
+    "image": "/assets/figma/audit-audience.jpg",
+    "items": [
+      "Propietarios de grandes activos inmobiliarios que no han revisado sus valores catastrales en los últimos cinco años.",
+      "Fondos y SOCIMIs que han adquirido carteras de terceros y nunca han auditado la coherencia de la tributación heredada.",
+      "Empresas con naves o edificios propios que han pasado por reformas, cambios de uso o depreciaciones sin que el catastro lo haya recogido.",
+      "Family offices con patrimonio disperso geográficamente y sin un proceso sistemático de revisión fiscal de activos."
+    ]
+  },
+  "logos": {
+    "title": "Empresas que ya confían en Suncapital",
+    "body": "Trabajamos con algunas de las entidades más exigentes del mercado para mejorar sus operaciones y reducir la complejidad de sus procesos.",
+    "items": ["/assets/figma/logo-1.png", "/assets/figma/logo-2.png", "/assets/figma/logo-3.png", "/assets/figma/logo-4.png", "/assets/figma/logo-5.png", "/assets/figma/logo-6.png", "/assets/figma/logo-7.png", "/assets/figma/logo-8.png", "/assets/figma/logo-9.png"]
+  },
+  "pricingCta": {
+    "title": "¿Cuánto cuesta la auditoría catastral?",
+    "body": "Nada hasta que haya ahorro. Nuestro modelo de honorarios está vinculado al resultado: solo facturamos un porcentaje del ahorro fiscal efectivamente conseguido en el IBI. Si no encontramos discrepancias que justifiquen la corrección, no hay coste para ti. La revisión inicial es gratuita y sin compromiso.",
+    "button": "Solicitar presupuesto personalizado",
+    "image": "/assets/figma/audit-pricing-cta.jpg"
+  },
+  "caseStudy": {
+    "kicker": "Resultados",
+    "title": "Casos de éxito",
+    "body": "Empresas como la tuya ya operan más volumen con el mismo equipo. Estos son algunos de los antes y después que lo demuestran.",
+    "tag": "Onboarding KYC",
+    "steps": [
+      ["El reto", "Gestora de fondos con 4.500 altas de clientes al mes procesadas manualmente con un equipo de 12 personas y tiempos de 8 días por expediente."],
+      ["La solución", "Implementación de Onboard BPM con captura automática de datos, verificación OCR de documentos y firma electrónica integrada."],
+      ["El resultado", "Reducción del tiempo de onboarding de 8 días a 1,5 días. El equipo pasó de 12 a 4 personas, redirigiendo el talento a tareas de mayor valor."]
+    ],
+    "metrics": [["-81%", "Tiempo de onboarding"], ["-67%", "Recursos operativos"], ["100%", "Trazabilidad normativa"]]
+  },
+  "certifications": {
+    "title": "Certificaciones que respaldan cada proyecto",
+    "body": "Suncapital está regulado y homologado por el Banco de España y opera bajo certificación ISO 27001 en seguridad de la información e ISO 9001 en gestión de la calidad. Para el sector financiero y asegurador, esto no es un diferencial, es el punto de partida mínimo que exigimos a nuestro propio equipo.",
+    "items": [
+      ["Homologado", "Banco de España", "/assets/figma/cert-bde.png"],
+      ["Seguridad", "ISO 27001", "/assets/figma/cert-27001.png"],
+      ["Calidad", "ISO 9001", "/assets/figma/cert-9001.png"],
+      ["Gobierno del dato", "RGPD", ""]
+    ]
+  },
+  "process": {
+    "title": "Cómo funciona el proceso de auditoría catastral",
+    "button": "Iniciar mi revisión catastral ahora",
+    "items": [
+      ["01", "Revisión inicial gratuita", "Analizamos una muestra de tus activos para identificar si existen discrepancias catastrales con potencial de corrección. Sin coste y sin compromiso."],
+      ["02", "Auditoría técnica completa", "Si hay potencial de ahorro, auditamos el valor catastral de cada activo: superficie, uso, antigüedad, estado y valoración. Comparamos con la realidad del inmueble y cuantificamos el sobrepago."],
+      ["03", "Preparación y presentación de la reclamación", "Elaboramos la documentación técnica y jurídica necesaria y presentamos la reclamación ante el catastro. Tú no intervienes en el proceso administrativo."],
+      ["04", "Seguimiento hasta la resolución", "Gestionamos el expediente hasta que el valor catastral queda corregido y el ahorro en IBI queda aplicado. Solo entonces facturamos nuestros honorarios."]
+    ]
+  },
+  "related": {
+    "title": "También trabajamos en otros servicios relacionados",
+    "items": [
+      ["Automatización Inteligente de Procesos", "Si además de optimizar tu fiscalidad inmobiliaria necesitas automatizar los procesos operativos de gestión de tu cartera de activos, aquí también podemos ayudarte.", "Ver Automatización de Procesos", "/assets/figma/audit-related-automation.jpg"],
+      ["Business Process Outsourcing", "Para carteras de activos que requieren gestión operativa continua: pago de tributos, administración de alquileres y recobro de impagos con un equipo dedicado y SLAs definidos.", "Ver BPO Inmobiliario", "/assets/figma/audit-related-bpo.jpg"],
+      ["Real Estate y Servicing", "Somos el socio operativo de referencia para servicers, fondos y grandes tenedores de activos en España. Automatización, BPO y auditoría catastral integradas en una sola propuesta.", "Ver soluciones para Real Estate", "/assets/figma/audit-related-real-estate.jpg"],
+      ["Banca, Financieras y Seguros", "Si tu entidad gestiona activos inmobiliarios en balance o carteras REO, la auditoría catastral puede reducir de forma estructural la carga fiscal de ese patrimonio.", "Ver soluciones para Banca y Seguros", "/assets/figma/audit-related-bank.jpg"]
+    ]
+  },
+  "finalCta": {
+    "title": "Si tienes activos inmobiliarios en España, probablemente estés pagando más de lo que corresponde",
+    "body": "La mayoría de los grandes patrimonios inmobiliarios nunca han pasado por una revisión catastral sistemática. No porque no sea necesario, sino porque nadie lo ha propuesto con un modelo sin riesgo. Nosotros sí lo hacemos. Revisa gratuitamente y decide después.",
+    "button": "Solicitar revisión catastral sin coste",
+    "image": "/assets/figma/audit-final-cta.jpg"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      ["¿Qué es el valor catastral y por qué puede estar equivocado?", "El valor catastral es la valoración administrativa que el catastro asigna a cada inmueble y que sirve de base para calcular impuestos como el IBI. Puede estar equivocado por múltiples razones: errores en la descripción original del inmueble, superficies registradas incorrectamente, usos desactualizados que no reflejan la realidad actual del activo, o simplemente porque el catastro no ha incorporado depreciaciones o cambios estructurales producidos a lo largo de los años. En carteras de gran tamaño, estos errores se multiplican y generan un sobrepago fiscal acumulado y silencioso."],
+      ["¿Para qué tipo de activos tiene sentido hacer una auditoría catastral?", "Nos especializamos en activos de más de 2.000 m²: naves logísticas e industriales, edificios de oficinas, centros comerciales, suelo urbano y urbanizable, y carteras REO de fondos y servicers. En viviendas residenciales pequeñas el margen de ahorro no justifica la operativa. El mayor impacto se produce en activos de gran tamaño donde una discrepancia catastral puede suponer decenas de miles de euros de sobrepago anual en IBI."],
+      ["¿Cuánto tiempo tarda en resolverse una reclamación catastral?", "Los plazos dependen del tipo de reclamación y de la administración competente en cada municipio. En términos generales, una corrección catastral por error descriptivo puede resolverse entre tres y nueve meses. Las reclamaciones de mayor complejidad técnica o jurídica pueden extenderse hasta dieciocho meses. Durante todo ese tiempo gestionamos el expediente nosotros y te informamos del estado de cada reclamación activa."],
+      ["¿Puedo reclamar el sobrepago de IBI de años anteriores?", "Sí, dentro de los plazos de prescripción que establece la normativa tributaria española, que en general permite reclamar los cuatro ejercicios anteriores al año en curso. En algunos casos concretos el periodo recuperable puede ser mayor. En la revisión inicial analizamos qué ejercicios son reclamables para cada activo y cuantificamos el importe total recuperable, no solo el ahorro futuro."],
+      ["¿Qué documentación necesito aportar para iniciar la auditoría?", "Para la revisión inicial es suficiente con el último recibo de IBI y los datos básicos de identificación catastral del activo. Para la auditoría completa necesitaremos acceso a la ficha catastral de cada inmueble, documentación técnica disponible como planos o licencias y, en algunos casos, una visita al activo para contrastar la descripción catastral con la realidad física. Gestionamos la obtención de la mayor parte de la documentación necesaria a través de nuestras propias fuentes administrativas."]
+    ]
+  },
+  "cities": {
+    "title": "Suncapital en tu ciudad",
+    "body": "Sabemos que muchos proyectos de transformación operativa empiezan con una conversación directa. Por eso contamos con presencia física en Madrid y Barcelona y seguimos ampliando nuestra red de atención en distintas ciudades de España para acompañar a empresas que necesitan mejorar sus procesos.",
+    "items": [
+      ["Valencia", "Desde Valencia trabajamos con empresas del sector inmobiliario, logístico y financiero que buscan operar con más eficiencia y control.", "Contactar desde Valencia", "/assets/figma/bpo-city-valencia.jpg"],
+      ["Barcelona", "Desde Barcelona ofrecemos soluciones de externalización operativa y auditoría catastral, especialmente pensadas para carteras inmobiliarias, entidades financieras y organizaciones con activos distribuidos.", "Contactar desde Barcelona", "/assets/figma/bpo-city-barcelona.jpg"],
+      ["Madrid", "Desde Madrid ayudamos a optimizar esas operaciones mediante automatización de procesos, externalización de tareas administrativas y consultoría especializada.", "Contactar desde Madrid", "/assets/figma/bpo-city-madrid.jpg"]
+    ]
+  }
+}

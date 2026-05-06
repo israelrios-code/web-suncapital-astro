@@ -1,0 +1,51 @@
+---
+const services = [
+  ["Automatización inteligente de procesos", "/automatizacion-inteligente-de-procesos"],
+  ["Business Process Outsourcing", "/business-process-outsourcing"],
+  ["Auditoría Catastral", "/auditoria-catastral"],
+];
+
+const industries = [
+  ["Banca, Financieras y Seguros", "/#industrias"],
+  ["Real Estate y Servicing", "/#industrias"],
+  ["Gran Consumo", "/#industrias"],
+  ["Tecnología para gestión operativa", "/#industrias"],
+];
+---
+
+<nav class="fixed inset-x-0 top-0 z-50 bg-ink/95 border-b border-white/10">
+  <div class="container-figma flex h-[102px] items-center justify-between gap-8">
+    <a href="/" class="text-white font-bold text-[30px] leading-none tracking-tight">
+      SC <span class="text-white/60">|</span> <span class="text-[24px]">suncapital</span>
+    </a>
+    <div class="hidden lg:flex items-center gap-8 text-white text-[18px] leading-[22px] font-bold">
+      <a href="/onboard" class="hover:text-secondary transition-colors">Software Onboard</a>
+
+      <div class="nav-menu">
+        <button class="nav-menu-trigger" type="button" aria-haspopup="true">
+          Servicios <span aria-hidden="true">⌄</span>
+        </button>
+        <div class="nav-menu-panel">
+          {services.map(([label, href]) => (
+            <a href={href}>{label}<span aria-hidden="true">→</span></a>
+          ))}
+        </div>
+      </div>
+
+      <div class="nav-menu">
+        <button class="nav-menu-trigger" type="button" aria-haspopup="true">
+          Industrias <span aria-hidden="true">⌄</span>
+        </button>
+        <div class="nav-menu-panel nav-menu-panel-wide">
+          {industries.map(([label, href]) => (
+            <a href={href}>{label}<span aria-hidden="true">→</span></a>
+          ))}
+        </div>
+      </div>
+
+      <a href="/sobre-nosotros" class="hover:text-secondary transition-colors">Sobre nosotros</a>
+      <a href="/noticias" class="hover:text-secondary transition-colors">Noticias</a>
+      <a class="btn-primary" href="/contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
