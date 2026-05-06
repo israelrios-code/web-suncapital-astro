@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import GoogleTagManagerHead from "../components/GoogleTagManagerHead.astro";
+import GoogleTagManagerBody from "../components/GoogleTagManagerBody.astro";
 import Nav from "../components/Nav.astro";
 import home from "../content/home.json";
 
@@ -18,8 +20,10 @@ const arrow = "→";
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Suncapital</title>
     <meta name="description" content={home.hero.body} />
+      <GoogleTagManagerHead />
   </head>
   <body>
+    <GoogleTagManagerBody />
     <Nav />
 
     <main>

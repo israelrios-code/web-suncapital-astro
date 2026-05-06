@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import GoogleTagManagerHead from "../components/GoogleTagManagerHead.astro";
+import GoogleTagManagerBody from "../components/GoogleTagManagerBody.astro";
 import Nav from "../components/Nav.astro";
 import Breadcrumb from "../components/Breadcrumb.astro";
 import data from "../content/automation.json";
@@ -14,8 +16,10 @@ const icons = ["01", "02", "03", "04", "05", "06"];
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Automatización inteligente de procesos | Suncapital</title>
     <meta name="description" content={data.hero.body} />
+      <GoogleTagManagerHead />
   </head>
   <body>
+    <GoogleTagManagerBody />
     <Nav />
 
     <main class="pt-[102px] bg-white">
