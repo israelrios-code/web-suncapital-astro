@@ -1,7 +1,8 @@
 {
   "hero": {
     "eyebrow": "Banca, Financieras y Seguros",
-    "title": "Automatización y BPO para Banca, Financieras y Seguros",
+    "titleAccent": "Reduce costes operativos y escala tu empresa",
+    "title": "con automatización e IA aplicada.",
     "body": "Reducimos la carga operativa de entidades financieras y aseguradoras mediante automatización inteligente, BPO especializado y tecnología propia preparada para entornos regulados.",
     "button": "Solicitar diagnóstico operativo",
     "image": "/assets/figma/automation-hero.jpg"
@@ -21,38 +22,40 @@
   "capabilities": {
     "title": "Procesos financieros que puedes optimizar con Suncapital",
     "items": [
-      ["Onboarding digital y KYC", "Automatizamos la recepción, revisión y validación documental para altas de clientes, productos financieros y expedientes regulados."],
-      ["Back office financiero", "Externalizamos y digitalizamos tareas administrativas, conciliaciones, verificaciones y controles operativos de alto volumen."],
-      ["Gestión documental inteligente", "Clasificamos, extraemos y validamos datos de contratos, pólizas, recibos, DNI, nóminas y documentación financiera."],
-      ["Automatización de siniestros", "Orquestamos flujos de reclamaciones y siniestros con reglas de negocio, asignación automática y seguimiento en tiempo real."],
-      ["Compliance y auditoría", "Registramos cada acción, cambio y aprobación para facilitar revisiones internas, auditorías externas y cumplimiento regulatorio."],
-      ["Integración tecnológica", "Conectamos Onboard con core bancario, CRM, ERP, gestores documentales y plataformas propias mediante APIs y conectores."]
+      ["Onboarding digital y KYC", "Automatizamos la recepción, revisión y validación documental para altas de clientes, productos financieros y expedientes regulados.", "Explorar onboarding", "#contacto", "/assets/icons/icon-cap-kyc.png"],
+      ["Back office financiero", "Externalizamos y digitalizamos tareas administrativas, conciliaciones, verificaciones y controles operativos de alto volumen.", "Conocer el servicio", "#contacto", "/assets/icons/icon-cap-backoffice.png"],
+      ["Gestión documental inteligente", "Clasificamos, extraemos y validamos datos de contratos, pólizas, recibos, DNI, nóminas y documentación financiera.", "Ver cómo funciona", "#contacto", "/assets/icons/icon-cap-documental.png"],
+      ["Automatización de siniestros", "Orquestamos flujos de reclamaciones y siniestros con reglas de negocio, asignación automática y seguimiento en tiempo real.", "Ver caso de uso", "#contacto", "/assets/icons/icon-cap-siniestros.png"],
+      ["Compliance y auditoría", "Registramos cada acción, cambio y aprobación para facilitar revisiones internas, auditorías externas y cumplimiento regulatorio.", "Ver certificaciones", "#contacto", "/assets/icons/icon-cap-compliance.png"],
+      ["Integración tecnológica", "Conectamos Onboard con core bancario, CRM, ERP, gestores documentales y plataformas propias mediante APIs y conectores.", "Hablar con un técnico", "#contacto", "/assets/icons/icon-cap-integracion.png"]
     ]
   },
   "solutions": {
     "title": "Soluciones diseñadas para procesos críticos del sector financiero",
     "body": "Combinamos plataforma, desarrollo a medida y operación BPO para resolver cuellos de botella concretos sin imponer migraciones innecesarias.",
     "items": [
-      ["Automatización de onboarding", "Captura documental, validación KYC, firma electrónica y trazabilidad completa del expediente.", "Explorar onboarding", "/assets/figma/automation-solution-1.jpg"],
-      ["BPO especializado en banca y seguros", "Equipos operativos preparados para gestionar documentación, validaciones, reclamaciones y soporte administrativo.", "Hablar con BPO", "/assets/figma/automation-solution-2.jpg"],
-      ["Automatización de siniestros y reclamaciones", "Flujos configurables para registrar, validar, asignar, resolver y auditar cada caso con control en tiempo real.", "Ver automatización", "/assets/figma/automation-solution-3.jpg"]
+      ["Automatización de onboarding", "Captura documental, validación KYC, firma electrónica y trazabilidad completa del expediente.", "Explorar onboarding", "/assets/figma/automation-solution-1.jpg", "Automatización"],
+      ["BPO especializado en banca y seguros", "Equipos operativos preparados para gestionar documentación, validaciones, reclamaciones y soporte administrativo.", "Hablar con BPO", "/assets/figma/automation-solution-2.jpg", "BPO"],
+      ["Automatización de siniestros y reclamaciones", "Flujos configurables para registrar, validar, asignar, resolver y auditar cada caso con control en tiempo real.", "Ver automatización", "/assets/figma/automation-solution-3.jpg", "Siniestros"]
     ]
   },
   "why": {
     "title": "Por qué Suncapital encaja en entornos regulados",
     "items": [
-      ["Experiencia sectorial", "Más de 15 años trabajando con operaciones complejas, alto volumen documental y procesos sensibles."],
-      ["Tecnología propia", "Onboard permite configurar flujos, reglas, validaciones y dashboards sin depender de desarrollos lentos para cada cambio."],
-      ["Seguridad certificada", "Operamos bajo estándares de seguridad de la información y calidad, con enfoque de cumplimiento desde el diseño."],
-      ["Modelo flexible", "Podemos actuar como plataforma SaaS, equipo BPO, proyecto a medida o una combinación de los tres."],
-      ["ROI medible", "Definimos indicadores desde el diagnóstico para medir ahorro de tiempo, reducción de errores y mejora operativa."],
-      ["Sin frenar la operación", "Implementamos por fases para evitar interrupciones en procesos críticos o sistemas centrales."]
+      ["Directores de Operaciones (COO).", "", "/assets/icons/icon-why-1.png"],
+      ["Directores de Tecnología (CTO / CIO).", "", "/assets/icons/icon-why-2.png"],
+      ["Responsables de Cumplimiento y Riesgo.", "", "/assets/icons/icon-why-3.png"],
+      ["Directores Financieros (CFO).", "", "/assets/icons/icon-why-4.png"],
+      ["Responsables de Innovación y Transformación Digital.", "", "/assets/icons/icon-why-5.png"],
+      ["Directores de Siniestros y Atención al Cliente.", "", "/assets/icons/icon-why-6.png"]
     ]
   },
   "onboard": {
-    "title": "Onboard: automatización inteligente para operaciones financieras",
-    "body": "Nuestra plataforma centraliza la entrada de información, lee documentos con IA, aplica reglas de negocio y ofrece visibilidad completa sobre cada expediente.",
-    "button": "Conocer Onboard",
+    "titleBefore": "Onboard, nuestra",
+    "titleHighlight": "plataforma BPM",
+    "titleAfter": "para operaciones financieras",
+    "body": "Cuando el volumen de expedientes, contratos y notificaciones supera lo que el equipo puede gestionar manualmente, Onboard actúa como el sistema nervioso de tu operación. Una plataforma BPM low-code que orquesta, automatiza y controla cada proceso desde un solo lugar, sin depender de IT para cada ajuste.",
+    "button": "Descubrir Onboard",
     "image": "/assets/figma/automation-onboard-screen.png",
     "badge": "/assets/figma/automation-onboard-badge.png",
     "items": [
@@ -64,32 +67,32 @@
     ]
   },
   "audience": {
-    "title": "Para entidades que necesitan crecer sin añadir más fricción operativa",
-    "body": "La solución está pensada para equipos donde el volumen crece, los requisitos de control aumentan y las tareas manuales ya están limitando la capacidad de respuesta.",
+    "title": "¿Quién utiliza la solución?",
+    "body": "Equipos de operaciones en entidades bancarias que gestionan miles de altas de clientes al mes:",
     "image": "/assets/figma/automation-audience.jpg",
     "items": [
-      "Optimización de procesos y reducción de carga operativa.",
-      "Digitalización de expedientes y trazabilidad end to end.",
-      "Soporte a áreas de operaciones, tecnología, compliance y atención al cliente.",
-      "Automatización sin reemplazar sistemas críticos existentes.",
-      "Escalado de equipos BPO con tecnología y métricas de control."
+      "Gestoras y aseguradoras con procesos de siniestros manuales y tiempos de resolución elevados.",
+      "Financieras de consumo que necesitan escalar su capacidad de análisis de riesgo sin aumentar plantilla.",
+      "Compañías del sector con carteras activas que deben reportar de forma continua a organismos reguladores."
     ]
   },
   "logos": {
-    "title": "Empresas que ya confían en Suncapital",
-    "body": "Organizaciones con procesos complejos confían en nosotros para automatizar operaciones, reducir tiempos de gestión y mejorar la trazabilidad.",
+    "title": "Empresas que ya confían en",
+    "highlight": "Suncapital",
+    "body": "Organizaciones de distintos sectores confían en nosotros para mejorar sus operaciones y reducir la complejidad de sus procesos: grandes volúmenes de información, activos o transacciones; logrando mejoras operativas y un impacto directo en el negocio.",
     "items": ["/assets/figma/logo-1.png", "/assets/figma/logo-2.png", "/assets/figma/logo-3.png", "/assets/figma/logo-4.png", "/assets/figma/logo-5.png", "/assets/figma/logo-6.png", "/assets/figma/logo-7.png", "/assets/figma/logo-8.png", "/assets/figma/logo-9.png"]
   },
   "ctaOne": {
-    "title": "Detecta cuánto está costando tu operación manual",
-    "body": "En una sesión de diagnóstico revisamos el proceso, el volumen, los puntos de fricción y las oportunidades reales de automatización.",
-    "button": "Agendar diagnóstico",
+    "title": "¿Cuánto cuesta automatizar tus procesos?",
+    "body": "Cada operación es diferente. No ofrecemos tarifas genéricas porque el impacto real depende de tu volumen, tu sector y el estado actual de tus procesos. Lo que sí podemos garantizar es que en una sesión de diagnóstico de 30 minutos estimamos contigo el ahorro potencial con datos reales de tu operación, sin compromisos y sin coste.",
+    "button": "Solicitar presupuesto personalizado",
     "image": "/assets/figma/automation-cta-1.jpg"
   },
   "caseStudy": {
-    "kicker": "Caso de éxito",
-    "title": "Onboarding KYC en una entidad financiera",
-    "body": "Una gestora con miles de altas mensuales necesitaba reducir tiempos de revisión documental sin perder control normativo.",
+    "kicker": "Resultados",
+    "title": "Casos de éxito",
+    "body": "Empresas como la tuya ya operan más volumen con el mismo equipo. Estos son algunos de los antes y después que lo demuestran.",
+    "tag": "Onboarding KYC",
     "steps": [
       ["El reto", "4.500 altas de clientes al mes procesadas manualmente con tiempos medios de 8 días por expediente."],
       ["La solución", "Onboard con captura automática de datos, verificación OCR de documentos y firma electrónica integrada."],
@@ -98,23 +101,23 @@
     "metrics": [["-81%", "Tiempo de onboarding"], ["-67%", "Recursos operativos"], ["100%", "Trazabilidad normativa"]]
   },
   "certifications": {
-    "title": "Seguridad, calidad y cumplimiento",
-    "body": "Suncapital está homologado por el Banco de España y cuenta con certificaciones internacionales como ISO 27001 e ISO 9001.",
+    "title": "Certificaciones que respaldan cada proyecto",
+    "body": "Suncapital está regulado y homologado por el Banco de España y opera bajo certificación ISO 27001 en seguridad de la información e ISO 9001 en gestión de la calidad. Para el sector financiero y asegurador, esto no es un diferencial, es el punto de partida mínimo que exigimos a nuestro propio equipo.",
     "items": [
       ["Homologado", "Banco de España", "/assets/figma/cert-bde.png"],
       ["Seguridad", "ISO 27001", "/assets/figma/cert-27001.png"],
-      ["Calidad", "ISO 9001", "/assets/figma/cert-9001.png"]
+      ["Calidad", "ISO 9001", "/assets/figma/cert-9001.png"],
+      ["Gobierno del dato", "RGPD", ""]
     ]
   },
   "process": {
-    "chip": "Cómo trabajamos",
-    "title": "De diagnóstico a operación optimizada",
-    "button": "Empezar diagnóstico",
+    "title": "Cómo empezamos a trabajar contigo",
+    "button": "Iniciar mi diagnóstico ahora",
     "items": [
-      ["01", "Mapeamos el proceso", "Identificamos entradas, tareas, reglas, sistemas, tiempos, errores y puntos de control."],
-      ["02", "Diseñamos la solución", "Definimos qué se automatiza, qué se externaliza y cómo se mide el impacto del cambio."],
-      ["03", "Implementamos por fases", "Configuramos Onboard, conectores, flujos y equipos BPO con una puesta en marcha controlada."],
-      ["04", "Medimos y optimizamos", "Ajustamos reglas, dashboards y capacidad operativa con datos reales del proceso."]
+      ["01", "Diagnóstico gratuito (30 minutos)", "Analizamos tus procesos actuales e identificamos los puntos de mayor coste operativo y riesgo normativo.", "/assets/icons/icon-process-1.png"],
+      ["02", "Propuesta a medida", "Diseñamos una solución específica para tu operación: tecnología, equipo BPO, o ambas, con un modelo de precio adaptado a tu realidad.", "/assets/icons/icon-process-2.png"],
+      ["03", "Implementación ágil", "Primer MVP funcional en pocas semanas. Sin interrumpir tu operación actual.", "/assets/icons/icon-process-3.png"],
+      ["04", "Seguimiento y mejora continua", "Definimos KPIs contigo desde el inicio y los medimos juntos. Tu éxito es el nuestro.", "/assets/icons/icon-process-4.png"]
     ]
   },
   "otherIndustries": {
@@ -134,11 +137,10 @@
   "faq": {
     "title": "Preguntas frecuentes sobre automatización en banca, financieras y seguros",
     "items": [
-      ["¿Qué procesos financieros puede automatizar Suncapital?", "Procesos de onboarding, KYC, gestión documental, validaciones internas, back office, reclamaciones, siniestros y flujos administrativos con alto volumen. El alcance se define después de mapear el proceso real y sus reglas de negocio."],
-      ["¿Cómo garantizáis el cumplimiento con normativas como DORA, MiFID II o Solvencia II?", "Nuestras soluciones incorporan trazabilidad completa de cada acción, registro de auditoría inmutable y controles de acceso por rol. Trabajamos con equipos jurídicos y de compliance de las entidades para parametrizar los flujos según los requisitos normativos específicos."],
-      ["¿Cuánto tiempo lleva implementar una solución de automatización en una entidad financiera?", "Para proyectos de automatización de procesos concretos como el onboarding o la gestión de siniestros, un primer MVP funcional puede estar operativo en cuatro a seis semanas. Una implantación completa suele completarse entre dos y cuatro meses."],
-      ["¿Vuestras soluciones se integran con cores bancarios y plataformas propias del sector?", "Sí. Desarrollamos conectores nativos y APIs robustas para integrarnos con cores bancarios, sistemas de gestión de siniestros, CRMs y ERPs. La idea es operar como capa de orquestación sobre el ecosistema actual."],
-      ["¿Qué diferencia a Suncapital de otras empresas de automatización para el sector financiero?", "La combinación de tecnología propia, capacidad de desarrollo a medida y servicios BPO especializados. No somos un proveedor de software genérico: conocemos la operación, los controles y la realidad regulatoria del sector."]
+      ["¿Qué procesos son más rentables de automatizar en banca y seguros?", "Onboarding, KYC, gestión de siniestros, conciliaciones, reporting regulatorio, gestión documental y aprobaciones internas. Estos procesos concentran alto volumen, reglas definidas y un elevado coste operativo manual. Automatizarlos no solo reduce errores y tiempos de respuesta, sino que también optimiza recursos, fortalece el cumplimiento normativo y mejora la experiencia del cliente."],
+      ["¿Cómo garantizáis cumplimiento y trazabilidad?", "Garantizamos cumplimiento y trazabilidad desde el diseño. Construimos flujos inteligentes con registros auditables, permisos por rol, validaciones de negocio y seguimiento integral de cada operación. Así, reducimos riesgos, fortalecemos el control y aseguramos el cumplimiento normativo sin añadir carga manual ni fricción a los equipos."],
+      ["¿Cuánto tiempo tarda un primer caso de uso?", "Un primer caso de uso puede estar operativo en tan solo cuatro a seis semanas. Desarrollamos un MVP bien delimitado que demuestra valor desde el inicio. A partir de ahí, escalamos de forma estratégica mediante una hoja de ruta priorizada por impacto y complejidad, asegurando resultados medibles y sostenibles."],
+      ["¿Necesitamos cambiar nuestros sistemas?", "No necesitas reemplazar lo que ya funciona. Diseñamos la estrategia para integrarnos con tu infraestructura existente, potenciando sus capacidades y acelerando resultados sin fricciones ni riesgos."]
     ]
   },
   "cities": {
@@ -147,7 +149,9 @@
     "items": [
       ["Valencia", "Automatización de procesos y BPO para empresas del sector inmobiliario, logístico y financiero en la Comunitat Valenciana. Oficina en Av. Corts Valencianes 58, 46015.", "Contactar desde Valencia", "/assets/figma/automation-city-valencia.jpg"],
       ["Barcelona", "Soluciones de externalización operativa y auditoría catastral para empresas en Cataluña. Atención especializada para carteras de activos y entidades financieras regionales.", "Contactar desde Barcelona", "/assets/figma/automation-city-barcelona.jpg"],
-      ["Zaragoza", "Servicios de automatización y BPO para empresas del sector logístico, alimentario e inmobiliario en Aragón. Consultoría presencial disponible bajo cita previa.", "Contactar desde Zaragoza", "/assets/figma/automation-city-zaragoza.jpg"]
+      ["Zaragoza", "Servicios de automatización y BPO para empresas del sector logístico, alimentario e inmobiliario en Aragón. Consultoría presencial disponible bajo cita previa.", "Contactar desde Zaragoza", "/assets/figma/automation-city-zaragoza.jpg"],
+      ["Bogotá", "Desde Bogotá apoyamos la optimización de operaciones a través de la automatización de procesos, la externalización de tareas administrativas y consultoría especializada para toda Latinoamérica.", "Contactar desde Bogotá", "/assets/figma/city-bogota.jpg"],
+      ["Medellín", "Con base en Medellín, impulsamos la eficiencia en Latinoamérica a través de la automatización de procesos, la tercerización de tareas administrativas y asesoría experta.", "Contactar desde Medellín", "/assets/figma/city-medellin.jpg"]
     ]
   }
 }

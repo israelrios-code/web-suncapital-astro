@@ -1,4 +1,4 @@
----
+﻿---
 import "../styles/global.css";
 import GoogleTagManagerHead from "../components/GoogleTagManagerHead.astro";
 import GoogleTagManagerBody from "../components/GoogleTagManagerBody.astro";
@@ -7,7 +7,11 @@ import Breadcrumb from "../components/Breadcrumb.astro";
 import data from "../content/about.json";
 import home from "../content/home.json";
 
-const icons = ["◇", "◱", "◌"];
+const missionIcons = [
+  "/assets/icons/icon-about-search.svg",
+  "/assets/icons/icon-about-laptop.svg",
+  "/assets/icons/icon-about-users.svg",
+];
 ---
 
 <html lang="es">
@@ -24,8 +28,10 @@ const icons = ["◇", "◱", "◌"];
 
     <main class="pt-[102px] bg-white">
       <Breadcrumb current="Sobre nosotros" />
-      <section class="relative min-h-[862px] overflow-hidden bg-ink flex items-center">
-        <img src={data.hero.image} alt="" class="absolute inset-0 h-full w-full object-cover" />
+      <section class="relative min-h-[862px] max-lg:min-h-0 overflow-hidden bg-ink flex items-center max-lg:py-[60px]">
+        <img src="/assets/deco/lineas-hero-todas-las-secciones.svg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-[1] opacity-20" />
+
+        <img src={data.hero.image} alt="" class="absolute inset-0 h-full w-full object-cover scale-x-[-1]" />
         <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(29,29,27,.15)_0%,#1d1d1b_100%),linear-gradient(90deg,#1d1d1b_0%,rgba(29,29,27,.75)_42%,rgba(29,29,27,.1)_100%)]"></div>
         <div class="container-figma relative">
           <div class="reveal max-w-[910px] text-white">
@@ -38,9 +44,9 @@ const icons = ["◇", "◱", "◌"];
         </div>
       </section>
 
-      <section class="bg-surface py-20">
+      <section class="bg-surface py-20 max-lg:py-[60px]">
         <div class="container-figma grid grid-cols-[883px_1fr] gap-20 items-center max-xl:grid-cols-[1fr_477px] max-lg:grid-cols-1">
-          <img src={data.mission.image} alt="" class="reveal h-[642px] w-full rounded-3xl object-cover max-lg:h-[420px]" />
+          <img src={data.mission.image} alt="" class="reveal h-[420px] w-full rounded-3xl object-cover" />
           <div class="reveal">
             <h2 class="text-primary text-[48px] leading-[52px] font-bold max-lg:text-[34px] max-lg:leading-[38px]">{data.mission.title}</h2>
             <p class="section-copy mt-8">{data.mission.body}</p>
@@ -49,7 +55,9 @@ const icons = ["◇", "◱", "◌"];
         <div class="container-figma mt-10 grid grid-cols-3 gap-6 max-lg:grid-cols-1">
           {data.mission.items.map((item, index) => (
             <article class="reveal min-h-[258px] rounded-3xl bg-primary p-8 text-white">
-              <span class="grid size-12 place-items-center rounded-2xl bg-accent text-white text-2xl">{icons[index]}</span>
+              <div class="flex size-12 items-center justify-center rounded-2xl bg-accent">
+                  <img src={missionIcons[index]} alt="" class="size-6 object-contain brightness-0 invert" />
+                </div>
               <h3 class="card-title mt-[18px] text-secondary">{item.title}</h3>
               <p class="section-copy mt-4">{item.body}</p>
             </article>
@@ -57,30 +65,31 @@ const icons = ["◇", "◱", "◌"];
         </div>
       </section>
 
-      <section class="bg-border py-20">
-        <div class="container-figma grid grid-cols-[612px_1fr] gap-20 items-start max-lg:grid-cols-1">
-          <div class="reveal sticky top-[142px] max-lg:static">
-            <h2 class="text-primary text-[48px] leading-[52px] font-bold">{data.history.title}</h2>
-            <img src={data.history.image} alt="" class="mt-10 h-[612px] w-full rounded-3xl object-cover max-lg:h-[420px]" />
-          </div>
-          <div class="relative grid gap-6">
-            <div class="absolute left-[52px] top-4 bottom-4 w-px bg-primary/25 max-sm:hidden"></div>
-            {data.history.items.map((item) => (
-              <article class="reveal relative grid grid-cols-[104px_1fr] gap-6 rounded-3xl bg-white p-8 shadow-sm max-sm:grid-cols-1">
-                <div class="relative z-10">
-                  <span class="grid size-[104px] place-items-center rounded-full bg-surface text-primary text-[28px] leading-8 font-semibold">{item.year}</span>
-                </div>
-                <div>
-                  <h3 class="card-title text-accent">{item.title}</h3>
-                  <p class="section-copy mt-4 text-ink">{item.body}</p>
-                </div>
-              </article>
-            ))}
+      <section class="bg-border py-20 max-lg:py-[60px]">
+        <div class="container-figma">
+          <h2 class="text-primary text-[48px] leading-[52px] font-bold text-center reveal max-lg:text-[34px] max-lg:leading-[38px]">{data.history.title}</h2>
+          <div class="mt-10 grid grid-cols-2 gap-20 items-start max-lg:grid-cols-1 max-lg:gap-8">
+            <div class="reveal sticky top-[142px] max-lg:static">
+              <img src={data.history.image} alt="" class="h-[520px] w-full rounded-3xl object-cover max-lg:h-[300px]" />
+            </div>
+            <div class="relative grid gap-4">
+              <div class="absolute left-[5px] top-6 bottom-6 w-0.5 bg-primary/20"></div>
+              {data.history.items.map((item) => (
+                <article class="reveal relative pl-10">
+                  <div class="absolute left-0 top-5 flex size-[11px] items-center justify-center rounded-full bg-accent"></div>
+                  <div class="rounded-3xl bg-white p-8 shadow-sm">
+                    <span class="block text-[64px] leading-none font-bold text-primary/20">{item.year}</span>
+                    <h3 class="card-title text-accent mt-3">{item.title}</h3>
+                    <p class="section-copy mt-4 text-ink">{item.body}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="relative overflow-hidden bg-ink py-20 dark-orb">
+      <section class="relative overflow-hidden bg-ink py-20 max-lg:py-[60px] dark-orb">
         <div class="container-figma relative text-center text-white">
           <h2 class="mx-auto max-w-[1020px] text-[48px] leading-[52px] font-bold reveal">
             {data.team.title.split(data.team.highlight)[0]}<span class="text-secondary">{data.team.highlight}</span>{data.team.title.split(data.team.highlight)[1]}
@@ -88,14 +97,18 @@ const icons = ["◇", "◱", "◌"];
           <p class="section-copy mx-auto mt-[18px] max-w-[1250px] reveal">{data.team.body}</p>
           <div class="mt-10 grid grid-cols-4 gap-6 text-left max-lg:grid-cols-2 max-sm:grid-cols-1">
             {data.team.items.map((person) => (
-              <article class="group reveal overflow-hidden rounded-3xl border border-border bg-white text-ink">
-                <div class="relative h-[276px] overflow-hidden">
-                  <img src={person.image} alt={person.name} class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                  <span class="absolute left-5 top-5 grid size-14 place-items-center rounded-2xl bg-surface text-primary font-bold">in</span>
+              <article class="reveal overflow-hidden rounded-3xl border border-border bg-white">
+                <div class="relative pt-5 px-5 pb-[200px]">
+                  <div class="absolute inset-0 overflow-hidden">
+                    <img src={person.image} alt={person.name} class="absolute inset-0 w-full h-full object-cover object-top" />
+                  </div>
+                  <div class="relative flex items-center justify-center bg-surface rounded-2xl p-3 w-14 h-14 shrink-0">
+                    <img src="/assets/icons/icon-linkedin.svg" alt="LinkedIn" class="size-8" />
+                  </div>
                 </div>
-                <div class="p-8">
-                  <h3 class="text-accent text-[28px] leading-8 font-semibold">{person.name}</h3>
-                  <p class="mt-3 text-[18px] leading-[22px] font-medium">{person.role}</p>
+                <div class="p-8 flex flex-col gap-3">
+                  <h3 class="card-title text-accent">{person.name}</h3>
+                  <p class="text-[18px] leading-[22px] font-medium text-ink">{person.role}</p>
                 </div>
               </article>
             ))}
@@ -103,7 +116,7 @@ const icons = ["◇", "◱", "◌"];
         </div>
       </section>
 
-      <section class="bg-white py-20">
+      <section class="bg-white py-20 max-lg:py-[60px]">
         <div class="container-figma grid grid-cols-[412px_1fr] gap-20 items-center max-lg:grid-cols-1">
           <div class="reveal">
             <h2 class="text-primary text-[48px] leading-[52px] font-bold">{data.recognitions.title}</h2>
@@ -115,7 +128,7 @@ const icons = ["◇", "◱", "◌"];
         </div>
       </section>
 
-      <section class="bg-white py-20">
+      <section class="bg-white py-20 max-lg:py-[60px]">
         <div class="container-figma text-center">
           <h2 class="text-primary text-[48px] leading-[52px] font-bold reveal">{data.certifications.title}</h2>
           <p class="section-copy mx-auto mt-[18px] max-w-[1250px] reveal">{data.certifications.body}</p>
@@ -131,11 +144,12 @@ const icons = ["◇", "◱", "◌"];
         </div>
       </section>
 
-      <section id="contacto" class="bg-surface py-20">
+      <section id="contacto" class="bg-surface py-20 max-lg:py-[60px]">
         <div class="container-figma reveal relative min-h-[460px] overflow-hidden rounded-3xl p-20 flex items-center max-lg:p-8">
-          <img src={data.finalCta.image} alt="" class="absolute inset-0 h-full w-full object-cover" />
+          <img src={data.finalCta.image} alt="" class="absolute inset-0 h-full w-full object-cover object-top" />
           <div class="absolute inset-0 bg-[linear-gradient(80deg,#1d1d1b_27%,rgba(29,29,27,0)_87%),linear-gradient(0deg,#1d1d1b_5%,rgba(29,29,27,0)_45%)]"></div>
-          <div class="relative max-w-[640px] text-white">
+          <img src="/assets/deco/lineas-hero-banner.svg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-[1] opacity-20" />
+          <div class="relative z-[2] max-w-[640px] text-white">
             <h2 class="text-[48px] leading-[52px] font-bold max-lg:text-[34px] max-lg:leading-[38px]">{data.finalCta.title}</h2>
             <p class="section-copy mt-5">{data.finalCta.body}</p>
             <a class="btn-primary mt-5" href={`mailto:${home.footer.email}`}>{data.finalCta.button}</a>
@@ -143,15 +157,20 @@ const icons = ["◇", "◱", "◌"];
         </div>
       </section>
 
-      <section class="bg-white py-20">
-        <div class="container-figma grid grid-cols-[338px_1fr] gap-20 items-start max-lg:grid-cols-1">
+      <section class="bg-white py-20 max-lg:py-[60px]">
+        <div class="container-figma grid grid-cols-[338px_1fr] gap-20 max-lg:gap-8 items-start max-lg:grid-cols-1">
           <h2 class="text-primary text-[48px] leading-[52px] font-bold reveal">{data.faq.title}</h2>
           <div class="grid gap-5">
-            {data.faq.items.map((question) => (
-              <details class="reveal rounded-xl border-2 border-border px-[26px] py-[18px]">
-                <summary class="flex cursor-pointer list-none items-center justify-between gap-8 text-primary text-[28px] leading-8 font-semibold">
-                  {question}<span class="grid size-8 shrink-0 place-items-center rounded-full bg-surface text-primary text-base">+</span>
+            {data.faq.items.map(([question, answer]) => (
+              <details class="reveal group rounded-xl border-2 border-border px-[26px] py-[18px]">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-6 card-title max-lg:text-[18px] max-lg:leading-[22px] text-primary group-open:text-accent">
+                  {question}
+                  <span class="grid size-8 shrink-0 place-items-center rounded-full bg-surface text-primary text-base group-open:bg-accent group-open:text-white">
+                    <span class="group-open:hidden">+</span>
+                    <span class="hidden group-open:inline leading-none">−</span>
+                  </span>
                 </summary>
+                <p class="section-copy mt-4 text-ink">{answer}</p>
               </details>
             ))}
           </div>
@@ -162,14 +181,14 @@ const icons = ["◇", "◱", "◌"];
     <footer class="bg-ink py-20 text-white">
       <div class="container-figma grid grid-cols-4 gap-10 max-lg:grid-cols-1">
         <div>
-          <strong class="block text-[30px] leading-none">SC <span class="text-white/60">|</span> <span class="text-[24px]">suncapital</span></strong>
+          <a href="/"><img src="/assets/logo-footer.svg" alt="Suncapital" width="270" height="40" class="h-9 w-auto" /></a>
           <p class="mt-6 font-manrope section-copy">{home.footer.body}</p>
-          <p class="mt-6 font-manrope section-copy">© 2025 Suncapital. Todos los derechos reservados.</p>
+          <a href="https://www.linkedin.com/company/suncapital" target="_blank" rel="noopener noreferrer" class="mt-6 block w-max"><img src="/assets/icons/icon-linkedin-social.svg" alt="LinkedIn Suncapital" width="30" height="30" class="w-10 h-10" /></a><p class="mt-6 font-manrope section-copy">© 2025 Suncapital. Todos los derechos reservados.</p>
           <div class="mt-6 grid gap-3 underline font-manrope section-copy"><a href="#">Política de Calidad y Seguridad</a><a href="#">Política de Privacidad</a><a href="#">Aviso Legal</a><a href="#">Canal Ético</a></div>
         </div>
         <div><h3 class="font-manrope text-secondary text-[28px] leading-8 font-bold">Oficinas</h3><p class="mt-6 font-manrope text-xl leading-6 font-bold">{home.footer.office}</p><p class="mt-1 font-manrope section-copy">{home.footer.address}</p><p class="mt-6 font-manrope section-copy">{home.footer.coverage}</p></div>
-        <div class="grid gap-4 text-[18px] leading-[22px] font-bold">{["Sobre nosotros", "Noticias", "Software Onboard", "Servicios", "Automatización inteligente de procesos", "Business Process Outsourcing", "Auditoría Catastral", "Industrias", "Banca, Financieras y Seguros", "Real Estate y Servicing", "Gran Consumo", "Tecnología para gestión operativa"].map((item) => <a href="#" class={item === "Servicios" || item === "Industrias" ? "text-secondary" : "text-white"}>{item} <span class="float-right">→</span></a>)}</div>
-        <div><a class="btn-primary" href={`mailto:${home.footer.email}`}>Contacto</a><p class="mt-6 text-sm leading-[18px]">{home.footer.email}</p><p class="mt-4 text-sm leading-[18px]">{home.footer.phone}</p><div class="mt-6 flex gap-2"><img src="/assets/figma/cert-bde.png" alt="" class="h-12 rounded bg-white p-2" /><img src="/assets/figma/cert-27001.png" alt="" class="h-12 rounded bg-white p-2" /><img src="/assets/figma/cert-9001.png" alt="" class="h-12 rounded bg-white p-2" /></div></div>
+        <div class="grid gap-4 text-[18px] leading-[22px] font-bold">{[["Sobre nosotros","/sobre-nosotros"],["Noticias","/noticias"],["Software Onboard","/onboard"],["Servicios","/#servicios"],["Automatización inteligente de procesos","/automatizacion-inteligente-de-procesos"],["Business Process Outsourcing","/business-process-outsourcing"],["Auditoría Catastral","/auditoria-catastral"],["Industrias","/#industrias"],["Banca, Financieras y Seguros","/banca-financieras-seguros"],["Real Estate y Servicing","/real-estate-servicing"],["Gran Consumo","/gran-consumo"],["Tecnología para gestión operativa","/tecnologia-gestion-operativa"]].map(([label, href]) => <a href={href} class={`${label === "Servicios" || label === "Industrias" ? "text-secondary" : "text-white"} hover:text-secondary transition-colors`}>{label}{label !== "Servicios" && label !== "Industrias" && <span class="float-right">→</span>}</a>)}</div>
+        <div><a class="btn-primary" href={`mailto:${home.footer.email}`}>Contacto</a><p class="mt-6 text-sm leading-[18px]">{home.footer.email}</p><p class="mt-4 text-sm leading-[18px]">{home.footer.phone}</p><div class="mt-6 flex flex-col gap-2"><div class="flex gap-2"><img src="/assets/figma/cert-27001.png" alt="ISO 27001" class="h-16 rounded bg-white p-2 object-contain" /><img src="/assets/figma/cert-9001.png" alt="ISO 9001" class="h-16 rounded bg-white p-2 object-contain" /></div><img src="/assets/figma/cert-bde.png" alt="Banco de España" class="h-20 w-full rounded bg-white p-1 object-contain" /></div></div>
       </div>
     </footer>
 

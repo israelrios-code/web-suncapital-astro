@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "titleBefore": "Soluciones Tecnológicas para Liderar la Transformación de la",
+    "titleAccent": "Banca, Financieras y Seguros",
+    "body": "Optimizamos tus procesos, reforzamos tu seguridad y mejoramos la experiencia de tus clientes con automatización inteligente y software a medida.",
+    "button": "Solicita una Consultoría Gratuita",
+    "image": "/assets/figma/banca-hero.jpg"
+  },
+  "featuredProposition": {
+    "title": "Convertimos tus operaciones en tu mayor ventaja competitiva",
+    "body": "Analizamos tus procesos de negocio para desarrollar soluciones de software a medida que automatizan tareas, optimizan flujos y te preparan para el futuro.",
+    "image": "/assets/figma/bpo-audience.jpg",
+    "features": [
+      ["Reducción de Costes", "Libera a tu equipo de tareas repetitivas para que se centren en actividades de alto valor que impulsen el crecimiento."],
+      ["Escalabilidad sin Límites", "Adapta tu capacidad operativa de forma ágil y sin incrementar los costes de personal de manera proporcional."],
+      ["Calidad del Dato", "Minimiza los fallos humanos y optimiza el uso de recursos, generando un impacto directo en la rentabilidad."],
+      ["Trazabilidad Completa", "Obtén una visibilidad completa de tus procesos, facilitando la auditoría, el control y la toma de decisiones."]
+    ]
+  },
+  "audienceSection": {
+    "title": "Impulsando un Sector en Constante Evolución",
+    "body": "El sector financiero, bancario y de seguros se enfrenta a una era de disrupción digital sin precedentes. La creciente demanda de servicios personalizados, la presión regulatoria (compliance), la competencia de las fintech y la necesidad de una eficiencia operativa máxima son los grandes desafíos.",
+    "body2": "En este entorno, la capacidad de adaptarse no es una opción, es una necesidad. La digitalización y automatización de procesos clave, desde el back office hasta la interacción con el cliente, son fundamentales para garantizar la competitividad, la seguridad y el crecimiento sostenible.",
+    "image": "/assets/figma/audience-pro.jpg"
+  },
+  "benefitsSection": {
+    "title": "Impulsamos el Crecimiento en Todo el",
+    "highlight": "Ecosistema Financiero",
+    "body": "Nuestra experiencia nos permite ofrecer soluciones de alto impacto a:",
+    "items": [
+      ["Banca Comercial y Retail", "Optimizando la operativa de sucursales y canales digitales.", "/assets/icons/icon-banca-ben-1.svg"],
+      ["Compañías de Seguros", "Agilizando la suscripción de pólizas y la gestión de siniestros.", "/assets/icons/icon-banca-ben-2.svg"],
+      ["Fintech y Neobancos", "Proporcionando la tecnología escalable para su crecimiento acelerado.", "/assets/icons/icon-banca-ben-3.svg"],
+      ["Empresas de Crédito y Financiación", "Mejorando los procesos de análisis y concesión de préstamos.", "/assets/icons/icon-banca-ben-4.svg"]
+    ]
+  },
+  "audienceProblem": {
+    "title": "¿Quién utiliza la solución?",
+    "body": "Equipos de operaciones en entidades bancarias que gestionan miles de altas de clientes al mes:",
+    "image": "/assets/figma/automation-audience.jpg",
+    "items": [
+      "Empresas de entre 20 y 500 empleados que han crecido apoyándose en su equipo interno y han llegado al límite de lo que pueden resolver contratando más.",
+      "Servicers y fondos inmobiliarios con carteras de activos que exigen gestión masiva y continua.",
+      "Empresas logísticas y de alimentación donde la documentación operativa crece más rápido que la capacidad de procesarla.",
+      "Entidades financieras que necesitan externalizar back office sin perder trazabilidad ni cumplimiento normativo."
+    ]
+  },
+  "logos": {
+    "title": "Empresas del sector financiero que ya confían en",
+    "highlight": "Suncapital",
+    "body": "Organizaciones de distintos sectores confían en nosotros para mejorar sus operaciones y reducir la complejidad de sus procesos: grandes volúmenes de información, activos o transacciones.",
+    "items": ["/assets/figma/logo-1.png", "/assets/figma/logo-2.png", "/assets/figma/logo-3.png", "/assets/figma/logo-4.png", "/assets/figma/logo-5.png", "/assets/figma/logo-6.png", "/assets/figma/logo-7.png", "/assets/figma/logo-8.png", "/assets/figma/logo-9.png"]
+  },
+  "process": {
+    "title": "Así arrancamos tu proyecto en banca y seguros",
+    "button": "Iniciar mi diagnóstico ahora",
+    "items": [
+      ["01", "Diagnóstico operativo gratuito", "Analizamos tus procesos actuales e identificamos los puntos de mayor coste operativo y riesgo normativo.", "/assets/icons/icon-bpo-proc-1.png"],
+      ["02", "Propuesta a medida", "Diseñamos una solución específica para tu operación: tecnología, equipo BPO o ambas, adaptada a tu realidad.", "/assets/icons/icon-bpo-proc-2.png"],
+      ["03", "Implementación ágil", "Primer MVP funcional en pocas semanas. Sin interrumpir tu operación actual ni reemplazar tus sistemas.", "/assets/icons/icon-bpo-proc-3.png"],
+      ["04", "Seguimiento y mejora continua", "Definimos KPIs contigo desde el inicio y los medimos juntos. Tu éxito operativo es el nuestro.", "/assets/icons/icon-bpo-proc-4.png"]
+    ]
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      ["¿Qué procesos del sector bancario y asegurador son automatizables con vuestra tecnología?", "Los procesos de mayor impacto son el onboarding KYC, la gestión de siniestros, el reporting regulatorio, la conciliación contable y la gestión de notificaciones electrónicas obligatorias. También automatizamos la digitalización de documentación contractual y los flujos de aprobación interna. En general, cualquier proceso repetitivo con alto volumen de documentos y reglas de negocio definidas es susceptible de ser automatizado con nuestra plataforma Onboard o mediante RPA."],
+      ["¿Cómo garantizan la seguridad de los datos sensibles?", "Utilizamos encriptación de extremo a extremo, cumplimos con la normativa ISO 27001 y realizamos auditorías de seguridad periódicas para garantizar la máxima protección de la información."],
+      ["¿Vuestras soluciones se integran con los sistemas que ya utilizo?", "Sí. Uno de nuestros puntos fuertes es la capacidad de integración. Desarrollamos nuestras soluciones con APIs robustas para que se conecten de forma fluida con tu ecosistema de software actual."],
+      ["¿Cuál es el tiempo medio de implementación de un proyecto?", "El tiempo varía según la complejidad, pero gracias a nuestras metodologías ágiles, podemos tener un MVP en pocas semanas y proyectos a medida en 2-3 meses."],
+      ["¿Qué modelo de precios tienen?", "Ofrecemos modelos flexibles: desde pago por uso para servicios BPO, donde no necesitas inversión inicial, SaaS para Onboard, hasta un precio cerrado por proyecto para el desarrollo de software a medida."],
+      ["¿Qué tipo de soporte ofrecéis una vez implementada la solución?", "Ofrecemos planes de soporte y mantenimiento flexibles que se adaptan a tus necesidades, desde soporte técnico reactivo hasta un acompañamiento proactivo para asegurar la evolución de la solución."],
+      ["¿Cuál es el Retorno de la Inversión (ROI) que podemos esperar?", "Nuestros clientes suelen experimentar un ROI en menos de 12 meses gracias a la reducción de costes, la eliminación de errores y el aumento de la productividad."],
+      ["¿Solo trabajáis con un tipo de tecnología o software de RPA?", "Somos agnósticos en cuanto a la tecnología. Seleccionamos las herramientas que mejor se adaptan a los retos y al ecosistema tecnológico de cada cliente, ya sea utilizando plataformas de RPA del mercado o desarrollando soluciones a medida."],
+      ["¿Vuestras soluciones son escalables?", "Absolutamente. Construimos todas nuestras soluciones, desde software a medida hasta automatizaciones, sobre una arquitectura modular y escalable, preparada para crecer y adaptarse al volumen de tu negocio sin perder rendimiento."]
+    ]
+  },
+  "otherIndustries": {
+    "title": "También operamos en otras industrias",
+    "items": [
+      ["Real Estate y Servicing", "Automatizamos la gestión de carteras inmobiliarias, alquileres y procesos asociados a activos REO.", "Ver soluciones", "/assets/figma/automation-other-real-estate.jpg"],
+      ["Gran Consumo", "Conciliación de facturas, albaranes, seguimiento operativo y control documental para cadenas de suministro.", "Ver soluciones", "/assets/figma/automation-other-logistics.jpg"],
+      ["Tecnología para gestión operativa", "Automatización de procesos operativos, gestión de redes e infraestructuras con IA y plataforma propia.", "Ver soluciones", "/assets/figma/bpo-hero.jpg"]
+    ]
+  }
+}

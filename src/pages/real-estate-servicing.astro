@@ -1,0 +1,398 @@
+﻿---
+import "../styles/global.css";
+import GoogleTagManagerHead from "../components/GoogleTagManagerHead.astro";
+import GoogleTagManagerBody from "../components/GoogleTagManagerBody.astro";
+import Nav from "../components/Nav.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+import CitiesCarousel from "../components/CitiesCarousel.astro";
+import data from "../content/real-estate.json";
+import home from "../content/home.json";
+
+const audienceGradients = [
+  "dark-card",
+  "dark-card-tr",
+  "dark-card-tl",
+  "dark-card-bl",
+  "dark-card-tr",
+  "dark-card",
+];
+const audienceIcons = [
+  "/assets/icons/icon-building-06.svg",
+  "/assets/icons/icon-dataflow-04.svg",
+  "/assets/icons/icon-home-03.svg",
+  "/assets/icons/icon-user-01.svg",
+  "/assets/icons/icon-building-01.svg",
+  "/assets/icons/icon-user-square.svg",
+];
+const benefitsIcons = [
+  "/assets/icons/icon-file-code-01.svg",
+  "/assets/icons/icon-dataflow-03.svg",
+  "/assets/icons/icon-bar-chart-05.svg",
+  "/assets/icons/icon-shield-tick.svg",
+  "/assets/icons/icon-puzzle-piece-01.svg",
+  "/assets/icons/icon-presentation-chart-01.svg",
+];
+const serviceHrefs = [
+  "/automatizacion-inteligente-de-procesos",
+  "/business-process-outsourcing",
+  "/auditoria-catastral",
+];
+const industryHrefs: Record<string, string> = {
+  "Banca, Financieras y Seguros": "/banca-financieras-seguros",
+  "Real Estate y Servicing": "/real-estate-servicing",
+  "Real State y Servicing": "/real-estate-servicing",
+  "Gran Consumo": "/gran-consumo",
+  "Tecnología para gestión operativa": "/tecnologia-gestion-operativa",
+  "Public Utilities": "/tecnologia-gestion-operativa",
+};
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Real Estate y Servicing | Suncapital</title>
+    <meta name="description" content={data.hero.body} />
+    <GoogleTagManagerHead />
+  </head>
+  <body>
+    <GoogleTagManagerBody />
+    <Nav />
+
+    <main class="pt-[102px] bg-white">
+      <Breadcrumb current="Real Estate y Servicing" />
+
+      <!-- 1. HERO — estilo BPO -->
+      <section class="relative overflow-hidden bg-ink py-[120px] dark-orb">
+        <img src="/assets/deco/lineas-hero-todas-las-secciones.svg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-[1] opacity-20" />
+        <div class="container-figma relative grid grid-cols-[760px_1fr] gap-20 items-center max-lg:grid-cols-1">
+          <div class="reveal">
+            <h1 class="text-white text-[68px] leading-[72px] font-bold max-lg:text-[44px] max-lg:leading-[48px]">
+              {data.hero.titleBefore} <span class="text-accent">{data.hero.titleAccent}</span>
+            </h1>
+            <p class="mt-10 text-white text-[18px] leading-[22px] font-medium">{data.hero.body}</p>
+            <a href="#contacto" class="btn-primary mt-10">{data.hero.button}</a>
+          </div>
+          <img src={data.hero.image} alt="" class="reveal h-[504px] w-full rounded-3xl object-cover shadow-2xl" />
+        </div>
+      </section>
+
+      <!-- 2. IMPULSANDO UN SECTOR — audienceSection específico -->
+      <section class="bg-surface py-20 max-lg:py-[60px]">
+        <div class="container-figma">
+          <div class="grid grid-cols-2 gap-20 max-lg:gap-8 items-center max-lg:grid-cols-1">
+            <img src={data.audienceSection.image} alt="" class="h-[368px] w-full rounded-3xl object-cover reveal" />
+            <div class="reveal">
+              <h2 class="section-title text-primary">{data.audienceSection.title}</h2>
+              <p class="section-copy mt-5">{data.audienceSection.body}</p>
+              <p class="section-copy mt-3">{data.audienceSection.body2}</p>
+            </div>
+          </div>
+          <div class="mt-10 grid grid-cols-4 gap-6 max-lg:grid-cols-1">
+            {home.audienceFeatures.map(([title, body, icon], index) => (
+              <article class={`reveal relative overflow-hidden rounded-3xl bg-ink p-8 min-h-[270px] ${audienceGradients[index]}`}>
+                <div class="relative z-[1]">
+                  <div class="mb-[18px] flex size-12 items-center justify-center rounded-2xl bg-surface">
+                    <img src={icon} alt="" class="size-6 object-contain" />
+                  </div>
+                  <h3 class="card-title text-secondary">{title}</h3>
+                  <p class="section-copy mt-4 text-white">{body}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. NUEVA SECCIÓN — ventaja competitiva -->
+      <section class="relative overflow-hidden bg-ink py-20 max-lg:py-[60px] dark-orb">
+        <div class="container-figma relative">
+          <div class="reveal grid grid-cols-2 gap-12 items-center max-lg:grid-cols-1">
+            <div class="text-white">
+              <h2 class="text-[48px] leading-[52px] font-bold max-lg:text-[34px] max-lg:leading-[38px]">{home.featuredProposition.title}</h2>
+              <p class="section-copy mt-4">{home.featuredProposition.body}</p>
+              <div class="mt-6 grid grid-cols-2 gap-4">
+                {home.featuredProposition.features.map(([title, body]) => (
+                  <div class="rounded-2xl bg-accent/20 p-5">
+                    <h3 class="text-secondary font-semibold text-[16px] leading-5">{title}</h3>
+                    <p class="section-copy mt-2">{body}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <img src={home.featuredProposition.image} alt="" class="w-full rounded-2xl object-cover h-[420px] max-lg:h-[280px]" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. SOLUCIONES DEL SECTOR — home cards sobre bg-surface -->
+      <section class="bg-surface py-[120px] max-lg:py-[60px]">
+        <div class="container-figma relative">
+          <header class="text-center text-primary reveal">
+            <h2 class="section-title">{home.servicesIndustry.title}</h2>
+            <p class="section-copy mt-[18px]">{home.servicesIndustry.body}</p>
+          </header>
+          <div class="mt-10 grid grid-cols-3 gap-6 max-lg:grid-cols-1">
+            {home.servicesIndustry.items.map((item) => (
+              <article class="group reveal relative min-h-[582px] max-lg:min-h-[400px] overflow-hidden rounded-[28px] p-10 flex flex-col justify-end">
+                <img src={item.image} alt={item.title} class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-[#0F172A]/70"></div>
+                <div class="relative">
+                  <h3 class="card-title text-white">{item.title}</h3>
+                  <p class="section-copy mt-4 text-white/80">{item.body}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. BENEFICIOS SECTOR — específico Real Estate -->
+      <section class="bg-surface py-20 max-lg:py-[60px]">
+        <div class="container-figma">
+          <header class="reveal text-center">
+            <h2 class="section-title text-primary">{data.benefitsSection.title} <span class="text-accent">{data.benefitsSection.highlight}</span></h2>
+            <p class="section-copy mt-5 max-w-[683px] mx-auto">{data.benefitsSection.body}</p>
+          </header>
+          <div class="mt-10 grid grid-cols-4 gap-6 max-lg:grid-cols-1">
+            {data.benefitsSection.items.map(([title, body, icon]) => (
+              <article class="reveal rounded-3xl border border-border bg-white p-8 min-h-[292px]">
+                <div class="mb-[18px] flex size-12 items-center justify-center rounded-2xl bg-surface">
+                  <img src={icon} alt="" class="size-6 object-contain" />
+                </div>
+                <h3 class="card-title text-primary">{title}</h3>
+                <p class="section-copy mt-4">{body}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. BANNER ONBOARD — centro de control -->
+      <section class="bg-white py-20 max-lg:py-[60px]">
+        <div class="container-figma reveal relative overflow-hidden rounded-3xl bg-ink p-10 max-lg:p-7 dark-orb">
+          <img src="/assets/deco/lineas-hero-banner.svg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-[1] opacity-20" />
+          <div class="relative z-[2] grid grid-cols-[1fr_1.1fr] gap-20 max-lg:gap-[60px] items-center max-lg:grid-cols-1">
+            <div class="flex flex-col gap-6">
+              <h2 class="text-white text-[48px] leading-[52px] font-bold max-lg:text-[34px] max-lg:leading-[38px]">{home.onboardAlt.titleBefore}<span class="text-secondary">{home.onboardAlt.titleHighlight}</span>{home.onboardAlt.titleAfter}</h2>
+              <div class="grid grid-cols-2 gap-4">
+                {home.onboardAlt.features.map(([title, body]) => (
+                  <div class="rounded-2xl bg-[#5C58ED]/20 p-4">
+                    <h3 class="text-secondary font-semibold text-[16px] leading-5">{title}</h3>
+                    <p class="section-copy mt-2 text-white">{body}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div class="relative">
+              <img src={home.onboardAlt.image} alt="" class="w-full" />
+              <img src={home.onboardAlt.badge} alt="" class="absolute left-[45%] top-[-24px] w-[270px] max-lg:w-[160px] max-lg:left-[38%] rounded-lg shadow-2xl" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. ¿QUIÉN UTILIZA LA SOLUCIÓN? — shared -->
+      <section class="bg-white py-20 max-lg:py-[60px]">
+        <div class="container-figma grid grid-cols-[1fr_560px] gap-20 items-center max-lg:grid-cols-1">
+          <div class="reveal">
+            <h2 class="section-title text-primary">{home.audienceProblemShared.title}</h2>
+            <p class="section-copy mt-5">{home.audienceProblemShared.body}</p>
+            <div class="mt-6 grid gap-6">
+              {home.audienceProblemShared.items.map((item) => (
+                <p class="flex gap-4 section-copy text-primary"><span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full border border-primary text-xs">✓</span>{item}</p>
+              ))}
+            </div>
+          </div>
+          <img src={home.audienceProblemShared.image} alt="" class="reveal h-[468px] w-full rounded-3xl object-cover" />
+        </div>
+      </section>
+
+      <!-- 8. LOGOS SECTOR FINANCIERO — del home con título custom -->
+      <section class="bg-surface py-[120px] max-lg:py-[60px]">
+        <div class="container-figma text-center reveal">
+          <h2 class="section-title text-primary">{home.logosShared.title}</h2>
+          <p class="section-copy mt-4">{home.logosShared.body}</p>
+          <div class="mt-20 max-lg:mt-10 grid grid-cols-9 gap-4 max-lg:grid-cols-3">
+            {data.logos.items.map((logo) => <div class="h-[62px] rounded-lg bg-white flex items-center justify-center px-4"><img src={logo} alt="" class="max-h-[50px] object-contain" /></div>)}
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. MODELOS DE PRECIOS — fondo oscuro con halos -->
+      <section id="servicios" class="relative overflow-hidden bg-ink py-[120px] max-lg:py-[60px] dark-orb">
+        <div class="container-figma relative">
+          <header class="text-center text-white reveal">
+            <h2 class="section-title">{home.servicesDark.title}</h2>
+            <p class="section-copy mt-[18px]">{home.servicesDark.body}</p>
+          </header>
+          <div class="mt-10 grid grid-cols-3 gap-6 max-lg:grid-cols-1">
+            {home.servicesDark.items.map((item) => (
+              <article class="group reveal relative min-h-[582px] max-lg:min-h-[400px] overflow-hidden rounded-[28px] p-10 flex flex-col justify-end">
+                <img src={item.image} alt={item.title} class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-[#0F172A]/70"></div>
+                <div class="relative">
+                  <span class="inline-flex rounded-full bg-accent px-3 py-1 text-white text-sm leading-[18px]">{item.tag}</span>
+                  <h3 class="card-title mt-4 text-white">{item.title}</h3>
+                  <p class="section-copy mt-4 text-white/80">{item.body}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div class="mt-10 text-center">
+            <a class="btn-primary" href="#contacto">{home.servicesDark.button}</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. CASOS DE ÉXITO — del home -->
+      <section class="bg-white py-20 max-lg:py-[60px]">
+        <div class="container-figma flex flex-col items-center gap-10">
+          <header class="reveal flex flex-col items-center gap-4 text-center">
+            <span class="inline-flex items-center gap-2 rounded-full border border-border px-4 py-[10px] text-primary section-copy"><i class="size-2 rounded-full bg-secondary"></i>{home.caseStudy.kicker}</span>
+            <h2 class="text-primary text-[48px] leading-[52px] font-bold">{home.caseStudy.title}</h2>
+            <p class="section-copy max-w-[760px]">{home.caseStudy.body}</p>
+          </header>
+          <article class="reveal relative w-full overflow-hidden rounded-3xl bg-ink border border-white/10 p-20 flex flex-col items-center gap-10 dark-orb max-lg:p-8">
+            <span class="rounded-full bg-secondary/20 px-3 py-1 text-secondary section-copy relative">{home.caseStudy.tag}</span>
+            <div class="relative grid grid-cols-3 gap-10 w-full max-lg:grid-cols-1">
+              {home.caseStudy.steps.map(([title, body], index) => (
+                <div class="flex flex-col gap-3">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-grid size-6 shrink-0 place-items-center rounded-full bg-secondary text-primary text-base font-normal">{index + 1}</span>
+                    <h3 class="text-surface font-semibold text-[20px] leading-6">{title}</h3>
+                  </div>
+                  <p class="section-copy text-white">{body}</p>
+                </div>
+              ))}
+            </div>
+            <div class="relative grid grid-cols-3 gap-20 w-full border-t border-white/60 pt-8 max-lg:grid-cols-1 max-lg:gap-6">
+              {home.caseStudy.metrics.map(([value, label]) => (
+                <div>
+                  <strong class="block text-[68px] leading-[72px] font-bold text-secondary">{value}</strong>
+                  <p class="section-copy text-white mt-1">{label}</p>
+                </div>
+              ))}
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 11. CERTIFICACIONES — del home -->
+      <section class="bg-white py-20 max-lg:py-[60px] text-center">
+        <div class="container-figma reveal">
+          <h2 class="section-title text-primary">{home.certificationsIndustry.title}</h2>
+          <p class="section-copy mx-auto mt-[18px] max-w-[1250px]">{home.certificationsIndustry.body}</p>
+          <div class="mt-10 grid grid-cols-4 gap-4 text-left max-lg:grid-cols-1">
+            {home.certifications.items.map(([status, title, image]) => (
+              <article class="reveal rounded-3xl bg-border p-8">
+                {image && <img src={image} alt="" class="mb-4 h-[54px] w-[146px] object-contain rounded-lg bg-white p-2" />}
+                <p class="text-accent text-[18px] leading-[22px] font-medium">{status}</p>
+                <h3 class="card-title mt-3 text-primary">{title}</h3>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- 12. PROCESO — shared -->
+      <section class="relative overflow-hidden bg-ink py-[120px] max-lg:py-[60px] dark-orb [&::after]:hidden">
+        <div class="container-figma relative text-center text-white">
+          <h2 class="text-[48px] leading-[52px] font-bold reveal">{home.processShared.title}</h2>
+          <div class="mt-10 grid grid-cols-3 gap-6 text-left max-lg:grid-cols-1">
+            {home.processShared.items.map(([num, title, body, icon]) => (
+              <article class="reveal min-h-[280px] rounded-3xl bg-primary p-10">
+                <div class="flex items-center justify-between"><p class="text-[68px] leading-[72px] font-bold text-white/20">{num}</p><div class="flex size-12 items-center justify-center rounded-2xl bg-accent"><img src={icon} alt="" class="size-6 object-contain" /></div></div>
+                <h3 class="card-title mt-6">{title}</h3>
+                <p class="mt-6 text-[16px] leading-5 font-medium">{body}</p>
+              </article>
+            ))}
+          </div>
+          <a href="#contacto" class="btn-primary mt-10">{home.processShared.button} <span class="ml-3">→</span></a>
+        </div>
+      </section>
+
+      <!-- 13. OTRAS INDUSTRIAS — estilo BPO, 3 cards 1 columna -->
+      <section class="relative overflow-hidden bg-ink py-[120px] max-lg:py-[60px] dark-orb [&::before]:hidden">
+        <div class="container-figma relative">
+          <h2 class="text-center text-white text-[48px] leading-[52px] font-bold reveal">{data.otherIndustries.title}</h2>
+          <div class="mt-10 grid grid-cols-3 gap-6 max-lg:grid-cols-1">
+            {data.otherIndustries.items.map(([title, body, button, image]) => (
+              <article class="group reveal relative min-h-[400px] overflow-hidden rounded-[28px] p-10 flex flex-col justify-end">
+                <img src={image} alt={title} class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-slate-900/70"></div>
+                <div class="relative text-white">
+                  <h3 class="card-title">{title}</h3>
+                  <a class="btn-primary mt-6" href={industryHrefs[title] ?? "/contacto"}>{button}</a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- 14. BANNER CTA — industrias -->
+      <section id="contacto" class="bg-white py-20 max-lg:py-[60px]">
+        <div class="container-figma reveal relative min-h-[506px] overflow-hidden rounded-3xl bg-ink p-20 flex items-end max-lg:p-6">
+          <img src={home.cta.image} alt="" class="absolute max-w-none h-[146%] w-[79%] left-[21%] top-[-7%] object-cover" />
+          <div class="absolute inset-0 bg-[linear-gradient(0.33deg,#1d1d1b_5%,rgba(29,29,27,0)_45%),linear-gradient(80.85deg,#1d1d1b_27%,rgba(29,29,27,0)_87%)]"></div>
+          <img src="/assets/deco/lineas-hero-banner.svg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-[1] opacity-20" />
+          <div class="relative z-[2] flex flex-col gap-5 max-w-[640px] text-white">
+            <h2 class="text-white text-[48px] leading-[52px] font-bold max-lg:text-[34px] max-lg:leading-[38px]">{home.ctaIndustry.title}</h2>
+            <p class="section-copy">{home.ctaIndustry.body}</p>
+            <a class="btn-primary self-start" href="/contacto">{home.ctaIndustry.button}</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 15. FAQs — específico Real Estate -->
+      <section class="bg-white py-20 max-lg:py-[60px]">
+        <div class="container-figma grid grid-cols-[338px_1fr] gap-20 max-lg:gap-8 items-start max-lg:grid-cols-1">
+          <h2 class="section-title text-primary reveal">{data.faq.title}</h2>
+          <div class="grid gap-5">
+            {data.faq.items.map(([question, answer]) => (
+              <details class="reveal group rounded-xl border-2 border-border px-[26px] py-[18px]">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-6 card-title max-lg:text-[18px] max-lg:leading-[22px] text-primary group-open:text-accent">
+                  {question}
+                  <span class="grid size-8 shrink-0 place-items-center rounded-full bg-surface text-primary text-base group-open:bg-accent group-open:text-white">
+                    <span class="group-open:hidden">+</span>
+                    <span class="hidden group-open:inline leading-none">−</span>
+                  </span>
+                </summary>
+                <p class="section-copy mt-4 text-ink">{answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- 16. SUNCAPITAL EN TU CIUDAD — del home -->
+      <CitiesCarousel title={home.cities.title} body={home.cities.body} items={home.cities.items} />
+    </main>
+
+    <footer class="bg-ink py-20 text-white">
+      <div class="container-figma grid grid-cols-4 gap-10 max-lg:grid-cols-1">
+        <div>
+          <a href="/"><img src="/assets/logo-footer.svg" alt="Suncapital" width="270" height="40" class="h-9 w-auto" /></a>
+          <p class="mt-6 font-manrope section-copy">{home.footer.body}</p>
+          <a href="https://www.linkedin.com/company/suncapital" target="_blank" rel="noopener noreferrer" class="mt-6 block w-max"><img src="/assets/icons/icon-linkedin-social.svg" alt="LinkedIn Suncapital" width="30" height="30" class="w-10 h-10" /></a>
+          <p class="mt-6 font-manrope section-copy">© 2025 Suncapital. Todos los derechos reservados.</p>
+          <div class="mt-6 grid gap-3 underline font-manrope section-copy"><a href="#">Política de Calidad y Seguridad</a><a href="#">Política de Privacidad</a><a href="#">Aviso Legal</a><a href="#">Canal Ético</a></div>
+        </div>
+        <div><h3 class="font-manrope text-secondary text-[28px] leading-8 font-bold">Oficinas</h3><p class="mt-6 font-manrope text-xl leading-6 font-bold">{home.footer.office}</p><p class="mt-1 font-manrope section-copy">{home.footer.address}</p><p class="mt-6 font-manrope section-copy">{home.footer.coverage}</p></div>
+        <div class="grid gap-4 text-[18px] leading-[22px] font-bold">{[["Sobre nosotros","/sobre-nosotros"],["Noticias","/noticias"],["Software Onboard","/onboard"],["Servicios","/#servicios"],["Automatización inteligente de procesos","/automatizacion-inteligente-de-procesos"],["Business Process Outsourcing","/business-process-outsourcing"],["Auditoría Catastral","/auditoria-catastral"],["Industrias","/#industrias"],["Banca, Financieras y Seguros","/banca-financieras-seguros"],["Real Estate y Servicing","/real-estate-servicing"],["Gran Consumo","/gran-consumo"],["Tecnología para gestión operativa","/tecnologia-gestion-operativa"]].map(([label, href]) => <a href={href} class={`${label === "Servicios" || label === "Industrias" ? "text-secondary" : "text-white"} hover:text-secondary transition-colors`}>{label}{label !== "Servicios" && label !== "Industrias" && <span class="float-right">→</span>}</a>)}</div>
+        <div><a class="btn-primary" href={`mailto:${home.footer.email}`}>Contacto</a><p class="mt-6 text-sm leading-[18px]">{home.footer.email}</p><p class="mt-4 text-sm leading-[18px]">{home.footer.phone}</p><div class="mt-6 flex flex-col gap-2"><div class="flex gap-2"><img src="/assets/figma/cert-27001.png" alt="ISO 27001" class="h-16 rounded bg-white p-2 object-contain" /><img src="/assets/figma/cert-9001.png" alt="ISO 9001" class="h-16 rounded bg-white p-2 object-contain" /></div><img src="/assets/figma/cert-bde.png" alt="Banco de España" class="h-20 w-full rounded bg-white p-1 object-contain" /></div></div>
+      </div>
+    </footer>
+
+    <script>
+      const els = document.querySelectorAll(".reveal");
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("is-visible");
+        });
+      }, { threshold: 0.12 });
+      els.forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>

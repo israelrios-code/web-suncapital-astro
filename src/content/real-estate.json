@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "titleBefore": "Soluciones definitivas para la",
+    "titleAccent": "Gestión de Activos Inmobiliarios y NPLs",
+    "body": "Combinamos nuestra experiencia en Servicing con una tecnología de automatización propia para optimizar la gestión integral de carteras REO y NPL, maximizando la rentabilidad y minimizando el riesgo operativo.",
+    "button": "Solicita una Consultoría Gratuita",
+    "image": "/assets/figma/re-hero.jpg"
+  },
+  "featuredProposition": {
+    "title": "Convertimos la gestión de activos en tu mayor ventaja operativa",
+    "body": "Analizamos tus procesos de gestión inmobiliaria para desarrollar soluciones que automatizan tareas críticas, reducen la carga administrativa y mejoran el control sobre cada activo.",
+    "image": "/assets/figma/audit-client-funds.jpg",
+    "features": [
+      ["Reducción de Costes", "Libera a tu equipo de tareas repetitivas para que se centren en actividades de alto valor que impulsen el crecimiento."],
+      ["Escalabilidad sin Límites", "Adapta tu capacidad operativa de forma ágil y sin incrementar los costes de personal de manera proporcional."],
+      ["Calidad del Dato", "Minimiza los fallos humanos y optimiza el uso de recursos, generando un impacto directo en la rentabilidad."],
+      ["Trazabilidad Completa", "Obtén una visibilidad completa de tus procesos, facilitando la auditoría, el control y la toma de decisiones."]
+    ]
+  },
+  "audienceSection": {
+    "title": "La Nueva Era del Real Estate y Servicing",
+    "body": "El sector inmobiliario y la gestión de activos (Servicing) se enfrentan a desafíos complejos: desde la volatilidad del mercado hasta la presión por optimizar la rentabilidad de las carteras. La competencia ya no se basa solo en la ubicación, sino en la capacidad de gestionar propiedades, préstamos y activos adjudicados (REOs) con máxima eficiencia y transparencia.",
+    "body2": "En este entorno, la capacidad de procesar y analizar datos no es una opción, es una necesidad. La implementación de plataformas de gestión centralizadas, la automatización de procesos de servicing y el análisis predictivo (IA) para la valoración y venta de activos son esenciales. Adaptarse es la clave para garantizar la agilidad operativa, la transparencia y un crecimiento rentable.",
+    "image": "/assets/figma/re-audience.jpg"
+  },
+  "benefitsSection": {
+    "title": "Soluciones a Medida para el",
+    "highlight": "Sector Inmobiliario",
+    "body": "Optimizamos operaciones y maximizamos el valor de los activos en todo el ciclo inmobiliario.",
+    "items": [
+      ["Servicers", "Automatizamos la gestión de carteras REO y NPL, desde el onboarding documental hasta la liquidación de impuestos.", "/assets/icons/icon-re-ben-1.svg"],
+      ["SOCIMIs y Fondos de Inversión", "Proporcionamos herramientas de análisis y reporting para la gestión eficiente de portfolios y el cumplimiento normativo.", "/assets/icons/icon-re-ben-2.svg"],
+      ["Promotoras Inmobiliarias", "Digitalizamos procesos clave, desde la gestión de licencias hasta la postventa, agilizando los plazos de entrega.", "/assets/icons/icon-re-ben-3.svg"],
+      ["Empresas BPO (Sector Real Estate)", "Externalizamos procesos de back-office inmobiliario (gestión de alquileres, incidencias, etc.) con tecnología y eficiencia.", "/assets/icons/icon-re-ben-4.svg"]
+    ]
+  },
+  "audienceProblem": {
+    "title": "¿Quién utiliza la solución?",
+    "body": "Organizaciones que gestionan grandes carteras de activos inmobiliarios y necesitan operar con más eficiencia:",
+    "image": "/assets/figma/audit-client-corporate.jpg",
+    "items": [
+      "Servicers y fondos de inversión con carteras de activos REO que exigen gestión masiva y continua.",
+      "Family offices con patrimonio inmobiliario distribuido en múltiples activos y tipologías.",
+      "Promotoras con suelo en desarrollo que necesitan control documental y fiscal sistemático.",
+      "Entidades bancarias con carteras adjudicadas que deben optimizar su gestión operativa."
+    ]
+  },
+  "logos": {
+    "title": "Empresas del sector inmobiliario que ya confían en",
+    "highlight": "Suncapital",
+    "body": "Servicers, fondos y grandes tenedores de activos confían en nosotros para automatizar operaciones y reducir la complejidad de sus procesos.",
+    "items": ["/assets/figma/logo-1.png", "/assets/figma/logo-2.png", "/assets/figma/logo-3.png", "/assets/figma/logo-4.png", "/assets/figma/logo-5.png", "/assets/figma/logo-6.png", "/assets/figma/logo-7.png", "/assets/figma/logo-8.png", "/assets/figma/logo-9.png"]
+  },
+  "process": {
+    "title": "Así arrancamos tu proyecto en Real Estate y Servicing",
+    "button": "Iniciar mi diagnóstico ahora",
+    "items": [
+      ["01", "Diagnóstico de cartera", "Analizamos el volumen, tipología de activos y procesos actuales para identificar los puntos de mayor fricción operativa.", "/assets/icons/icon-bpo-proc-1.png"],
+      ["02", "Propuesta personalizada", "Diseñamos una solución adaptada: automatización, BPO, auditoría catastral o una combinación de los tres.", "/assets/icons/icon-bpo-proc-2.png"],
+      ["03", "Implementación por fases", "Arrancamos por el proceso con mayor impacto sin interrumpir la operación actual ni reemplazar tus sistemas.", "/assets/icons/icon-bpo-proc-3.png"],
+      ["04", "Operación y mejora continua", "Medimos resultados desde el primer día y ajustamos el servicio conforme evoluciona tu cartera.", "/assets/icons/icon-bpo-proc-4.png"]
+    ]
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      ["¿Qué procesos del sector inmobiliario y servicing son automatizables con vuestra tecnología?", "Los procesos de mayor impacto incluyen la gestión documental de activos REO y NPL, la automatización del onboarding de compradores, la conciliación contable, la gestión de impuestos (IBI) y el reporting de carteras. También automatizamos la digitalización de contratos, licencias y procesos de due diligence. En general, cualquier proceso repetitivo con alto volumen documental es susceptible de ser automatizado con nuestra plataforma Onboard."],
+      ["¿Cómo garantizan la seguridad de los datos sensibles?", "Utilizamos encriptación de extremo a extremo, cumplimos con la normativa ISO 27001 y realizamos auditorías de seguridad periódicas para garantizar la máxima protección de la información."],
+      ["¿Vuestras soluciones se integran con los sistemas que ya utilizo?", "Sí. Uno de nuestros puntos fuertes es la capacidad de integración. Desarrollamos nuestras soluciones con APIs robustas para que se conecten de forma fluida con tu ecosistema de software actual."],
+      ["¿Cuál es el tiempo medio de implementación de un proyecto?", "El tiempo varía según la complejidad, pero gracias a nuestras metodologías ágiles, podemos tener un MVP en pocas semanas y proyectos a medida en 2-3 meses."],
+      ["¿Qué modelo de precios tienen?", "Ofrecemos modelos flexibles: desde pago por uso para servicios BPO, donde no necesitas inversión inicial, SaaS para Onboard, hasta un precio cerrado por proyecto para el desarrollo de software a medida."],
+      ["¿Qué tipo de soporte ofrecéis una vez implementada la solución?", "Ofrecemos planes de soporte y mantenimiento flexibles que se adaptan a tus necesidades, desde soporte técnico reactivo hasta un acompañamiento proactivo para asegurar la evolución de la solución."],
+      ["¿Cuál es el Retorno de la Inversión (ROI) que podemos esperar?", "Nuestros clientes suelen experimentar un ROI en menos de 12 meses gracias a la reducción de costes, la eliminación de errores y el aumento de la productividad."],
+      ["¿Solo trabajáis con un tipo de tecnología o software de RPA?", "Somos agnósticos en cuanto a la tecnología. Seleccionamos las herramientas que mejor se adaptan a los retos y al ecosistema tecnológico de cada cliente, ya sea utilizando plataformas de RPA del mercado o desarrollando soluciones a medida."],
+      ["¿Vuestras soluciones son escalables?", "Absolutamente. Construimos todas nuestras soluciones, desde software a medida hasta automatizaciones, sobre una arquitectura modular y escalable, preparada para crecer y adaptarse al volumen de tu negocio sin perder rendimiento."]
+    ]
+  },
+  "otherIndustries": {
+    "title": "Otras Industrias que Transformamos",
+    "body": "Adaptamos nuestra tecnología y conocimiento a los desafíos únicos de tu industria.",
+    "items": [
+      ["Banca, Financieras y Seguros", "", "Consultar servicio", "/assets/figma/re-other-1.jpg"],
+      ["Gran Consumo", "", "Consultar servicio", "/assets/figma/re-other-2.jpg"],
+      ["Public Utilities", "", "Consultar servicio", "/assets/figma/re-other-3.jpg"]
+    ]
+  }
+}

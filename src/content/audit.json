@@ -14,12 +14,12 @@
   "why": {
     "title": "Por qué la auditoría catastral de Suncapital es diferente",
     "items": [
-      ["Modelo de éxito, sin riesgo para ti", "No cobramos honorarios iniciales ni tarifas fijas. Nuestra retribución está vinculada exclusivamente al ahorro real y demostrable que conseguimos en tu tributación inmobiliaria.", "Entender el modelo de honorarios"],
-      ["Especialistas en grandes activos, no en viviendas residenciales", "Nos focalizamos en activos de más de 2.000 m²: naves logísticas, edificios de oficinas, carteras REO, suelo industrial y centros comerciales. Donde el margen de ahorro justifica la operativa.", "Ver tipos de activos que auditamos"],
-      ["Más de 500.000 tributos inmobiliarios gestionados", "Llevamos más de 15 años gestionando el pago de tributos para carteras masivas de activos en España. Conocemos el catastro, los criterios de valoración y los mecanismos de corrección mejor que nadie.", "Ver nuestra trayectoria"],
-      ["Gestión completa del proceso de reclamación", "Identificamos la discrepancia, preparamos la documentación técnica y jurídica, presentamos la reclamación ante el catastro y hacemos el seguimiento hasta la resolución. Tú no intervienes en nada.", "Ver cómo funciona el proceso"],
-      ["Seguridad jurídica en cada corrección", "Cada reclamación está respaldada por un análisis técnico riguroso. No generamos contingencias fiscales ni reclamaciones sin fundamento. El ahorro que conseguimos es sólido y sostenible en el tiempo.", "Ver garantías del servicio"],
-      ["Ahorro que se repite cada año", "Una vez corregido el valor catastral, el ahorro en IBI se aplica de forma automática en cada liquidación posterior. No es un beneficio puntual: es una reducción estructural del coste fiscal de tu patrimonio.", "Calcular mi ahorro potencial"]
+      ["Modelo de éxito, sin riesgo para ti", "No cobramos honorarios iniciales ni tarifas fijas. Nuestra retribución está vinculada exclusivamente al ahorro real y demostrable que conseguimos en tu tributación inmobiliaria.", "Entender el modelo de honorarios", "/assets/icons/icon-cat-1.png"],
+      ["Especialistas en grandes activos, no en viviendas residenciales", "Nos focalizamos en activos de más de 2.000 m²: naves logísticas, edificios de oficinas, carteras REO, suelo industrial y centros comerciales. Donde el margen de ahorro justifica la operativa.", "Ver tipos de activos que auditamos", "/assets/icons/icon-cat-2.png"],
+      ["Más de 500.000 tributos inmobiliarios gestionados", "Llevamos más de 15 años gestionando el pago de tributos para carteras masivas de activos en España. Conocemos el catastro, los criterios de valoración y los mecanismos de corrección mejor que nadie.", "Ver nuestra trayectoria", "/assets/icons/icon-cat-3.png"],
+      ["Gestión completa del proceso de reclamación", "Identificamos la discrepancia, preparamos la documentación técnica y jurídica, presentamos la reclamación ante el catastro y hacemos el seguimiento hasta la resolución. Tú no intervienes en nada.", "Ver cómo funciona el proceso", "/assets/icons/icon-cat-4.png"],
+      ["Seguridad jurídica en cada corrección", "Cada reclamación está respaldada por un análisis técnico riguroso. No generamos contingencias fiscales ni reclamaciones sin fundamento. El ahorro que conseguimos es sólido y sostenible en el tiempo.", "Ver garantías del servicio", "/assets/icons/icon-cat-5.png"],
+      ["Ahorro que se repite cada año", "Una vez corregido el valor catastral, el ahorro en IBI se aplica de forma automática en cada liquidación posterior. No es un beneficio puntual: es una reducción estructural del coste fiscal de tu patrimonio.", "Calcular mi ahorro potencial", "/assets/icons/icon-cat-6.png"]
     ]
   },
   "clients": {
@@ -34,12 +34,12 @@
   "audienceProblem": {
     "title": "¿A quién le resuelve el problema nuestra auditoría catastral?",
     "items": [
-      "Director Financiero con activos inmobiliarios en el balance y costes fiscales no optimizados.",
-      "Responsable de Patrimonio de family office con cartera diversificada en España.",
-      "Director de Activos de fondo de inversión o SOCIMI con carteras REO o en gestión.",
-      "Director General de empresa con inmuebles propios que nunca han pasado por una revisión catastral.",
-      "Responsable Fiscal de gran empresa o corporación con exposición significativa al IBI.",
-      "Director de Operaciones de promotora con suelo en cartera pendiente de desarrollo."
+      ["Director Financiero con activos inmobiliarios en el balance y costes fiscales no optimizados.", "/assets/icons/icon-cat-ap-1.png"],
+      ["Responsable de Patrimonio de family office con cartera diversificada en España.", "/assets/icons/icon-cat-ap-2.png"],
+      ["Director de Activos de fondo de inversión o SOCIMI con carteras REO o en gestión.", "/assets/icons/icon-cat-ap-3.png"],
+      ["Director General de empresa con inmuebles propios que nunca han pasado por una revisión catastral.", "/assets/icons/icon-cat-ap-4.png"],
+      ["Responsable Fiscal de gran empresa o corporación con exposición significativa al IBI.", "/assets/icons/icon-cat-ap-5.png"],
+      ["Director de Operaciones de promotora con suelo en cartera pendiente de desarrollo.", "/assets/icons/icon-cat-ap-6.png"]
     ]
   },
   "onboard": {
@@ -104,10 +104,10 @@
     "title": "Cómo funciona el proceso de auditoría catastral",
     "button": "Iniciar mi revisión catastral ahora",
     "items": [
-      ["01", "Revisión inicial gratuita", "Analizamos una muestra de tus activos para identificar si existen discrepancias catastrales con potencial de corrección. Sin coste y sin compromiso."],
-      ["02", "Auditoría técnica completa", "Si hay potencial de ahorro, auditamos el valor catastral de cada activo: superficie, uso, antigüedad, estado y valoración. Comparamos con la realidad del inmueble y cuantificamos el sobrepago."],
-      ["03", "Preparación y presentación de la reclamación", "Elaboramos la documentación técnica y jurídica necesaria y presentamos la reclamación ante el catastro. Tú no intervienes en el proceso administrativo."],
-      ["04", "Seguimiento hasta la resolución", "Gestionamos el expediente hasta que el valor catastral queda corregido y el ahorro en IBI queda aplicado. Solo entonces facturamos nuestros honorarios."]
+      ["01", "Revisión inicial gratuita", "Analizamos una muestra de tus activos para identificar si existen discrepancias catastrales con potencial de corrección. Sin coste y sin compromiso.", "/assets/icons/icon-cat-proc-1.png"],
+      ["02", "Auditoría técnica completa", "Si hay potencial de ahorro, auditamos el valor catastral de cada activo: superficie, uso, antigüedad, estado y valoración. Comparamos con la realidad del inmueble y cuantificamos el sobrepago.", "/assets/icons/icon-cat-proc-2.png"],
+      ["03", "Preparación y presentación de la reclamación", "Elaboramos la documentación técnica y jurídica necesaria y presentamos la reclamación ante el catastro. Tú no intervienes en el proceso administrativo.", "/assets/icons/icon-cat-proc-3.png"],
+      ["04", "Seguimiento hasta la resolución", "Gestionamos el expediente hasta que el valor catastral queda corregido y el ahorro en IBI queda aplicado. Solo entonces facturamos nuestros honorarios.", "/assets/icons/icon-cat-proc-4.png"]
     ]
   },
   "related": {
@@ -141,7 +141,9 @@
     "items": [
       ["Valencia", "Desde Valencia trabajamos con empresas del sector inmobiliario, logístico y financiero que buscan operar con más eficiencia y control.", "Contactar desde Valencia", "/assets/figma/bpo-city-valencia.jpg"],
       ["Barcelona", "Desde Barcelona ofrecemos soluciones de externalización operativa y auditoría catastral, especialmente pensadas para carteras inmobiliarias, entidades financieras y organizaciones con activos distribuidos.", "Contactar desde Barcelona", "/assets/figma/bpo-city-barcelona.jpg"],
-      ["Madrid", "Desde Madrid ayudamos a optimizar esas operaciones mediante automatización de procesos, externalización de tareas administrativas y consultoría especializada.", "Contactar desde Madrid", "/assets/figma/bpo-city-madrid.jpg"]
+      ["Madrid", "Desde Madrid ayudamos a optimizar esas operaciones mediante automatización de procesos, externalización de tareas administrativas y consultoría especializada.", "Contactar desde Madrid", "/assets/figma/bpo-city-madrid.jpg"],
+      ["Bogotá", "Desde Bogotá apoyamos la optimización de operaciones a través de la automatización de procesos, la externalización de tareas administrativas y consultoría especializada para toda Latinoamérica.", "Contactar desde Bogotá", "/assets/figma/city-bogota.jpg"],
+      ["Medellín", "Con base en Medellín, impulsamos la eficiencia en Latinoamérica a través de la automatización de procesos, la tercerización de tareas administrativas y asesoría experta.", "Contactar desde Medellín", "/assets/figma/city-medellin.jpg"]
     ]
   }
 }

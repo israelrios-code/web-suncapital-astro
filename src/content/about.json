@@ -67,11 +67,11 @@
   "faq": {
     "title": "Preguntas frecuentes",
     "items": [
-      "¿Suncapital es una empresa de software o una consultora?",
-      "¿Con qué tipo de empresas trabajáis habitualmente?",
-      "¿Tenéis presencia en América Latina?",
-      "¿Cómo se inicia un proyecto con Suncapital?",
-      "¿Cuánto tiempo lleváis en el mercado?"
+      ["¿Suncapital es una empresa de software o una consultora?", "Las dos cosas, y esa es precisamente la diferencia. Tenemos tecnología propia — Onboard — pero no la vendemos como un producto estándar. La configuramos, la implementamos y acompañamos la operación. No entregamos licencias: entregamos resultados."],
+      ["¿Con qué tipo de empresas trabajáis habitualmente?", "Con organizaciones que gestionan grandes volúmenes de documentos, expedientes o transacciones y cuyos procesos operativos han dejado de escalar de forma sostenible. Nuestros clientes típicos son empresas de real estate, banca, seguros, logística y alimentación, aunque el denominador común es siempre el mismo: una operación que crece más rápido que su capacidad de procesarla."],
+      ["¿Tenéis presencia en América Latina?", "Sí. Desde 2024 operamos en México y Colombia con equipos locales. Si tu empresa tiene operaciones en LATAM o estás buscando un partner con presencia en la región, podemos acompañarte desde ahí."],
+      ["¿Cómo se inicia un proyecto con Suncapital?", "Con un diagnóstico. Sin compromiso y sin pedirte recursos de tu equipo. Tú nos cuentas dónde está el problema; nosotros hacemos el mapa inicial e identificamos los procesos con mayor potencial de impacto. Si hay un caso claro, avanzamos. Si no lo hay, te lo decimos también."],
+      ["¿Cuánto tiempo lleváis en el mercado?", "Desde 2008. Más de 15 años gestionando operaciones complejas en real estate, banca, logística y catastral, primero como operadores y después como desarrolladores de la tecnología que ahora ofrecemos a nuestros clientes."]
     ]
   }
 }

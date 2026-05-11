@@ -1,0 +1,134 @@
+---
+interface Props {
+  title: string;
+  body: string;
+  items: [string, string, string, string][];
+}
+
+const { title, body, items } = Astro.props;
+const arrow = "→";
+const desktopPages = Math.ceil(items.length / 3);
+const mobilePages  = items.length;
+---
+
+<section class="bg-surface py-20 max-lg:py-[60px] cities-carousel-section">
+  <div class="container-figma text-center">
+    <h2 class="text-primary text-[48px] leading-[52px] font-bold reveal max-lg:text-[34px] max-lg:leading-[38px]">{title}</h2>
+    <p class="section-copy mt-6 reveal">{body}</p>
+
+    <div class="mt-12 cities-carousel-outer">
+      <div class="flex gap-6 cities-carousel-track">
+        {items.map(([t, b, btn, img]) => (
+          <article class="cities-carousel-card shrink-0 w-[calc(33.333%-16px)] overflow-hidden rounded-3xl border border-border bg-white text-left max-lg:w-[80vw]">
+            <img src={img} alt={t} class="h-[286px] w-full object-cover" />
+            <div class="p-6 flex flex-col gap-4">
+              <h3 class="text-[18px] leading-[22px] font-medium text-primary">{t}</h3>
+              <p class="text-sm leading-[18px]">{b}</p>
+              <a class="btn-text w-full justify-between" href="/contacto">{btn} {arrow}</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+
+    <!-- Siempre renderizamos mobilePages dots; JS oculta los extra en desktop -->
+    <div
+      class="mt-6 flex justify-center gap-2 cities-carousel-dots"
+      data-desktop-pages={desktopPages}
+      data-mobile-pages={mobilePages}
+    >
+      {Array.from({ length: mobilePages }).map((_, i) => (
+        <button
+          class={`cities-dot size-2 rounded-full transition-all duration-300 ${i === 0 ? 'bg-primary' : 'bg-primary/30'}`}
+          data-page={i}
+          aria-label={`Elemento ${i + 1}`}
+        ></button>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .cities-carousel-outer {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .cities-carousel-outer::-webkit-scrollbar { display: none; }
+
+  @media (max-width: 1023px) {
+    .cities-carousel-outer { scroll-snap-type: x mandatory; }
+    .cities-carousel-card  { scroll-snap-align: start; }
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.cities-carousel-section').forEach((section) => {
+    const outer  = section.querySelector('.cities-carousel-outer') as HTMLElement | null;
+    const track  = section.querySelector('.cities-carousel-track') as HTMLElement | null;
+    const dotsEl = section.querySelector('.cities-carousel-dots') as HTMLElement | null;
+    if (!outer || !track || !dotsEl) return;
+
+    const desktopPages = parseInt(dotsEl.dataset.desktopPages || '1');
+    const mobilePages  = parseInt(dotsEl.dataset.mobilePages  || '1');
+    const allDots = Array.from(dotsEl.querySelectorAll('.cities-dot')) as HTMLElement[];
+
+    const isMobile = () => window.innerWidth < 1024;
+
+    /* Muestra/oculta dots según breakpoint */
+    function setupDots() {
+      const count = isMobile() ? mobilePages : desktopPages;
+      allDots.forEach((d, i) => {
+        d.style.display = i < count ? '' : 'none';
+      });
+    }
+
+    function cardWidth() {
+      return (track!.children[0] as HTMLElement).offsetWidth + 24;
+    }
+
+    function updateDots(page: number) {
+      const count = isMobile() ? mobilePages : desktopPages;
+      allDots.forEach((d, i) => {
+        if (i >= count) return;
+        d.className = `cities-dot size-2 rounded-full transition-all duration-300 ${
+          i === page ? 'bg-primary' : 'bg-primary/30'
+        }`;
+      });
+    }
+
+    function goTo(page: number) {
+      /* Mobile: 1 card por dot | Desktop: 3 cards por dot */
+      const offset = isMobile() ? page * cardWidth() : page * cardWidth() * 3;
+      outer!.scrollTo({ left: offset, behavior: 'smooth' });
+      updateDots(page);
+    }
+
+    /* Dots click */
+    allDots.forEach(dot => {
+      dot.addEventListener('click', () => goTo(parseInt(dot.dataset.page || '0')));
+    });
+
+    /* Sincroniza dots al hacer scroll (touch o trackpad) */
+    let timer: ReturnType<typeof setTimeout>;
+    outer!.addEventListener('scroll', () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        const cW = cardWidth();
+        const divisor = isMobile() ? cW : cW * 3;
+        const maxPage = (isMobile() ? mobilePages : desktopPages) - 1;
+        const page = Math.min(Math.round(outer!.scrollLeft / divisor), maxPage);
+        updateDots(page);
+      }, 80);
+    }, { passive: true });
+
+    /* Reajusta al cambiar tamaño de ventana */
+    window.addEventListener('resize', () => {
+      setupDots();
+      outer!.scrollTo({ left: 0, behavior: 'instant' as ScrollBehavior });
+      updateDots(0);
+    });
+
+    setupDots(); // inicial
+  });
+</script>

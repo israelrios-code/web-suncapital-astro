@@ -1,14 +1,49 @@
----
+﻿---
 import "../styles/global.css";
 import GoogleTagManagerHead from "../components/GoogleTagManagerHead.astro";
 import GoogleTagManagerBody from "../components/GoogleTagManagerBody.astro";
 import Nav from "../components/Nav.astro";
+import CitiesCarousel from "../components/CitiesCarousel.astro";
 import home from "../content/home.json";
+
+const audienceGradients = [
+  "dark-card",     // 0 → inferior derecha
+  "dark-card-tr",  // 1 → superior derecha
+  "dark-card-tl",  // 2 → superior izquierda
+  "dark-card-bl",  // 3 → inferior izquierda
+  "dark-card-tr",  // 4 → superior derecha
+  "dark-card",     // 5 → inferior derecha
+];
+
+const industryHrefs: Record<string, string> = {
+  "Banca, Financieras y Seguros": "/banca-financieras-seguros",
+  "Real Estate y Servicing": "/real-estate-servicing",
+  "Gran Consumo": "/gran-consumo",
+  "Tecnología para gestión operativa": "/tecnologia-gestion-operativa",
+};
 
 const serviceHrefs = [
   "/automatizacion-inteligente-de-procesos",
   "/business-process-outsourcing",
   "/auditoria-catastral",
+];
+
+const benefitsIcons = [
+  "/assets/icons/icon-file-code-01.svg",
+  "/assets/icons/icon-dataflow-03.svg",
+  "/assets/icons/icon-bar-chart-05.svg",
+  "/assets/icons/icon-shield-tick.svg",
+  "/assets/icons/icon-puzzle-piece-01.svg",
+  "/assets/icons/icon-presentation-chart-01.svg",
+];
+
+const audienceIcons = [
+  "/assets/icons/icon-building-06.svg",
+  "/assets/icons/icon-dataflow-04.svg",
+  "/assets/icons/icon-home-03.svg",
+  "/assets/icons/icon-user-01.svg",
+  "/assets/icons/icon-building-01.svg",
+  "/assets/icons/icon-user-square.svg",
 ];
 
 const arrow = "→";
@@ -27,7 +62,9 @@ const arrow = "→";
     <Nav />
 
     <main>
-      <section class="relative min-h-[868px] overflow-hidden bg-ink pt-[252px] pb-[160px]">
+      <section class="relative min-h-[868px] overflow-hidden bg-ink pt-[252px] pb-[160px] max-lg:pt-[180px] max-lg:pb-[60px]">
+        <img src="/assets/deco/lineas-hero-home.svg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-[1] opacity-20" />
+
         <img src={home.hero.image} alt="" class="absolute inset-y-0 right-0 h-full w-[78%] object-cover" />
         <div class="absolute inset-0 bg-[linear-gradient(82deg,#1d1d1b_27%,rgba(29,29,27,0)_87%),linear-gradient(0deg,#1d1d1b_5%,rgba(29,29,27,0)_45%),linear-gradient(90deg,rgba(29,29,27,.4),rgba(29,29,27,.4))]"></div>
         <div class="container-figma relative">
@@ -41,7 +78,7 @@ const arrow = "→";
         </div>
       </section>
 
-      <section id="servicios" class="relative overflow-hidden bg-ink py-[120px] dark-orb">
+      <section id="servicios" class="relative overflow-hidden bg-ink py-[120px] max-lg:py-[60px] dark-orb">
         <div class="container-figma relative">
           <header class="text-center text-white reveal">
             <h2 class="section-title">{home.services.title}</h2>
@@ -49,13 +86,13 @@ const arrow = "→";
           </header>
           <div class="mt-10 grid grid-cols-3 gap-6 max-lg:grid-cols-1">
             {home.services.items.map((item, index) => (
-              <article class="group reveal relative min-h-[582px] overflow-hidden rounded-[28px] border border-border p-10 flex flex-col justify-end">
+              <article class="group reveal relative min-h-[582px] max-lg:min-h-[400px] overflow-hidden rounded-[28px] p-10 flex flex-col justify-end">
                 <img src={item.image} alt={item.title} class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div class="absolute inset-0 bg-gradient-to-b from-[#dff1f900] to-[#dff1f9eb]"></div>
+                <div class="absolute inset-0 bg-[#0F172A]/70"></div>
                 <div class="relative">
                   <span class="inline-flex rounded-full bg-accent px-3 py-1 text-white text-sm leading-[18px]">{item.tag}</span>
-                  <h3 class="card-title mt-4 text-primary">{item.title}</h3>
-                  <p class="section-copy mt-4">{item.body}</p>
+                  <h3 class="card-title mt-4 text-white">{item.title}</h3>
+                  <p class="section-copy mt-4 text-white/80">{item.body}</p>
                   <a class="btn-primary mt-[18px]" href={serviceHrefs[index]}>{item.button}</a>
                 </div>
               </article>
@@ -64,19 +101,19 @@ const arrow = "→";
         </div>
       </section>
 
-      <section class="bg-surface py-[120px]">
+      <section class="bg-surface py-[120px] max-lg:py-[60px]">
         <div class="container-figma text-center reveal">
           <h2 class="section-title text-primary">{home.logos.title} <span class="text-accent">{home.logos.highlight}</span></h2>
           <p class="section-copy mt-4">{home.logos.body}</p>
-          <div class="mt-20 grid grid-cols-9 gap-4 max-lg:grid-cols-3">
+          <div class="mt-20 max-lg:mt-10 grid grid-cols-9 gap-4 max-lg:grid-cols-3">
             {home.logos.items.map((logo) => <div class="h-[62px] rounded-lg bg-white flex items-center justify-center px-4"><img src={logo} alt="" class="max-h-[50px] object-contain" /></div>)}
           </div>
         </div>
       </section>
 
-      <section class="bg-white py-20">
+      <section class="bg-white py-20 max-lg:py-[60px]">
         <div class="container-figma">
-          <div class="grid grid-cols-2 gap-20 items-center max-lg:grid-cols-1">
+          <div class="grid grid-cols-2 gap-20 max-lg:gap-8 items-center max-lg:grid-cols-1">
             <img src={home.audience.image} alt="" class="h-[368px] w-full rounded-3xl object-cover reveal" />
             <div class="reveal">
               <h2 class="section-title text-primary">{home.audience.title}</h2>
@@ -84,11 +121,15 @@ const arrow = "→";
             </div>
           </div>
           <div class="mt-10 grid grid-cols-3 gap-6 max-lg:grid-cols-1">
-            {home.audience.items.map(([title, body]) => (
-              <article class="reveal relative overflow-hidden rounded-3xl bg-ink p-8 min-h-[270px]">
-                <div class="mb-[18px] flex size-12 items-center justify-center rounded-2xl bg-surface text-primary font-bold">□</div>
-                <h3 class="card-title text-secondary">{title}</h3>
-                <p class="section-copy mt-4 text-white">{body}</p>
+            {home.audience.items.map(([title, body], index) => (
+              <article class={`reveal relative overflow-hidden rounded-3xl bg-ink p-8 min-h-[270px] ${audienceGradients[index]}`}>
+                <div class="relative z-[1]">
+                  <div class="mb-[18px] flex size-12 items-center justify-center rounded-2xl bg-surface">
+                    <img src={audienceIcons[index]} alt="" class="size-6 object-contain" />
+                  </div>
+                  <h3 class="card-title text-secondary">{title}</h3>
+                  <p class="section-copy mt-4 text-white">{body}</p>
+                </div>
               </article>
             ))}
           </div>
@@ -96,34 +137,39 @@ const arrow = "→";
         </div>
       </section>
 
-      <section class="bg-white py-20">
-        <div class="container-figma reveal relative overflow-hidden rounded-3xl bg-ink p-10 dark-orb">
-          <div class="relative grid grid-cols-[1fr_1.1fr] gap-20 items-center max-lg:grid-cols-1">
-            <div>
-              <h2 class="section-title text-white">{home.onboard.title} <span class="text-secondary">{home.onboard.highlight}</span></h2>
-              <p class="section-copy mt-4 text-white">{home.onboard.body}</p>
-              <div class="mt-6 grid gap-2">
-                {home.onboard.items.map((item) => <div class="rounded bg-primary p-3 text-white section-copy">{item}</div>)}
+      <section class="bg-white py-20 max-lg:py-[60px]">
+        <div class="container-figma reveal relative overflow-hidden rounded-3xl bg-ink p-10 max-lg:p-7 dark-orb">
+          <img src="/assets/deco/lineas-hero-banner.svg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-[1] opacity-20" />
+          <div class="relative grid grid-cols-[1fr_1.1fr] gap-20 max-lg:gap-[60px] items-center max-lg:grid-cols-1">
+            <div class="flex flex-col gap-4">
+              <h2 class="text-white text-[48px] leading-[52px] font-bold max-lg:text-[34px] max-lg:leading-[38px]">{home.onboard.title} <span class="text-secondary">{home.onboard.highlight}</span></h2>
+              <p class="section-copy text-white">{home.onboard.body}</p>
+              <div class="rounded-2xl bg-[#5C58ED]/20 p-4">
+                <ul class="list-disc pl-6 section-copy text-white space-y-1">
+                  {home.onboard.items.map((item) => <li>{item}</li>)}
+                </ul>
               </div>
             </div>
             <div class="relative">
               <img src={home.onboard.image} alt="" class="w-full" />
-              <img src={home.onboard.badge} alt="" class="absolute left-[45%] top-[-24px] w-[270px] rounded-lg shadow-2xl" />
+              <img src={home.onboard.badge} alt="" class="absolute left-[45%] top-[-24px] w-[270px] max-lg:w-[160px] max-lg:left-[38%] rounded-lg shadow-2xl" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="bg-surface py-20">
+      <section class="bg-surface py-20 max-lg:py-[60px]">
         <div class="container-figma">
           <header class="reveal">
             <h2 class="section-title text-primary">{home.benefits.title} <span class="text-accent">{home.benefits.highlight}</span></h2>
             <p class="section-copy mt-5 max-w-[683px]">{home.benefits.body}</p>
           </header>
           <div class="mt-10 grid grid-cols-3 gap-6 max-lg:grid-cols-1">
-            {home.benefits.items.map(([title, body]) => (
+            {home.benefits.items.map(([title, body], index) => (
               <article class="reveal rounded-3xl border border-border bg-white p-8 min-h-[292px]">
-                <div class="mb-[18px] flex size-12 items-center justify-center rounded-2xl bg-surface text-primary font-bold">⌁</div>
+                <div class="mb-[18px] flex size-12 items-center justify-center rounded-2xl bg-surface">
+                  <img src={benefitsIcons[index]} alt="" class="size-6 object-contain" />
+                </div>
                 <h3 class="card-title text-primary">{title}</h3>
                 <p class="section-copy mt-4">{body}</p>
               </article>
@@ -133,7 +179,7 @@ const arrow = "→";
         </div>
       </section>
 
-      <section class="relative overflow-hidden bg-ink py-20 dark-orb">
+      <section class="relative overflow-hidden bg-ink py-20 max-lg:py-[60px] dark-orb">
         <div class="container-figma relative text-center text-white reveal">
           <h2 class="section-title">{home.stats.title} <span class="text-secondary">{home.stats.highlight}</span></h2>
           <p class="section-copy mt-[18px]">{home.stats.body}</p>
@@ -143,45 +189,104 @@ const arrow = "→";
         </div>
       </section>
 
-      <section id="industrias" class="rounded-3xl bg-surface py-20">
+      <section id="industrias" class="rounded-3xl bg-surface py-20 max-lg:pt-[60px]">
         <div class="container-figma text-center">
           <h2 class="section-title text-primary reveal">{home.industries.title} <span class="text-accent">{home.industries.highlight}</span> {home.industries.suffix}</h2>
           <p class="section-copy mt-[18px] text-slate-600 reveal">{home.industries.body}</p>
-          <div class="mt-10 grid grid-cols-4 gap-5 text-left max-lg:grid-cols-1">
+          <div id="ind-track" class="mt-10 grid grid-cols-4 gap-5 text-left max-lg:flex max-lg:overflow-x-auto max-lg:snap-x max-lg:snap-mandatory max-lg:[&::-webkit-scrollbar]:hidden" style="scrollbar-width:none">
             {home.industries.items.map(([title, body, image]) => (
-              <article class="reveal overflow-hidden rounded-3xl border border-border bg-white">
-                <img src={image} alt={title} class="h-[268px] w-full object-cover" />
-                <div class="p-8">
-                  <h3 class="card-title text-primary">{title}</h3>
-                  <p class="mt-3 text-sm leading-[18px]">{body}</p>
+              <a href={industryHrefs[title] ?? "/contacto"} class="group reveal flex flex-col overflow-hidden rounded-3xl border border-border bg-white h-[540px] max-lg:h-auto max-lg:w-[80vw] max-lg:shrink-0 max-lg:snap-start">
+                <div class="overflow-hidden h-[268px] shrink-0 transition-[height] duration-500 ease-out group-hover:h-[388px] max-lg:h-[220px]">
+                  <img src={image} alt={title} class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
                 </div>
-              </article>
+                <div class="p-8 flex-1">
+                  <h3 class="card-title text-primary">{title}</h3>
+                  <div class="overflow-hidden max-h-[200px] opacity-100 transition-all duration-500 ease-out group-hover:max-h-0 group-hover:opacity-0 max-lg:max-h-none">
+                    <p class="mt-3 text-sm leading-[18px]">{body}</p>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+          <div id="ind-dots" class="hidden mt-6 justify-center gap-2">
+            {home.industries.items.map((_, i) => (
+              <button data-i={i} class="ind-dot size-2 rounded-full bg-primary/20 transition-all duration-300" aria-label={`Ir a industria ${i + 1}`}></button>
             ))}
           </div>
           <a href="#contacto" class="btn-primary mt-10">{home.industries.button}</a>
+          <script>
+            (function () {
+              const track = document.getElementById('ind-track');
+              const dotsWrap = document.getElementById('ind-dots');
+              const dots = Array.from(document.querySelectorAll('.ind-dot'));
+              if (!track || !dotsWrap || !dots.length) return;
+              function setActive(i) {
+                dots.forEach((d, idx) => {
+                  d.classList.toggle('bg-primary', idx === i);
+                  d.classList.toggle('w-4', idx === i);
+                  d.classList.toggle('bg-primary/20', idx !== i);
+                  d.classList.toggle('w-2', idx !== i);
+                });
+              }
+              function setup() {
+                if (window.innerWidth < 1024) {
+                  dotsWrap.style.display = 'flex';
+                  setActive(0);
+                } else {
+                  dotsWrap.style.display = 'none';
+                }
+              }
+              track.addEventListener('scroll', () => {
+                const cardW = track.firstElementChild?.offsetWidth || 1;
+                const idx = Math.round(track.scrollLeft / (cardW + 20));
+                setActive(Math.min(idx, dots.length - 1));
+              }, { passive: true });
+              dots.forEach((d, i) => {
+                d.addEventListener('click', () => {
+                  const cardW = track.firstElementChild?.offsetWidth || 1;
+                  track.scrollTo({ left: i * (cardW + 20), behavior: 'smooth' });
+                });
+              });
+              setup();
+              window.addEventListener('resize', setup);
+            })();
+          </script>
         </div>
       </section>
 
-      <section class="bg-white py-20">
-        <div class="container-figma grid grid-cols-[327px_1fr] gap-20 items-center max-lg:grid-cols-1">
-          <header class="reveal">
-            <span class="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-primary section-copy"><i class="size-2 rounded-full bg-secondary"></i>{home.caseStudy.kicker}</span>
-            <h2 class="section-title mt-[18px] text-primary">{home.caseStudy.title}</h2>
-            <p class="section-copy mt-[18px]">{home.caseStudy.body}</p>
+      <section class="bg-white py-20 max-lg:py-[60px]">
+        <div class="container-figma flex flex-col items-center gap-10">
+          <header class="reveal flex flex-col items-center gap-4 text-center">
+            <span class="inline-flex items-center gap-2 rounded-full border border-border px-4 py-[10px] text-primary section-copy"><i class="size-2 rounded-full bg-secondary"></i>{home.caseStudy.kicker}</span>
+            <h2 class="text-primary text-[48px] leading-[52px] font-bold">{home.caseStudy.title}</h2>
+            <p class="section-copy max-w-[760px]">{home.caseStudy.body}</p>
           </header>
-          <article class="reveal rounded-3xl bg-primary p-10 text-white">
-            <span class="mx-auto flex w-max rounded-full bg-secondary/20 px-3 py-1 text-secondary">{home.caseStudy.tag}</span>
-            <div class="mt-8 grid grid-cols-3 gap-10 max-lg:grid-cols-1">
-              {home.caseStudy.steps.map(([title, body], index) => <div><h3 class="text-surface font-semibold text-xl leading-8"><span class="mr-2 inline-grid size-6 place-items-center rounded-full bg-secondary text-primary text-base">{index + 1}</span>{title}</h3><p class="section-copy mt-3">{body}</p></div>)}
+          <article class="reveal relative w-full overflow-hidden rounded-3xl bg-ink border border-white/10 p-20 flex flex-col items-center gap-10 dark-orb max-lg:p-8">
+            <span class="rounded-full bg-secondary/20 px-3 py-1 text-secondary section-copy relative">{home.caseStudy.tag}</span>
+            <div class="relative grid grid-cols-3 gap-10 w-full max-lg:grid-cols-1">
+              {home.caseStudy.steps.map(([title, body], index) => (
+                <div class="flex flex-col gap-3">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-grid size-6 shrink-0 place-items-center rounded-full bg-secondary text-primary text-base font-normal">{index + 1}</span>
+                    <h3 class="text-surface font-semibold text-[20px] leading-6">{title}</h3>
+                  </div>
+                  <p class="section-copy text-white">{body}</p>
+                </div>
+              ))}
             </div>
-            <div class="mt-8 grid grid-cols-3 gap-20 border-t border-white/60 pt-6 text-center max-lg:grid-cols-1">
-              {home.caseStudy.metrics.map(([value, label]) => <div><strong class="section-title text-secondary">{value}</strong><p class="section-copy">{label}</p></div>)}
+            <div class="relative grid grid-cols-3 gap-20 w-full border-t border-white/60 pt-8 max-lg:grid-cols-1 max-lg:gap-6">
+              {home.caseStudy.metrics.map(([value, label]) => (
+                <div>
+                  <strong class="block text-[68px] leading-[72px] font-bold text-secondary">{value}</strong>
+                  <p class="section-copy text-white mt-1">{label}</p>
+                </div>
+              ))}
             </div>
           </article>
         </div>
       </section>
 
-      <section class="bg-white py-20 text-center">
+      <section class="bg-white py-20 max-lg:py-[60px] text-center">
         <div class="container-figma reveal">
           <h2 class="section-title text-primary">{home.certifications.title}</h2>
           <p class="section-copy mx-auto mt-[18px] max-w-[1250px]">{home.certifications.body}</p>
@@ -198,64 +303,128 @@ const arrow = "→";
         </div>
       </section>
 
-      <section id="sobre-nosotros" class="relative overflow-hidden bg-ink py-20 dark-orb">
+      <section id="sobre-nosotros" class="relative overflow-hidden bg-ink py-20 max-lg:py-[60px] dark-orb">
         <div class="container-figma relative text-center text-white">
           <h2 class="section-title reveal">{home.team.title} <span class="text-secondary">{home.team.highlight}</span> {home.team.suffix}</h2>
           <p class="section-copy mt-[18px] reveal">{home.team.body}</p>
-          <div class="mt-10 grid grid-cols-4 gap-6 text-left max-lg:grid-cols-1">
-            {home.team.items.map(([name, role, image]) => <article class="reveal overflow-hidden rounded-3xl border border-border bg-white"><div class="relative"><img src={image} alt={name} class="h-[276px] w-full object-cover" /><span class="absolute left-5 top-5 rounded-2xl bg-surface px-3 py-2 text-primary font-bold">in</span></div><div class="p-8"><h3 class="card-title text-accent">{name}</h3><p class="mt-3 text-[18px] leading-[22px] font-medium text-ink">{role}</p></div></article>)}
+          <div id="team-track" class="mt-10 grid grid-cols-4 gap-6 text-left max-lg:flex max-lg:overflow-x-auto max-lg:snap-x max-lg:snap-mandatory max-lg:[&::-webkit-scrollbar]:hidden" style="scrollbar-width:none">
+            {home.team.items.map(([name, role, image]) => (
+              <article class="reveal overflow-hidden rounded-3xl border border-border bg-white max-lg:w-[80vw] max-lg:shrink-0 max-lg:snap-start">
+                <div class="relative pt-5 px-5 pb-[200px]">
+                  <div class="absolute inset-0 overflow-hidden">
+                    <img src={image} alt={name} class="absolute inset-0 w-full h-full object-cover object-top" />
+                  </div>
+                  <div class="relative flex items-center justify-center bg-surface rounded-2xl p-3 w-14 h-14 shrink-0">
+                    <img src="/assets/icons/icon-linkedin.svg" alt="LinkedIn" class="size-8" />
+                  </div>
+                </div>
+                <div class="p-8 flex flex-col gap-3">
+                  <h3 class="card-title text-accent">{name}</h3>
+                  <p class="text-[18px] leading-[22px] font-medium text-ink">{role}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div id="team-dots" class="hidden mt-6 justify-center gap-2">
+            {home.team.items.map((_, i) => (
+              <button data-i={i} class="team-dot size-2 rounded-full bg-white/30 transition-all duration-300" aria-label={`Ir a miembro ${i + 1}`}></button>
+            ))}
+          </div>
+          <script>
+            (function () {
+              const track = document.getElementById('team-track');
+              const dotsWrap = document.getElementById('team-dots');
+              const dots = Array.from(document.querySelectorAll('.team-dot'));
+              if (!track || !dotsWrap || !dots.length) return;
+              function setActive(i) {
+                dots.forEach((d, idx) => {
+                  d.classList.toggle('bg-white', idx === i);
+                  d.classList.toggle('w-4', idx === i);
+                  d.classList.toggle('bg-white/30', idx !== i);
+                  d.classList.toggle('w-2', idx !== i);
+                });
+              }
+              function setup() {
+                if (window.innerWidth < 1024) {
+                  dotsWrap.style.display = 'flex';
+                  setActive(0);
+                } else {
+                  dotsWrap.style.display = 'none';
+                }
+              }
+              track.addEventListener('scroll', () => {
+                const cardW = track.firstElementChild?.offsetWidth || 1;
+                const idx = Math.round(track.scrollLeft / (cardW + 24));
+                setActive(Math.min(idx, dots.length - 1));
+              }, { passive: true });
+              dots.forEach((d, i) => {
+                d.addEventListener('click', () => {
+                  const cardW = track.firstElementChild?.offsetWidth || 1;
+                  track.scrollTo({ left: i * (cardW + 24), behavior: 'smooth' });
+                });
+              });
+              setup();
+              window.addEventListener('resize', setup);
+            })();
+          </script>
+          <div class="mt-10 reveal">
+            <a href="/sobre-nosotros" class="btn-primary">Descubre más sobre nosotros</a>
           </div>
         </div>
       </section>
 
-      <section id="contacto" class="bg-white py-20">
-        <div class="container-figma reveal relative min-h-[526px] overflow-hidden rounded-3xl p-20 flex items-center">
-          <img src={home.cta.image} alt="" class="absolute inset-0 h-full w-full object-cover" />
-          <div class="absolute inset-0 bg-[linear-gradient(81deg,#1d1d1b_27%,rgba(29,29,27,0)_87%),linear-gradient(0deg,#1d1d1b_5%,rgba(29,29,27,0)_45%)]"></div>
-          <div class="relative max-w-[640px] text-white">
-            <h2 class="section-title">{home.cta.title}</h2>
-            <p class="section-copy mt-5">{home.cta.body}</p>
-            <a class="btn-primary mt-5" href={`mailto:${home.footer.email}`}>{home.cta.button}</a>
+      <section id="contacto" class="bg-surface py-20 max-lg:py-[60px]">
+        <div class="container-figma reveal relative min-h-[506px] overflow-hidden rounded-3xl bg-ink p-20 flex items-end max-lg:p-6">
+          <img src="/assets/deco/lineas-hero-banner.svg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-[1] opacity-20" />
+          <img src={home.cta.image} alt="" class="absolute max-w-none h-[146%] w-[79%] left-[21%] top-[-7%] object-cover" />
+          <div class="absolute inset-0 bg-[linear-gradient(0.33deg,#1d1d1b_5%,rgba(29,29,27,0)_45%),linear-gradient(80.85deg,#1d1d1b_27%,rgba(29,29,27,0)_87%)]"></div>
+          <div class="relative flex flex-col gap-5 max-w-[640px] text-white">
+            <h2 class="text-white text-[48px] leading-[52px] font-bold max-lg:text-[34px] max-lg:leading-[38px]">{home.cta.title}</h2>
+            <p class="section-copy">{home.cta.body}</p>
+            <a class="btn-primary self-start" href="/contacto">{home.cta.button}</a>
           </div>
         </div>
       </section>
 
-      <section id="noticias" class="bg-white py-20">
-        <div class="container-figma grid grid-cols-[338px_1fr] gap-20 items-start max-lg:grid-cols-1">
+      <section id="noticias" class="bg-white py-20 max-lg:py-[60px]">
+        <div class="container-figma grid grid-cols-[338px_1fr] gap-20 max-lg:gap-8 items-start max-lg:grid-cols-1">
           <h2 class="section-title text-primary reveal">{home.faq.title}</h2>
           <div class="grid gap-5">
-            {home.faq.items.map((item) => <details class="reveal group rounded-xl border-2 border-border px-[26px] py-[18px]"><summary class="flex cursor-pointer list-none items-center justify-between gap-8 card-title text-primary">{item}<span class="grid size-8 place-items-center rounded-full bg-surface text-primary text-base">+</span></summary><p class="section-copy mt-4 text-ink">Nuestro equipo revisa tu caso y te propone un camino de mejora medible, seguro y adaptado a tus sistemas actuales.</p></details>)}
+            {home.faq.items.map(([question, answer]) => (
+              <details class="reveal group rounded-xl border-2 border-border px-[26px] py-[18px]">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-6 card-title max-lg:text-[18px] max-lg:leading-[22px] text-primary group-open:text-accent">
+                  {question}
+                  <span class="grid size-8 shrink-0 place-items-center rounded-full bg-surface text-primary text-base group-open:bg-accent group-open:text-white">
+                    <span class="group-open:hidden">+</span>
+                    <span class="hidden group-open:inline leading-none">−</span>
+                  </span>
+                </summary>
+                <p class="section-copy mt-4 text-ink">{answer}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>
 
-      <section class="bg-white py-20">
+      <section class="bg-white py-20 max-lg:py-[60px]">
         <div class="container-figma text-center">
           <h2 class="section-title text-primary reveal">{home.news.title}</h2>
           <p class="section-copy mt-6 reveal">{home.news.body}</p>
           <div class="mt-12 grid grid-cols-3 gap-6 text-left max-lg:grid-cols-1">
-            {home.news.items.map(([date, title, body, image]) => <article class="reveal overflow-hidden rounded-3xl border border-border bg-white"><img src={image} alt={title} class="h-[200px] w-full object-cover" /><div class="p-6"><p class="text-sm leading-[18px] text-ink/50">{date}</p><h3 class="mt-4 text-[18px] leading-[22px] font-medium text-primary">{title}</h3><p class="mt-4 text-sm leading-[18px]">{body}</p><a class="btn-text mt-4" href="#">Leer artículo {arrow}</a></div></article>)}
+            {home.news.items.map(([date, title, body, image]) => <article class="reveal overflow-hidden rounded-3xl border border-border bg-white"><img src={image} alt={title} class="h-[200px] w-full object-cover" /><div class="p-6"><p class="text-sm leading-[18px] text-ink/50">{date}</p><h3 class="mt-4 text-[18px] leading-[22px] font-medium text-primary">{title}</h3><p class="mt-4 text-sm leading-[18px]">{body}</p><a class="btn-text mt-4" href="/noticias">Leer artículo {arrow}</a></div></article>)}
           </div>
         </div>
       </section>
 
-      <section class="bg-surface py-20">
-        <div class="container-figma text-center">
-          <h2 class="section-title text-primary reveal">{home.cities.title}</h2>
-          <p class="section-copy mt-6 reveal">{home.cities.body}</p>
-          <div class="mt-12 grid grid-cols-3 gap-6 text-left max-lg:grid-cols-1">
-            {home.cities.items.map(([title, body, button, image]) => <article class="reveal overflow-hidden rounded-3xl border border-border bg-white"><img src={image} alt={title} class="h-[286px] w-full object-cover" /><div class="p-6"><h3 class="text-[18px] leading-[22px] font-medium text-primary">{title}</h3><p class="mt-4 text-sm leading-[18px]">{body}</p><a class="btn-text mt-4 w-full justify-between" href="#contacto">{button} {arrow}</a></div></article>)}
-          </div>
-        </div>
-      </section>
+      <CitiesCarousel title={home.cities.title} body={home.cities.body} items={home.cities.items} />
     </main>
 
     <footer class="bg-ink py-20 text-white">
       <div class="container-figma grid grid-cols-4 gap-10 max-lg:grid-cols-1">
         <div>
-          <strong class="block text-[30px] leading-none">SC <span class="text-white/60">|</span> <span class="text-[24px]">suncapital</span></strong>
+          <a href="/"><img src="/assets/logo-footer.svg" alt="Suncapital" width="270" height="40" class="h-9 w-auto" /></a>
           <p class="mt-6 font-manrope section-copy">{home.footer.body}</p>
-          <p class="mt-6 font-manrope section-copy">© 2025 Suncapital. Todos los derechos reservados.</p>
+          <a href="https://www.linkedin.com/company/suncapital" target="_blank" rel="noopener noreferrer" class="mt-6 block w-max"><img src="/assets/icons/icon-linkedin-social.svg" alt="LinkedIn Suncapital" width="30" height="30" class="w-10 h-10" /></a><p class="mt-6 font-manrope section-copy">© 2025 Suncapital. Todos los derechos reservados.</p>
           <div class="mt-6 grid gap-3 underline font-manrope section-copy"><a href="#">Política de Calidad y Seguridad</a><a href="#">Política de Privacidad</a><a href="#">Aviso Legal</a><a href="#">Canal Ético</a></div>
         </div>
         <div>
@@ -265,13 +434,13 @@ const arrow = "→";
           <p class="mt-6 font-manrope section-copy">{home.footer.coverage}</p>
         </div>
         <div class="grid gap-4 text-[18px] leading-[22px] font-bold">
-          {["Sobre nosotros", "Noticias", "Software Onboard", "Servicios", "Automatización inteligente de procesos", "Business Process Outsourcing", "Auditoría Catastral", "Industrias", "Banca, Financieras y Seguros", "Real Estate y Servicing", "Gran Consumo", "Tecnología para gestión operativa"].map((item) => <a href="#" class={item === "Servicios" || item === "Industrias" ? "text-secondary" : "text-white"}>{item} <span class="float-right">{arrow}</span></a>)}
+          {[["Sobre nosotros","/sobre-nosotros"],["Noticias","/noticias"],["Software Onboard","/onboard"],["Servicios","/#servicios"],["Automatización inteligente de procesos","/automatizacion-inteligente-de-procesos"],["Business Process Outsourcing","/business-process-outsourcing"],["Auditoría Catastral","/auditoria-catastral"],["Industrias","/#industrias"],["Banca, Financieras y Seguros","/banca-financieras-seguros"],["Real Estate y Servicing","/real-estate-servicing"],["Gran Consumo","/gran-consumo"],["Tecnología para gestión operativa","/tecnologia-gestion-operativa"]].map(([label, href]) => <a href={href} class={`${label === "Servicios" || label === "Industrias" ? "text-secondary" : "text-white"} hover:text-secondary transition-colors`}>{label}{label !== "Servicios" && label !== "Industrias" && <span class="float-right">{arrow}</span>}</a>)}
         </div>
         <div>
           <a class="btn-primary" href={`mailto:${home.footer.email}`}>Contacto</a>
           <p class="mt-6 text-sm leading-[18px]">{home.footer.email}</p>
           <p class="mt-4 text-sm leading-[18px]">{home.footer.phone}</p>
-          <div class="mt-6 flex gap-2"><img src="/assets/figma/cert-bde.png" alt="" class="h-12 rounded bg-white p-2" /><img src="/assets/figma/cert-27001.png" alt="" class="h-12 rounded bg-white p-2" /><img src="/assets/figma/cert-9001.png" alt="" class="h-12 rounded bg-white p-2" /></div>
+          <div class="mt-6 flex flex-col gap-2"><div class="flex gap-2"><img src="/assets/figma/cert-27001.png" alt="ISO 27001" class="h-16 rounded bg-white p-2 object-contain" /><img src="/assets/figma/cert-9001.png" alt="ISO 9001" class="h-16 rounded bg-white p-2 object-contain" /></div><img src="/assets/figma/cert-bde.png" alt="Banco de España" class="h-20 w-full rounded bg-white p-1 object-contain" /></div>
         </div>
       </div>
     </footer>

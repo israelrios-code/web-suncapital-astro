@@ -15,12 +15,12 @@
   "why": {
     "title": "Lo que hace diferente a nuestro modelo de BPO",
     "items": [
-      ["Equipo dedicado, no recursos compartidos", "Tienes personas asignadas a tu operación con nombre, formación en tus procesos y compromisos de rendimiento. No compartes equipo con otros clientes ni dependes de un pool rotativo.", "Conocer el modelo de equipo"],
-      ["Operación activa en semanas, no en meses", "El BPO es el servicio que más rápido se activa. Sin desarrollo previo, sin migraciones. En dos a cuatro semanas el equipo está formado y ejecutando con pleno rendimiento.", "Ver cómo arrancamos"],
-      ["Trazabilidad total sobre lo que delegas", "Delegar no significa perder control. Desde la plataforma Onboard tienes visibilidad en tiempo real de cada tarea gestionada, cada incidencia resuelta y cada KPI comprometido.", "Ver plataforma Onboard"],
-      ["Escala hacia arriba o hacia abajo sin penalizaciones", "Si tu operación tiene picos estacionales o crece de forma acelerada, ajustamos el equipo y la capacidad sin compromisos de permanencia ni costes adicionales por cambio de volumen.", "Ver modelos de contratación"],
-      ["Especialización sectorial desde el primer día", "No llegamos a aprender tu sector: llevamos más de 15 años operando en real estate, banca, logística y seguros. El equipo ya conoce los procesos antes de empezar a ejecutarlos.", "Ver industrias donde operamos"],
-      ["Precio por lo que usas, no por lo que contratas", "Pago por uso, por volumen gestionado o por equipo dedicado. Tú eliges el modelo que encaja con tu momento de negocio, sin estructura fija que pesar en tu cuenta de resultados.", "Solicitar presupuesto"]
+      ["Equipo dedicado, no recursos compartidos", "Tienes personas asignadas a tu operación con nombre, formación en tus procesos y compromisos de rendimiento. No compartes equipo con otros clientes ni dependes de un pool rotativo.", "Conocer el modelo de equipo", "/assets/icons/icon-bpo-1.png"],
+      ["Operación activa en semanas, no en meses", "El BPO es el servicio que más rápido se activa. Sin desarrollo previo, sin migraciones. En dos a cuatro semanas el equipo está formado y ejecutando con pleno rendimiento.", "Ver cómo arrancamos", "/assets/icons/icon-bpo-2.png"],
+      ["Trazabilidad total sobre lo que delegas", "Delegar no significa perder control. Desde la plataforma Onboard tienes visibilidad en tiempo real de cada tarea gestionada, cada incidencia resuelta y cada KPI comprometido.", "Ver plataforma Onboard", "/assets/icons/icon-bpo-3.png"],
+      ["Escala hacia arriba o hacia abajo sin penalizaciones", "Si tu operación tiene picos estacionales o crece de forma acelerada, ajustamos el equipo y la capacidad sin compromisos de permanencia ni costes adicionales por cambio de volumen.", "Ver modelos de contratación", "/assets/icons/icon-bpo-4.png"],
+      ["Especialización sectorial desde el primer día", "No llegamos a aprender tu sector: llevamos más de 15 años operando en real estate, banca, logística y seguros. El equipo ya conoce los procesos antes de empezar a ejecutarlos.", "Ver industrias donde operamos", "/assets/icons/icon-bpo-5.png"],
+      ["Precio por lo que usas, no por lo que contratas", "Pago por uso, por volumen gestionado o por equipo dedicado. Tú eliges el modelo que encaja con tu momento de negocio, sin estructura fija que pesar en tu cuenta de resultados.", "Solicitar presupuesto", "/assets/icons/icon-bpo-6.png"]
     ]
   },
   "services": {
@@ -35,12 +35,12 @@
   "audienceProblem": {
     "title": "¿A quién le resuelve el problema el BPO?",
     "items": [
-      "Director de Operaciones que ya no puede escalar su equipo interno.",
-      "Director General de empresa en crecimiento con procesos tensionados.",
-      "Director Financiero que necesita reducir costes de estructura sin perder control.",
-      "Director de Compras con gestión documental manual y volumen creciente.",
-      "Responsable de Transformación Digital que busca eficiencia antes que tecnología.",
-      "Responsable de Logística con alta carga de gestión administrativa repetitiva."
+      ["Director de Operaciones que ya no puede escalar su equipo interno.", "/assets/icons/icon-bpo-ap-1.png"],
+      ["Director General de empresa en crecimiento con procesos tensionados.", "/assets/icons/icon-bpo-ap-2.png"],
+      ["Director Financiero que necesita reducir costes de estructura sin perder control.", "/assets/icons/icon-bpo-ap-3.png"],
+      ["Director de Compras con gestión documental manual y volumen creciente.", "/assets/icons/icon-bpo-ap-4.png"],
+      ["Responsable de Transformación Digital que busca eficiencia antes que tecnología.", "/assets/icons/icon-bpo-ap-5.png"],
+      ["Responsable de Logística con alta carga de gestión administrativa repetitiva.", "/assets/icons/icon-bpo-ap-6.png"]
     ]
   },
   "onboard": {
@@ -105,10 +105,10 @@
     "title": "Así arrancamos tu servicio BPO",
     "button": "Iniciar mi diagnóstico ahora",
     "items": [
-      ["01", "Diagnóstico de procesos (30 minutos, sin coste)", "Identificamos qué procesos externalizaría primero, el volumen actual y el punto de dolor más alto para tu equipo."],
-      ["02", "Diseño del modelo de servicio", "Definimos el equipo asignado, las herramientas, los SLAs por proceso y el modelo de precio adaptado a tu volumen real."],
-      ["03", "Onboarding del equipo y arranque operativo", "Formamos al equipo en tus procesos, configuramos los flujos en Onboard y arrancamos en semanas sin tocar lo que ya funciona."],
-      ["04", "Operación, reporte y mejora continua", "Recibes informes periódicos de rendimiento. Ajustamos el servicio conforme evoluciona tu operación, hacia arriba o hacia abajo."]
+      ["01", "Diagnóstico de procesos (30 minutos, sin coste)", "Identificamos qué procesos externalizaría primero, el volumen actual y el punto de dolor más alto para tu equipo.", "/assets/icons/icon-bpo-proc-1.png"],
+      ["02", "Diseño del modelo de servicio", "Definimos el equipo asignado, las herramientas, los SLAs por proceso y el modelo de precio adaptado a tu volumen real.", "/assets/icons/icon-bpo-proc-2.png"],
+      ["03", "Onboarding del equipo y arranque operativo", "Formamos al equipo en tus procesos, configuramos los flujos en Onboard y arrancamos en semanas sin tocar lo que ya funciona.", "/assets/icons/icon-bpo-proc-3.png"],
+      ["04", "Operación, reporte y mejora continua", "Recibes informes periódicos de rendimiento. Ajustamos el servicio conforme evoluciona tu operación, hacia arriba o hacia abajo.", "/assets/icons/icon-bpo-proc-4.png"]
     ]
   },
   "otherIndustries": {
@@ -142,7 +142,9 @@
     "items": [
       ["Valencia", "Desde Valencia trabajamos con empresas del sector inmobiliario, logístico y financiero que buscan operar con más eficiencia y control.", "Contactar desde Valencia", "/assets/figma/bpo-city-valencia.jpg"],
       ["Barcelona", "Desde Barcelona ofrecemos soluciones de externalización operativa y auditoría catastral, especialmente pensadas para carteras inmobiliarias, entidades financieras y organizaciones con activos distribuidos.", "Contactar desde Barcelona", "/assets/figma/bpo-city-barcelona.jpg"],
-      ["Madrid", "Desde Madrid ayudamos a optimizar esas operaciones mediante automatización de procesos, externalización de tareas administrativas y consultoría especializada.", "Contactar desde Madrid", "/assets/figma/bpo-city-madrid.jpg"]
+      ["Madrid", "Desde Madrid ayudamos a optimizar esas operaciones mediante automatización de procesos, externalización de tareas administrativas y consultoría especializada.", "Contactar desde Madrid", "/assets/figma/bpo-city-madrid.jpg"],
+      ["Bogotá", "Desde Bogotá apoyamos la optimización de operaciones a través de la automatización de procesos, la externalización de tareas administrativas y consultoría especializada para toda Latinoamérica.", "Contactar desde Bogotá", "/assets/figma/city-bogota.jpg"],
+      ["Medellín", "Con base en Medellín, impulsamos la eficiencia en Latinoamérica a través de la automatización de procesos, la tercerización de tareas administrativas y asesoría experta.", "Contactar desde Medellín", "/assets/figma/city-medellin.jpg"]
     ]
   }
 }

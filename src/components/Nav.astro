@@ -6,40 +6,65 @@ const services = [
 ];
 
 const industries = [
-  ["Banca, Financieras y Seguros", "/#industrias"],
-  ["Real Estate y Servicing", "/#industrias"],
-  ["Gran Consumo", "/#industrias"],
-  ["Tecnología para gestión operativa", "/#industrias"],
+  ["Banca, Financieras y Seguros", "/banca-financieras-seguros"],
+  ["Real Estate y Servicing", "/real-estate-servicing"],
+  ["Gran Consumo", "/gran-consumo"],
+  ["Tecnología para gestión operativa", "/tecnologia-gestion-operativa"],
 ];
 ---
 
 <nav class="fixed inset-x-0 top-0 z-50 bg-ink/95 border-b border-white/10">
   <div class="container-figma flex h-[102px] items-center justify-between gap-8">
-    <a href="/" class="text-white font-bold text-[30px] leading-none tracking-tight">
-      SC <span class="text-white/60">|</span> <span class="text-[24px]">suncapital</span>
+
+    <a href="/" class="shrink-0">
+      <img src="/assets/logo-menu.svg" alt="Suncapital" width="270" height="40" class="h-9 w-auto" />
     </a>
-    <div class="hidden lg:flex items-center gap-8 text-white text-[18px] leading-[22px] font-bold">
-      <a href="/onboard" class="hover:text-secondary transition-colors">Software Onboard</a>
+
+    <!-- Desktop menu -->
+    <div class="hidden lg:flex items-center gap-8 text-white text-[20px] leading-6 font-bold">
+      <a href="/onboard" class="hover:text-secondary transition-colors whitespace-nowrap">Software Onboard</a>
 
       <div class="nav-menu">
         <button class="nav-menu-trigger" type="button" aria-haspopup="true">
-          Servicios <span aria-hidden="true">⌄</span>
+          Servicios
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true" class="shrink-0">
+            <path d="M4.5 6.75 9 11.25l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </button>
-        <div class="nav-menu-panel">
-          {services.map(([label, href]) => (
-            <a href={href}>{label}<span aria-hidden="true">→</span></a>
-          ))}
+        <div class="nav-mega-panel">
+          <div class="flex gap-10 items-start">
+            <img src="/assets/figma/nav-servicios.png" alt="" class="h-[213px] w-[371px] shrink-0 rounded-2xl object-cover border border-white/15" />
+            <div class="flex flex-col gap-5 min-w-0">
+              <p class="text-secondary text-[28px] leading-8 font-semibold">Nuestros servicios</p>
+              {services.map(([label, href]) => (
+                <a href={href} class="flex items-center gap-2 text-white text-[20px] leading-6 font-bold hover:text-secondary transition-colors whitespace-nowrap">
+                  {label} <span aria-hidden="true" class="text-base">→</span>
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="nav-menu">
         <button class="nav-menu-trigger" type="button" aria-haspopup="true">
-          Industrias <span aria-hidden="true">⌄</span>
+          Industrias
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true" class="shrink-0">
+            <path d="M4.5 6.75 9 11.25l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </button>
-        <div class="nav-menu-panel nav-menu-panel-wide">
-          {industries.map(([label, href]) => (
-            <a href={href}>{label}<span aria-hidden="true">→</span></a>
-          ))}
+        <div class="nav-mega-panel">
+          <div class="flex gap-10 items-start">
+            <img src="/assets/figma/nav-industrias.png" alt="" class="h-[213px] w-[371px] shrink-0 rounded-2xl object-cover border border-white/15" />
+            <div class="flex flex-col gap-5 min-w-0">
+              <p class="text-secondary text-[28px] leading-8 font-semibold">Industrias</p>
+              {industries.map(([label, href]) => (
+                <a href={href} class="flex items-center gap-2 text-white text-[20px] leading-6 font-bold hover:text-secondary transition-colors whitespace-nowrap">
+                  {label} <span aria-hidden="true" class="text-base">→</span>
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
@@ -47,5 +72,189 @@ const industries = [
       <a href="/noticias" class="hover:text-secondary transition-colors">Noticias</a>
       <a class="btn-primary" href="/contacto">Contacto</a>
     </div>
+
+    <!-- Hamburger -->
+    <button id="nav-hamburger" class="lg:hidden flex flex-col justify-center items-center gap-[5px] w-10 h-10 shrink-0" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+    </button>
   </div>
 </nav>
+
+<!-- Mobile drawer — z-[60] para cubrir la nav -->
+<div
+  id="nav-mobile"
+  class="fixed inset-0 z-[60] flex flex-col bg-ink text-white translate-x-full transition-transform duration-300 ease-out lg:hidden overflow-y-auto"
+  aria-hidden="true"
+>
+  <!-- Drawer header -->
+  <div class="flex items-center justify-between px-6 h-[102px] border-b border-white/10 shrink-0">
+    <a href="/">
+      <img src="/assets/logo-menu.svg" alt="Suncapital" width="270" height="40" class="h-9 w-auto" />
+    </a>
+    <button id="nav-close" class="w-10 h-10 flex items-center justify-center" aria-label="Cerrar menú">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M18 6 6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Nav links -->
+  <div class="flex flex-col px-6 py-6 flex-1">
+
+    <a href="/onboard" class="mob-link">Software Onboard</a>
+
+    <!-- Servicios accordion -->
+    <div class="mob-accordion">
+      <button class="mob-trigger" type="button">
+        <span>Servicios</span>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="mob-chevron" aria-hidden="true">
+          <path d="M5 7.5 10 12.5 15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="mob-panel">
+        {services.map(([label, href]) => (
+          <a href={href} class="mob-sublink">{label} →</a>
+        ))}
+      </div>
+    </div>
+
+    <!-- Industrias accordion -->
+    <div class="mob-accordion">
+      <button class="mob-trigger" type="button">
+        <span>Industrias</span>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="mob-chevron" aria-hidden="true">
+          <path d="M5 7.5 10 12.5 15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="mob-panel">
+        {industries.map(([label, href]) => (
+          <a href={href} class="mob-sublink">{label} →</a>
+        ))}
+      </div>
+    </div>
+
+    <a href="/sobre-nosotros" class="mob-link">Sobre nosotros</a>
+    <a href="/noticias" class="mob-link">Noticias</a>
+
+    <div class="mt-auto pt-8 pb-4">
+      <a href="/contacto" class="btn-primary block text-center">Contacto</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Hamburger lines */
+  .ham-line {
+    display: block;
+    height: 2px;
+    width: 24px;
+    background: white;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+  }
+
+  /* Mobile nav links */
+  .mob-link {
+    display: block;
+    padding: 16px 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    transition: color 0.2s;
+  }
+  .mob-link:hover { color: var(--secondary); }
+
+  /* Accordion trigger — display:flex propio, sin heredar mob-link */
+  .mob-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  .mob-trigger:hover { color: var(--secondary); }
+
+  .mob-chevron {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+  .mob-accordion.is-open .mob-chevron { transform: rotate(180deg); }
+
+  /* Accordion panel */
+  .mob-panel {
+    display: none;
+    flex-direction: column;
+    padding: 8px 0 8px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .mob-accordion.is-open .mob-panel { display: flex; }
+
+  .mob-sublink {
+    display: block;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #fff;
+    text-align: left;
+    transition: color 0.2s;
+  }
+  .mob-sublink:hover { color: var(--secondary); }
+</style>
+
+<script>
+  const hamburger = document.getElementById('nav-hamburger') as HTMLButtonElement;
+  const mobile = document.getElementById('nav-mobile') as HTMLElement;
+  const closeBtn = document.getElementById('nav-close') as HTMLButtonElement;
+  const lines = hamburger.querySelectorAll('.ham-line');
+
+  function openMenu() {
+    mobile.classList.remove('translate-x-full');
+    mobile.setAttribute('aria-hidden', 'false');
+    hamburger.setAttribute('aria-expanded', 'true');
+    // Animate to X
+    (lines[0] as HTMLElement).style.transform = 'translateY(7px) rotate(45deg)';
+    (lines[1] as HTMLElement).style.opacity = '0';
+    (lines[2] as HTMLElement).style.transform = 'translateY(-7px) rotate(-45deg)';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    mobile.classList.add('translate-x-full');
+    mobile.setAttribute('aria-hidden', 'true');
+    hamburger.setAttribute('aria-expanded', 'false');
+    // Restore hamburger
+    (lines[0] as HTMLElement).style.transform = '';
+    (lines[1] as HTMLElement).style.opacity = '';
+    (lines[2] as HTMLElement).style.transform = '';
+    document.body.style.overflow = '';
+  }
+
+  hamburger.addEventListener('click', () =>
+    mobile.classList.contains('translate-x-full') ? openMenu() : closeMenu()
+  );
+  closeBtn.addEventListener('click', closeMenu);
+  mobile.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+
+  // Accordions
+  document.querySelectorAll('.mob-accordion').forEach(acc => {
+    const trigger = acc.querySelector('.mob-trigger') as HTMLButtonElement;
+    trigger.addEventListener('click', () => acc.classList.toggle('is-open'));
+  });
+</script>
